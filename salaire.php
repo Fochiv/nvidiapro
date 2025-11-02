@@ -49,16 +49,16 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['reclamer_salaire'])) 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Salaire - NVIDIA Technology</title>
+    <title>Salaire - TESLA Technology</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
-    /* VARIABLES THEME NVIDIA */
+    /* VARIABLES THEME TESLA */
     :root {
-        --nvidia-green: #76B900; 
-        --nvidia-dark: #1e1e1e;
-        --nvidia-black: #000000;
-        --nvidia-light-gray: #f5f5f5;
-        --nvidia-gray: #aaaaaa;
+        --tesla-green: #E82127; 
+        --tesla-dark: #1e1e1e;
+        --tesla-black: #000000;
+        --tesla-light-gray: #f5f5f5;
+        --tesla-gray: #aaaaaa;
         --text-white: #ffffff;
         --text-light-gray: #e0e0e0;
         --error: #ef4444;
@@ -75,7 +75,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['reclamer_salaire'])) 
     
     body {
         /* Fond sombre et technique */
-        background-color: var(--nvidia-dark); 
+        background-color: var(--tesla-dark); 
         color: var(--text-light-gray);
         min-height: 100vh;
         overflow-x: hidden;
@@ -99,24 +99,24 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['reclamer_salaire'])) 
         font-size: 28px;
         font-weight: 700;
         margin-bottom: 8px;
-        /* Titre en vert NVIDIA */
-        color: var(--nvidia-green); 
+        /* Titre en rouge TESLA */
+        color: var(--tesla-green); 
     }
     
     .header p {
         font-size: 16px;
-        color: var(--nvidia-gray);
+        color: var(--tesla-gray);
     }
     
     /* Carte Salaire Actuel */
     .salaire-card {
-        background: var(--nvidia-black);
+        background: var(--tesla-black);
         border-radius: 15px;
         padding: 25px;
         margin-bottom: 25px;
         /* Ombre technique verte */
-        box-shadow: 0 0 20px rgba(118, 185, 0, 0.3);
-        border: 1px solid rgba(118, 185, 0, 0.5);
+        box-shadow: 0 0 20px rgba(232, 33, 39, 0.3);
+        border: 1px solid rgba(232, 33, 39, 0.5);
         text-align: center;
         animation: fadeInUp 1s ease-out;
         position: relative;
@@ -131,20 +131,20 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['reclamer_salaire'])) 
         width: 100%;
         height: 100%;
         /* Motif subtil */
-        background: radial-gradient(circle at center, rgba(118, 185, 0, 0.05) 1%, transparent 70%);
+        background: radial-gradient(circle at center, rgba(232, 33, 39, 0.05) 1%, transparent 70%);
         z-index: -1;
     }
     
     .niveau-badge {
         display: inline-block;
-        background-color: var(--nvidia-green);
-        color: var(--nvidia-black);
+        background-color: var(--tesla-green);
+        color: var(--tesla-black);
         padding: 6px 15px;
         border-radius: 15px;
         font-weight: 700;
         font-size: 13px;
         margin-bottom: 15px;
-        box-shadow: 0 4px 10px rgba(118, 185, 0, 0.4);
+        box-shadow: 0 4px 10px rgba(232, 33, 39, 0.4);
     }
     
     .salaire-montant {
@@ -152,19 +152,19 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['reclamer_salaire'])) 
         font-weight: 900;
         color: var(--text-white);
         margin: 15px 0;
-        text-shadow: 0 0 10px rgba(118, 185, 0, 0.5);
+        text-shadow: 0 0 10px rgba(232, 33, 39, 0.5);
     }
     
     .salaire-periode {
-        color: var(--nvidia-gray);
+        color: var(--tesla-gray);
         font-size: 14px;
         font-weight: 600;
     }
     
     /* Bouton Récupérer */
     .btn-recupérer {
-        background-color: var(--nvidia-green);
-        color: var(--nvidia-black);
+        background-color: var(--tesla-green);
+        color: var(--tesla-black);
         border: none;
         border-radius: 10px;
         padding: 16px 30px;
@@ -174,7 +174,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['reclamer_salaire'])) 
         transition: var(--transition);
         width: 100%;
         margin: 20px 0;
-        box-shadow: 0 4px 15px rgba(118, 185, 0, 0.5);
+        box-shadow: 0 4px 15px rgba(232, 33, 39, 0.5);
         display: flex;
         align-items: center;
         justify-content: center;
@@ -183,11 +183,11 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['reclamer_salaire'])) 
     
     .btn-recupérer:hover:not(:disabled) {
         transform: scale(1.02);
-        box-shadow: 0 6px 20px rgba(118, 185, 0, 0.7);
+        box-shadow: 0 6px 20px rgba(232, 33, 39, 0.7);
     }
     
     .btn-recupérer:disabled {
-        background: var(--nvidia-gray);
+        background: var(--tesla-gray);
         color: #444;
         cursor: not-allowed;
         transform: none;
@@ -196,7 +196,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['reclamer_salaire'])) 
     
     /* Section Progression et Information (style de carte unifié) */
     .progression-section, .info-section {
-        background: var(--nvidia-black);
+        background: var(--tesla-black);
         border-radius: 15px;
         padding: 20px;
         margin-bottom: 25px;
@@ -208,12 +208,12 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['reclamer_salaire'])) 
     .section-title {
         font-size: 18px;
         font-weight: 700;
-        color: var(--nvidia-green);
+        color: var(--tesla-green);
         margin-bottom: 15px;
         display: flex;
         align-items: center;
         gap: 10px;
-        border-bottom: 2px solid rgba(118, 185, 0, 0.3);
+        border-bottom: 2px solid rgba(232, 33, 39, 0.3);
         padding-bottom: 10px;
     }
     
@@ -244,14 +244,14 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['reclamer_salaire'])) 
         justify-content: center;
         font-weight: 700;
         font-size: 13px;
-        background: rgba(118, 185, 0, 0.1);
-        color: var(--nvidia-green);
-        border: 1px solid rgba(118, 185, 0, 0.5);
+        background: rgba(232, 33, 39, 0.1);
+        color: var(--tesla-green);
+        border: 1px solid rgba(232, 33, 39, 0.5);
     }
     
     .niveau-item.actuel .niveau-numero {
-        background-color: var(--nvidia-green);
-        color: var(--nvidia-black);
+        background-color: var(--tesla-green);
+        color: var(--tesla-black);
     }
     
     .niveau-salaire {
@@ -270,14 +270,14 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['reclamer_salaire'])) 
         width: 35px;
         height: 35px;
         border-radius: 8px;
-        background: rgba(118, 185, 0, 0.1);
+        background: rgba(232, 33, 39, 0.1);
         display: flex;
         align-items: center;
         justify-content: center;
-        color: var(--nvidia-green);
+        color: var(--tesla-green);
         font-size: 16px;
         flex-shrink: 0;
-        border: 1px solid rgba(118, 185, 0, 0.3);
+        border: 1px solid rgba(232, 33, 39, 0.3);
     }
     
     .info-text {
@@ -326,7 +326,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['reclamer_salaire'])) 
     }
     
     .popup-content {
-        background: var(--nvidia-black);
+        background: var(--tesla-black);
         width: 100%;
         max-width: 380px;
         border-radius: 15px;
@@ -433,7 +433,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['reclamer_salaire'])) 
 <body>
     <div class="container">
         <div class="header">
-            <h1>Salaire Quotidien - NVIDIA Technology</h1>
+            <h1>Salaire Quotidien - TESLA Technology</h1>
             <p>Recevez votre rémunération quotidienne selon votre niveau VIP</p>
         </div>
         
@@ -548,8 +548,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['reclamer_salaire'])) 
                     <i class="fas fa-ban"></i>
                 </div>
                 <div class="popup-message">
-                    Votre accès a été **temporairement restreint** en raison d'une détection d'activité non conforme aux protocoles NVIDIA Technology (activité non autorisée sur certains niveaux inférieurs).<br><br>
-                    Pour rétablir l'accès et recevoir votre versement, contactez le support technique NVIDIA Technology immédiatement.
+                    Votre accès a été **temporairement restreint** en raison d'une détection d'activité non conforme aux protocoles TESLA Technology (activité non autorisée sur certains niveaux inférieurs).<br><br>
+                    Pour rétablir l'accès et recevoir votre versement, contactez le support technique TESLA Technology immédiatement.
                 </div>
                 <button class="popup-btn" onclick="closePopup()">
                     <i class="fas fa-headset"></i> Contacter le Support Technique

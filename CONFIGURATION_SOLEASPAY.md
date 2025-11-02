@@ -1,4 +1,4 @@
-# Configuration SoleasPay pour NVIDIA Technology Platform
+# Configuration SoleasPay pour TESLA Technology Platform
 
 ## Configuration du Webhook (Obligatoire pour la validation automatique)
 

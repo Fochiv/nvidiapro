@@ -24,26 +24,26 @@ $code_parrain = isset($_SESSION['parrain_code']) ? $_SESSION['parrain_code'] : '
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <title>NVIDIA Technologie</title>
+    <title>TESLA Technologie</title>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
         :root {
-            /* Couleurs NVIDIA Thème */
+            /* Couleurs TESLA Thème */
             --primary-black: #000000;
             --soft-black: #0f0f0f;
             --dark-gray: #1a1a1a;
             --light-gray: #2e2e2e; /* Utilisé pour les bords clairs/soft */
-            --accent-green: #76b900; /* Le vert iconique de NVIDIA */
+            --accent-green: #E82127; /* Le vert iconique de TESLA */
             --green-light: #90d400;
             --green-dark: #5c8f00;
             --text-light: #e0e0e0;
             --text-gray: #aaaaaa;
             --text-dark: #ffffff; /* Texte principal en blanc pour le fond sombre */
             --card-bg: rgba(0, 0, 0, 0.8); /* Fond des cartes/éléments semi-transparent sombre */
-            --border-color: rgba(118, 185, 0, 0.3); /* Bordure en accent vert */
+            --border-color: rgba(232, 33, 39, 0.3); /* Bordure en accent vert */
             --error: #ff4444;
-            --success: #76b900; /* Succès en vert NVIDIA */
+            --success: #E82127; /* Succès en rouge TESLA */
             --transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
         }
         
@@ -71,7 +71,7 @@ $code_parrain = isset($_SESSION['parrain_code']) ? $_SESSION['parrain_code'] : '
             touch-action: manipulation;
         }
         
-        /* Arrière-plan géométrique élégant - Style sombre NVIDIA */
+        /* Arrière-plan géométrique élégant - Style sombre TESLA */
         .background {
             position: fixed;
             top: 0;
@@ -79,10 +79,10 @@ $code_parrain = isset($_SESSION['parrain_code']) ? $_SESSION['parrain_code'] : '
             width: 100%;
             height: 100%;
             background: 
-                radial-gradient(circle at 10% 20%, rgba(118, 185, 0, 0.1) 0%, transparent 20%),
-                radial-gradient(circle at 90% 80%, rgba(118, 185, 0, 0.1) 0%, transparent 20%),
-                radial-gradient(circle at 20% 30%, rgba(118, 185, 0, 0.05) 0%, transparent 50%),
-                radial-gradient(circle at 80% 70%, rgba(118, 185, 0, 0.05) 0%, transparent 50%),
+                radial-gradient(circle at 10% 20%, rgba(232, 33, 39, 0.1) 0%, transparent 20%),
+                radial-gradient(circle at 90% 80%, rgba(232, 33, 39, 0.1) 0%, transparent 20%),
+                radial-gradient(circle at 20% 30%, rgba(232, 33, 39, 0.05) 0%, transparent 50%),
+                radial-gradient(circle at 80% 70%, rgba(232, 33, 39, 0.05) 0%, transparent 50%),
                 linear-gradient(135deg, var(--soft-black) 0%, var(--primary-black) 100%);
             z-index: -3;
         }
@@ -94,23 +94,23 @@ $code_parrain = isset($_SESSION['parrain_code']) ? $_SESSION['parrain_code'] : '
             width: 100%;
             height: 100%;
             background-image: 
-                linear-gradient(30deg, rgba(118, 185, 0, 0.05) 12%, transparent 12.5%, transparent 87%, rgba(118, 185, 0, 0.05) 87.5%, rgba(118, 185, 0, 0.05) 0),
-                linear-gradient(150deg, rgba(118, 185, 0, 0.05) 12%, transparent 12.5%, transparent 87%, rgba(118, 185, 0, 0.05) 87.5%, rgba(118, 185, 0, 0.05) 0),
-                linear-gradient(30deg, rgba(118, 185, 0, 0.03) 12%, transparent 12.5%, transparent 87%, rgba(118, 185, 0, 0.03) 87.5%, rgba(118, 185, 0, 0.03) 0),
-                linear-gradient(150deg, rgba(118, 185, 0, 0.03) 12%, transparent 12.5%, transparent 87%, rgba(118, 185, 0, 0.03) 87.5%, rgba(118, 185, 0, 0.03) 0),
-                linear-gradient(60deg, rgba(118, 185, 0, 0.08) 25%, transparent 25.5%, transparent 75%, rgba(118, 185, 0, 0.08) 75%, rgba(118, 185, 0, 0.08) 0),
-                linear-gradient(60deg, rgba(118, 185, 0, 0.08) 25%, transparent 25.5%, transparent 75%, rgba(118, 185, 0, 0.08) 75%, rgba(118, 185, 0, 0.08) 0);
+                linear-gradient(30deg, rgba(232, 33, 39, 0.05) 12%, transparent 12.5%, transparent 87%, rgba(232, 33, 39, 0.05) 87.5%, rgba(232, 33, 39, 0.05) 0),
+                linear-gradient(150deg, rgba(232, 33, 39, 0.05) 12%, transparent 12.5%, transparent 87%, rgba(232, 33, 39, 0.05) 87.5%, rgba(232, 33, 39, 0.05) 0),
+                linear-gradient(30deg, rgba(232, 33, 39, 0.03) 12%, transparent 12.5%, transparent 87%, rgba(232, 33, 39, 0.03) 87.5%, rgba(232, 33, 39, 0.03) 0),
+                linear-gradient(150deg, rgba(232, 33, 39, 0.03) 12%, transparent 12.5%, transparent 87%, rgba(232, 33, 39, 0.03) 87.5%, rgba(232, 33, 39, 0.03) 0),
+                linear-gradient(60deg, rgba(232, 33, 39, 0.08) 25%, transparent 25.5%, transparent 75%, rgba(232, 33, 39, 0.08) 75%, rgba(232, 33, 39, 0.08) 0),
+                linear-gradient(60deg, rgba(232, 33, 39, 0.08) 25%, transparent 25.5%, transparent 75%, rgba(232, 33, 39, 0.08) 75%, rgba(232, 33, 39, 0.08) 0);
             background-size: 100px 175px;
             background-position: 0 0, 0 0, 50px 87.5px, 50px 87.5px, 0 0, 50px 87.5px;
             z-index: -2;
             animation: patternShift 30s linear infinite;
         }
         
-        .blue-accent, .purple-accent { /* Accent vert unique pour NVIDIA */
+        .blue-accent, .purple-accent { /* Accent vert unique pour TESLA */
             position: fixed;
             width: 400px;
             height: 400px;
-            background: radial-gradient(circle, rgba(118, 185, 0, 0.15) 0%, transparent 70%);
+            background: radial-gradient(circle, rgba(232, 33, 39, 0.15) 0%, transparent 70%);
             filter: blur(60px);
             z-index: -1;
         }
@@ -134,9 +134,9 @@ $code_parrain = isset($_SESSION['parrain_code']) ? $_SESSION['parrain_code'] : '
             background: linear-gradient(
                 125deg,
                 transparent 0%,
-                rgba(118, 185, 0, 0.08) 40%,
-                rgba(118, 185, 0, 0.15) 50%, /* L'effet le plus brillant en vert */
-                rgba(118, 185, 0, 0.08) 60%,
+                rgba(232, 33, 39, 0.08) 40%,
+                rgba(232, 33, 39, 0.15) 50%, /* L'effet le plus brillant en vert */
+                rgba(232, 33, 39, 0.08) 60%,
                 transparent 100%
             );
             opacity: 0.3;
@@ -183,7 +183,7 @@ $code_parrain = isset($_SESSION['parrain_code']) ? $_SESSION['parrain_code'] : '
         .logo-icon {
             width: 60px;
             height: 60px;
-            /* Dégradé de vert NVIDIA */
+            /* Dégradé de rouge TESLA */
             background: linear-gradient(135deg, var(--accent-green), var(--green-dark));
             border: none;
             border-radius: 15px;
@@ -193,7 +193,7 @@ $code_parrain = isset($_SESSION['parrain_code']) ? $_SESSION['parrain_code'] : '
             color: var(--primary-black); /* Icône texte en noir pour contraste */
             font-weight: bold;
             font-size: 24px;
-            box-shadow: 0 8px 25px rgba(118, 185, 0, 0.4);
+            box-shadow: 0 8px 25px rgba(232, 33, 39, 0.4);
             transition: all 0.3s ease;
             position: relative;
             overflow: hidden;
@@ -213,14 +213,14 @@ $code_parrain = isset($_SESSION['parrain_code']) ? $_SESSION['parrain_code'] : '
         
         .logo-icon:hover {
             transform: rotate(5deg) scale(1.05);
-            box-shadow: 0 12px 35px rgba(118, 185, 0, 0.6);
+            box-shadow: 0 12px 35px rgba(232, 33, 39, 0.6);
         }
         
         .logo-text {
             font-family: 'Playfair Display', serif;
             font-weight: 700;
             font-size: 32px;
-            /* Dégradé de vert NVIDIA */
+            /* Dégradé de rouge TESLA */
             background: linear-gradient(135deg, var(--accent-green), var(--green-light));
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
@@ -277,21 +277,21 @@ $code_parrain = isset($_SESSION['parrain_code']) ? $_SESSION['parrain_code'] : '
         }
         
         .btn-login:hover {
-            background: rgba(118, 185, 0, 0.1);
+            background: rgba(232, 33, 39, 0.1);
             transform: translateY(-2px);
-            box-shadow: 0 4px 12px rgba(118, 185, 0, 0.3);
+            box-shadow: 0 4px 12px rgba(232, 33, 39, 0.3);
         }
         
         .btn-register {
-            /* Dégradé de vert NVIDIA */
+            /* Dégradé de rouge TESLA */
             background: linear-gradient(135deg, var(--accent-green), var(--green-dark));
             color: var(--primary-black); /* Texte noir sur vert pour le bouton principal */
-            box-shadow: 0 4px 12px rgba(118, 185, 0, 0.4);
+            box-shadow: 0 4px 12px rgba(232, 33, 39, 0.4);
         }
         
         .btn-register:hover {
             transform: translateY(-2px) scale(1.03);
-            box-shadow: 0 6px 16px rgba(118, 185, 0, 0.5);
+            box-shadow: 0 6px 16px rgba(232, 33, 39, 0.5);
         }
         
         /* Section principale */
@@ -313,7 +313,7 @@ $code_parrain = isset($_SESSION['parrain_code']) ? $_SESSION['parrain_code'] : '
             overflow: hidden;
             position: relative;
             box-shadow: 
-                0 25px 50px rgba(118, 185, 0, 0.15),
+                0 25px 50px rgba(232, 33, 39, 0.15),
                 0 15px 30px rgba(0, 0, 0, 0.5);
             margin-bottom: 30px;
             border: 1px solid var(--border-color);
@@ -354,7 +354,7 @@ $code_parrain = isset($_SESSION['parrain_code']) ? $_SESSION['parrain_code'] : '
             font-family: 'Playfair Display', serif;
             font-size: 28px;
             margin-bottom: 12px;
-            color: var(--accent-green); /* Titre en vert NVIDIA */
+            color: var(--accent-green); /* Titre en rouge TESLA */
             font-weight: 700;
         }
         
@@ -375,7 +375,7 @@ $code_parrain = isset($_SESSION['parrain_code']) ? $_SESSION['parrain_code'] : '
         }
         
         .btn-register-main {
-            /* Dégradé de vert NVIDIA */
+            /* Dégradé de rouge TESLA */
             background: linear-gradient(135deg, var(--accent-green), var(--green-dark));
             color: var(--primary-black); /* Texte noir pour contraste */
             border: none;
@@ -386,7 +386,7 @@ $code_parrain = isset($_SESSION['parrain_code']) ? $_SESSION['parrain_code'] : '
             cursor: pointer;
             transition: var(--transition);
             box-shadow: 
-                0 8px 25px rgba(118, 185, 0, 0.6),
+                0 8px 25px rgba(232, 33, 39, 0.6),
                 inset 0 1px 0 rgba(255, 255, 255, 0.3);
             position: relative;
             overflow: hidden;
@@ -412,14 +412,14 @@ $code_parrain = isset($_SESSION['parrain_code']) ? $_SESSION['parrain_code'] : '
         .btn-register-main:hover {
             transform: translateY(-4px) scale(1.04);
             box-shadow: 
-                0 15px 30px rgba(118, 185, 0, 0.8),
+                0 15px 30px rgba(232, 33, 39, 0.8),
                 inset 0 1px 0 rgba(255, 255, 255, 0.4);
         }
 
         /* Message de parrainage */
         .referral-notice {
             /* Thème sombre et accent vert */
-            background: linear-gradient(135deg, rgba(118, 185, 0, 0.15), rgba(0, 0, 0, 0.5));
+            background: linear-gradient(135deg, rgba(232, 33, 39, 0.15), rgba(0, 0, 0, 0.5));
             padding: 18px;
             border-radius: 12px;
             margin-bottom: 25px;
@@ -432,7 +432,7 @@ $code_parrain = isset($_SESSION['parrain_code']) ? $_SESSION['parrain_code'] : '
             align-items: center;
             justify-content: center;
             gap: 10px;
-            box-shadow: 0 5px 15px rgba(118, 185, 0, 0.2);
+            box-shadow: 0 5px 15px rgba(232, 33, 39, 0.2);
             animation: pulse 2s infinite;
             backdrop-filter: blur(10px);
             max-width: 500px;
@@ -602,7 +602,7 @@ $code_parrain = isset($_SESSION['parrain_code']) ? $_SESSION['parrain_code'] : '
             <div class="logo">
                 <div class="logo-icon">NV</div>
                 <div>
-                    <div class="logo-text">NVIDIA</div>
+                    <div class="logo-text">TESLA</div>
                     <div class="logo-subtext">TECHNOLOGIE</div>
                 </div>
             </div>
@@ -615,7 +615,7 @@ $code_parrain = isset($_SESSION['parrain_code']) ? $_SESSION['parrain_code'] : '
         <div class="hero-section">
             <?php if (!empty($code_parrain)): ?>
                 <div class="referral-notice">
-                    <i class="fas fa-user-friends"></i> Vous êtes invité par un partenaire NVIDIA
+                    <i class="fas fa-user-friends"></i> Vous êtes invité par un partenaire TESLA
                 </div>
             <?php endif; ?>
             
@@ -634,7 +634,7 @@ $code_parrain = isset($_SESSION['parrain_code']) ? $_SESSION['parrain_code'] : '
                 </div>
                 <div class="carousel-slide" style="background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?ixlib=rb-4.0.3&auto=format&fit=crop&w=1350&q=80');">
                     <div class="slide-content">
-                        <h2 class="slide-title">NVIDIA - Le Futur de la Technologie</h2>
+                        <h2 class="slide-title">TESLA - Le Futur de la Technologie</h2>
                         <p class="slide-text">De l'IA aux graphismes de pointe, rejoignez le leader mondial de la technologie.</p>
                     </div>
                 </div>

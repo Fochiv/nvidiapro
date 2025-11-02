@@ -22,13 +22,13 @@ $user = $query->fetch();
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Certificat Technologique - NVIDIA Technologie</title>
+    <title>Certificat Technologique - TESLA Technologie</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
     <style>
-        /* Définition des couleurs NVIDIA */
+        /* Définition des couleurs TESLA */
         :root {
-            --nvidia-green: #76B900; /* Le vert emblématique de NVIDIA */
+            --tesla-green: #E82127; /* Le vert emblématique de TESLA */
             --dark-charcoal: #1a1c20; /* Noir/Gris très foncé pour les fonds */
             --charcoal: #2a2d30; /* Gris foncé pour les éléments secondaires */
             --light-grey: #f0f2f5;
@@ -63,7 +63,7 @@ $user = $query->fetch();
             padding: 20px;
         }
 
-        /* Header adapté au thème NVIDIA */
+        /* Header adapté au thème TESLA */
         .header {
             text-align: center;
             margin-bottom: 30px;
@@ -75,7 +75,7 @@ $user = $query->fetch();
             position: relative;
             overflow: hidden;
             /* Bordure d'accentuation verte */
-            border-bottom: 5px solid var(--nvidia-green); 
+            border-bottom: 5px solid var(--tesla-green); 
         }
 
         .header::before {
@@ -86,7 +86,7 @@ $user = $query->fetch();
             width: 200%;
             height: 200%;
             /* Effet subtil avec la couleur verte */
-            background: radial-gradient(circle, rgba(118, 185, 0, 0.1) 0%, transparent 70%); 
+            background: radial-gradient(circle, rgba(232, 33, 39, 0.1) 0%, transparent 70%); 
             animation: float 6s ease-in-out infinite;
         }
 
@@ -113,7 +113,7 @@ $user = $query->fetch();
             margin-bottom: 30px;
             box-shadow: var(--shadow);
             overflow: hidden;
-            border: 2px solid var(--nvidia-green); /* Bordure verte */
+            border: 2px solid var(--tesla-green); /* Bordure verte */
             position: relative;
         }
 
@@ -121,7 +121,7 @@ $user = $query->fetch();
             width: 100%;
             height: auto;
             display: block;
-            border-bottom: 3px solid var(--nvidia-green);
+            border-bottom: 3px solid var(--tesla-green);
         }
 
         .certificate-content {
@@ -129,9 +129,9 @@ $user = $query->fetch();
             text-align: center;
         }
 
-        /* Titre en vert NVIDIA */
+        /* Titre en rouge TESLA */
         .certificate-title {
-            color: var(--nvidia-green); 
+            color: var(--tesla-green); 
             font-size: 24px;
             font-weight: 700;
             margin-bottom: 15px;
@@ -162,13 +162,13 @@ $user = $query->fetch();
             margin-bottom: 15px;
             padding: 12px;
             /* Fond légèrement plus clair que le conteneur */
-            background: rgba(118, 185, 0, 0.05); 
+            background: rgba(232, 33, 39, 0.05); 
             border-radius: 10px;
-            border-left: 4px solid var(--nvidia-green); /* Barre latérale verte */
+            border-left: 4px solid var(--tesla-green); /* Barre latérale verte */
         }
 
         .benefit-icon {
-            color: var(--nvidia-green);
+            color: var(--tesla-green);
             font-size: 18px;
             margin-top: 2px;
             flex-shrink: 0;
@@ -214,10 +214,10 @@ $user = $query->fetch();
             margin-top: 25px;
         }
 
-        /* Bouton principal en vert NVIDIA */
+        /* Bouton principal en rouge TESLA */
         .btn-primary {
             flex: 1;
-            background: linear-gradient(135deg, var(--nvidia-green), #5a8d00);
+            background: linear-gradient(135deg, var(--tesla-green), #b91f1f);
             color: var(--dark-charcoal); /* Texte sombre sur fond clair (vert) */
             border: none;
             padding: 16px;
@@ -230,21 +230,21 @@ $user = $query->fetch();
             align-items: center;
             justify-content: center;
             gap: 10px;
-            box-shadow: 0 6px 20px rgba(118, 185, 0, 0.4);
+            box-shadow: 0 6px 20px rgba(232, 33, 39, 0.4);
         }
 
         .btn-primary:hover {
             transform: translateY(-3px);
-            box-shadow: 0 8px 25px rgba(118, 185, 0, 0.5);
-            background: var(--nvidia-green);
+            box-shadow: 0 8px 25px rgba(232, 33, 39, 0.5);
+            background: var(--tesla-green);
         }
 
         /* Bouton secondaire adapté au thème sombre */
         .btn-secondary {
             flex: 1;
             background: transparent;
-            color: var(--nvidia-green);
-            border: 2px solid var(--nvidia-green);
+            color: var(--tesla-green);
+            border: 2px solid var(--tesla-green);
             padding: 16px;
             border-radius: 12px;
             font-size: 16px;
@@ -258,7 +258,7 @@ $user = $query->fetch();
         }
 
         .btn-secondary:hover {
-            background: var(--nvidia-green);
+            background: var(--tesla-green);
             color: var(--dark-charcoal); /* Texte sombre sur hover */
             transform: translateY(-3px);
         }
@@ -270,7 +270,7 @@ $user = $query->fetch();
             padding: 20px;
             margin-bottom: 25px;
             text-align: center;
-            border: 2px solid var(--nvidia-green);
+            border: 2px solid var(--tesla-green);
         }
 
         .user-name {
@@ -281,7 +281,7 @@ $user = $query->fetch();
         }
 
         .user-status {
-            color: var(--nvidia-green);
+            color: var(--tesla-green);
             font-size: 14px;
             font-weight: 500;
             display: flex;
@@ -291,7 +291,7 @@ $user = $query->fetch();
         }
 
         .badge {
-            background: var(--nvidia-green);
+            background: var(--tesla-green);
             color: var(--dark-charcoal);
             padding: 4px 12px;
             border-radius: 20px;
@@ -347,7 +347,7 @@ $user = $query->fetch();
 <body>
     <div class="container">
         <div class="header">
-            <h1><i class="fas fa-microchip"></i> NVIDIA Technologie</h1>
+            <h1><i class="fas fa-microchip"></i> TESLA Technologie</h1>
             <p>Certificat de Partenariat Technologique</p>
         </div>
 
@@ -360,17 +360,17 @@ $user = $query->fetch();
         </div>
 
         <div class="certificate-container">
-            <img src="canva.jpg" alt="Certificat Technologique NVIDIA" class="certificate-image">
+            <img src="canva.jpg" alt="Certificat Technologique TESLA" class="certificate-image">
             
             <div class="certificate-content">
                 <div class="certificate-title">
                     <i class="fas fa-certificate"></i>
-                    Certificat de Partenariat NVIDIA
+                    Certificat de Partenariat TESLA
                 </div>
                 
                 <p class="certificate-description">
                     Obtenez votre certificat de partenariat officiel qui atteste de votre statut de partenaire privilégié 
-                    chez **NVIDIA Technologie**. Ce document exclusif valide votre engagement et vous offre 
+                    chez **TESLA Technologie**. Ce document exclusif valide votre engagement et vous offre 
                     des avantages uniques au sein de notre écosystème.
                 </p>
 
@@ -389,7 +389,7 @@ $user = $query->fetch();
                             <i class="fas fa-code"></i> </div>
                         <div class="benefit-text">
                             <strong>Statut de développeur certifié</strong><br>
-                            Atteste de votre appartenance à la communauté de développement NVIDIA.
+                            Atteste de votre appartenance à la communauté de développement TESLA.
                         </div>
                     </div>
                     
@@ -409,7 +409,7 @@ $user = $query->fetch();
                     </div>
                     <p class="importance-text">
                         Ce certificat sera essentiel pour les futurs événements de partenaires, l'accès au support technique 
-                        avancé et pour bénéficier des dernières innovations de NVIDIA.
+                        avancé et pour bénéficier des dernières innovations de TESLA.
                     </p>
                 </div>
 
@@ -435,10 +435,10 @@ $user = $query->fetch();
     <script>
         function requestCertificate() {
             // Simulation de la demande de certificat
-            const userConfirmed = confirm('Voulez-vous vraiment générer votre certificat de Partenariat NVIDIA ?\n\nLe certificat sera disponible sous 24 heures.');
+            const userConfirmed = confirm('Voulez-vous vraiment générer votre certificat de Partenariat TESLA ?\n\nLe certificat sera disponible sous 24 heures.');
             
             if (userConfirmed) {
-                alert('✅ Votre demande de certificat a été envoyée avec succès !\n\nVous recevrez votre certificat de Partenariat NVIDIA sous 24 heures.');
+                alert('✅ Votre demande de certificat a été envoyée avec succès !\n\nVous recevrez votre certificat de Partenariat TESLA sous 24 heures.');
                 
                 // Ici vous pouvez ajouter un appel AJAX pour enregistrer la demande en base de données
                 // fetch('request_certificate.php', { method: 'POST' })
@@ -446,12 +446,12 @@ $user = $query->fetch();
         }
 
         function shareCertificate() {
-            const shareText = 'Je viens d\'obtenir mon certificat de Partenariat NVIDIA ! 🚀 Fier de faire partie de la technologie de pointe.';
+            const shareText = 'Je viens d\'obtenir mon certificat de Partenariat TESLA ! 🚀 Fier de faire partie de la technologie de pointe.';
             const shareUrl = window.location.href;
             
             if (navigator.share) {
                 navigator.share({
-                    title: 'Mon Certificat NVIDIA',
+                    title: 'Mon Certificat TESLA',
                     text: shareText,
                     url: shareUrl
                 });

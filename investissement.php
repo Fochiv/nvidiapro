@@ -44,19 +44,19 @@ foreach ($plans_corriges as &$plan) {
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Investissement - NVIDIA Technologie</title>
+    <title>Investissement - TESLA Technologie</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
     :root {
-        /* Couleurs NVIDIA / Thème Sombre */
+        /* Couleurs TESLA / Thème Sombre */
         --primary-white: #ffffff;
         --soft-white: #f8fafc;
         --warm-white: #fefefe;
         --light-gray: #f1f5f9;
 
-        /* Couleurs NVIDIA */
-        --nvidia-green: #76B900; /* Vert signature */
-        --nvidia-dark-green: #588A00;
+        /* Couleurs TESLA */
+        --tesla-green: #E82127; /* Vert signature */
+        --tesla-dark-green: #588A00;
         --accent-dark: #1e293b; /* Bleu très foncé pour le contraste */
         --dark-bg: #0f172a; /* Fond très sombre */
         --dark-card-bg: #1e293b; /* Fond des cartes sombres */
@@ -97,7 +97,7 @@ foreach ($plans_corriges as &$plan) {
         left: 0;
         width: 100%;
         height: 100%;
-        background: radial-gradient(circle at 10% 20%, rgba(118, 185, 0, 0.08) 0%, transparent 20%),
+        background: radial-gradient(circle at 10% 20%, rgba(232, 33, 39, 0.08) 0%, transparent 20%),
             radial-gradient(circle at 90% 80%, rgba(30, 41, 59, 0.2) 0%, transparent 20%);
         z-index: -3;
     }
@@ -123,7 +123,7 @@ foreach ($plans_corriges as &$plan) {
         right: 0;
         width: 400px;
         height: 400px;
-        background: radial-gradient(circle, rgba(118, 185, 0, 0.2) 0%, transparent 70%);
+        background: radial-gradient(circle, rgba(232, 33, 39, 0.2) 0%, transparent 70%);
         filter: blur(80px);
         z-index: -1;
     }
@@ -142,7 +142,7 @@ foreach ($plans_corriges as &$plan) {
     /* En-tête avec dégradé vert-sombre */
     .header {
         height: 220px;
-        background: linear-gradient(135deg, var(--nvidia-dark-green), var(--accent-dark));
+        background: linear-gradient(135deg, var(--tesla-dark-green), var(--accent-dark));
         position: relative;
         display: flex;
         flex-direction: column;
@@ -194,7 +194,7 @@ foreach ($plans_corriges as &$plan) {
         border-radius: 15px;
         padding: 8px;
         box-shadow: 0 8px 25px rgba(0, 0, 0, 0.4);
-        border: 2px solid var(--nvidia-green);
+        border: 2px solid var(--tesla-green);
         animation: menuSlideUp 0.8s ease-out 0.5s both;
     }
     
@@ -234,7 +234,7 @@ foreach ($plans_corriges as &$plan) {
         left: -100%;
         width: 100%;
         height: 100%;
-        background: linear-gradient(90deg, transparent, rgba(118, 185, 0, 0.1), transparent);
+        background: linear-gradient(90deg, transparent, rgba(232, 33, 39, 0.1), transparent);
         transition: left 0.6s ease;
     }
     
@@ -243,10 +243,10 @@ foreach ($plans_corriges as &$plan) {
     }
     
     .menu-btn.active {
-        background: linear-gradient(135deg, var(--nvidia-green), var(--nvidia-dark-green));
+        background: linear-gradient(135deg, var(--tesla-green), var(--tesla-dark-green));
         color: var(--primary-white);
         transform: scale(1.05);
-        box-shadow: 0 4px 15px rgba(118, 185, 0, 0.4);
+        box-shadow: 0 4px 15px rgba(232, 33, 39, 0.4);
     }
     
     /* Contenu principal */
@@ -275,7 +275,7 @@ foreach ($plans_corriges as &$plan) {
         background: var(--dark-card-bg);
         border-radius: 16px;
         padding: 20px;
-        border: 1px solid rgba(118, 185, 0, 0.2);
+        border: 1px solid rgba(232, 33, 39, 0.2);
         position: relative;
         overflow: hidden;
         opacity: 0;
@@ -311,16 +311,16 @@ foreach ($plans_corriges as &$plan) {
         left: 0;
         right: 0;
         height: 3px;
-        background: linear-gradient(90deg, var(--nvidia-green), var(--nvidia-dark-green), var(--nvidia-green));
+        background: linear-gradient(90deg, var(--tesla-green), var(--tesla-dark-green), var(--tesla-green));
         transform: scaleX(0);
         transform-origin: left;
         transition: transform 0.6s ease;
     }
     
     .plan-card:hover {
-        border-color: var(--nvidia-green);
+        border-color: var(--tesla-green);
         transform: translateY(-8px) scale(1.02);
-        box-shadow: 0 15px 35px rgba(118, 185, 0, 0.2);
+        box-shadow: 0 15px 35px rgba(232, 33, 39, 0.2);
     }
     
     .plan-card:hover::before {
@@ -355,7 +355,7 @@ foreach ($plans_corriges as &$plan) {
     .plan-nom {
         font-size: 20px;
         font-weight: 700;
-        color: var(--nvidia-green);
+        color: var(--tesla-green);
         margin-bottom: 12px;
         position: relative;
         display: inline-block;
@@ -368,7 +368,7 @@ foreach ($plans_corriges as &$plan) {
         left: 0;
         width: 0;
         height: 2px;
-        background: var(--nvidia-green);
+        background: var(--tesla-green);
         transition: width 0.4s ease;
     }
     
@@ -422,12 +422,12 @@ foreach ($plans_corriges as &$plan) {
         width: 100%;
         height: 100%;
         border-radius: 12px;
-        border: 3px solid var(--nvidia-green);
+        border: 3px solid var(--tesla-green);
         background: var(--dark-bg);
         overflow: hidden;
         position: relative;
         transition: var(--transition);
-        box-shadow: 0 4px 15px rgba(118, 185, 0, 0.2);
+        box-shadow: 0 4px 15px rgba(232, 33, 39, 0.2);
     }
     
     .plan-image img {
@@ -439,7 +439,7 @@ foreach ($plans_corriges as &$plan) {
     
     .plan-card:hover .plan-image {
         transform: rotate(5deg) scale(1.1);
-        box-shadow: 0 8px 25px rgba(118, 185, 0, 0.3);
+        box-shadow: 0 8px 25px rgba(232, 33, 39, 0.3);
     }
     
     .plan-card:hover .plan-image img {
@@ -448,27 +448,27 @@ foreach ($plans_corriges as &$plan) {
     
     /* Barre d'action */
     .action-bar {
-        background: rgba(118, 185, 0, 0.05); /* Arrière-plan subtil */
+        background: rgba(232, 33, 39, 0.05); /* Arrière-plan subtil */
         border-radius: 12px;
         padding: 15px;
         display: flex;
         align-items: center;
         justify-content: space-between;
-        border: 1px solid rgba(118, 185, 0, 0.2);
+        border: 1px solid rgba(232, 33, 39, 0.2);
         position: relative;
         overflow: hidden;
         transition: var(--transition);
     }
     
     .plan-card:hover .action-bar {
-        background: rgba(118, 185, 0, 0.1);
-        border-color: rgba(118, 185, 0, 0.4);
+        background: rgba(232, 33, 39, 0.1);
+        border-color: rgba(232, 33, 39, 0.4);
     }
     
     .plan-prix {
         font-size: 22px;
         font-weight: 700;
-        color: var(--nvidia-green);
+        color: var(--tesla-green);
         position: relative;
         z-index: 2;
     }
@@ -480,13 +480,13 @@ foreach ($plans_corriges as &$plan) {
         font-size: 14px;
         font-weight: 600;
         cursor: pointer;
-        background: linear-gradient(135deg, var(--nvidia-green), var(--nvidia-dark-green));
+        background: linear-gradient(135deg, var(--tesla-green), var(--tesla-dark-green));
         color: var(--primary-white);
         transition: var(--transition);
         position: relative;
         overflow: hidden;
         z-index: 2;
-        box-shadow: 0 4px 15px rgba(118, 185, 0, 0.3);
+        box-shadow: 0 4px 15px rgba(232, 33, 39, 0.3);
     }
     
     .btn-investir::before {
@@ -502,7 +502,7 @@ foreach ($plans_corriges as &$plan) {
     
     .btn-investir:hover {
         transform: translateY(-2px) scale(1.05);
-        box-shadow: 0 6px 20px rgba(118, 185, 0, 0.5);
+        box-shadow: 0 6px 20px rgba(232, 33, 39, 0.5);
     }
     
     .btn-investir:hover::before {
@@ -515,7 +515,7 @@ foreach ($plans_corriges as &$plan) {
         padding: 80px 30px;
         background: var(--dark-card-bg);
         border-radius: 20px;
-        border: 3px dashed rgba(118, 185, 0, 0.4);
+        border: 3px dashed rgba(232, 33, 39, 0.4);
         margin-top: 20px;
         animation: pulseGlow 2s ease-in-out infinite;
         position: relative;
@@ -525,12 +525,12 @@ foreach ($plans_corriges as &$plan) {
     
     @keyframes pulseGlow {
         0%, 100% {
-            border-color: rgba(118, 185, 0, 0.4);
-            box-shadow: 0 0 20px rgba(118, 185, 0, 0.1);
+            border-color: rgba(232, 33, 39, 0.4);
+            box-shadow: 0 0 20px rgba(232, 33, 39, 0.1);
         }
         50% {
-            border-color: rgba(118, 185, 0, 0.6);
-            box-shadow: 0 0 30px rgba(118, 185, 0, 0.2);
+            border-color: rgba(232, 33, 39, 0.6);
+            box-shadow: 0 0 30px rgba(232, 33, 39, 0.2);
         }
     }
     
@@ -541,7 +541,7 @@ foreach ($plans_corriges as &$plan) {
         left: -50%;
         width: 200%;
         height: 200%;
-        background: conic-gradient(transparent, rgba(118, 185, 0, 0.1), transparent 30%);
+        background: conic-gradient(transparent, rgba(232, 33, 39, 0.1), transparent 30%);
         animation: rotate 4s linear infinite;
     }
     
@@ -553,7 +553,7 @@ foreach ($plans_corriges as &$plan) {
     
     .locked-icon {
         font-size: 64px;
-        color: var(--nvidia-green);
+        color: var(--tesla-green);
         margin-bottom: 20px;
         position: relative;
         z-index: 2;
@@ -572,7 +572,7 @@ foreach ($plans_corriges as &$plan) {
     .locked-title {
         font-size: 24px;
         font-weight: 700;
-        color: var(--nvidia-green);
+        color: var(--tesla-green);
         margin-bottom: 15px;
         position: relative;
         z-index: 2;
@@ -614,7 +614,7 @@ foreach ($plans_corriges as &$plan) {
         max-width: 380px;
         border-radius: 20px;
         overflow: hidden;
-        border: 3px solid var(--nvidia-green);
+        border: 3px solid var(--tesla-green);
         animation: popupScale 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
         box-shadow: 0 25px 50px rgba(0, 0, 0, 0.6);
     }
@@ -632,7 +632,7 @@ foreach ($plans_corriges as &$plan) {
     
     .popup-header {
         padding: 25px;
-        background: linear-gradient(135deg, var(--nvidia-green), var(--nvidia-dark-green));
+        background: linear-gradient(135deg, var(--tesla-green), var(--tesla-dark-green));
         color: var(--primary-white);
         display: flex;
         justify-content: space-between;
@@ -676,23 +676,23 @@ foreach ($plans_corriges as &$plan) {
     }
     
     .popup-detail {
-        background: rgba(118, 185, 0, 0.05);
+        background: rgba(232, 33, 39, 0.05);
         padding: 15px;
         border-radius: 10px;
         text-align: center;
-        border: 1px solid rgba(118, 185, 0, 0.1);
+        border: 1px solid rgba(232, 33, 39, 0.1);
         transition: transform 0.3s ease;
     }
     
     .popup-detail:hover {
         transform: translateY(-3px);
-        background: rgba(118, 185, 0, 0.08);
+        background: rgba(232, 33, 39, 0.08);
     }
     
     .popup-detail-valeur {
         font-size: 18px;
         font-weight: 700;
-        color: var(--nvidia-green);
+        color: var(--tesla-green);
         margin-bottom: 5px;
     }
     
@@ -709,17 +709,17 @@ foreach ($plans_corriges as &$plan) {
         font-size: 16px;
         font-weight: 700;
         cursor: pointer;
-        background: linear-gradient(135deg, var(--nvidia-green), var(--nvidia-dark-green));
+        background: linear-gradient(135deg, var(--tesla-green), var(--tesla-dark-green));
         color: var(--primary-white);
         transition: var(--transition);
         position: relative;
         overflow: hidden;
-        box-shadow: 0 6px 20px rgba(118, 185, 0, 0.4);
+        box-shadow: 0 6px 20px rgba(232, 33, 39, 0.4);
     }
     
     .popup-btn:hover {
         transform: translateY(-3px);
-        box-shadow: 0 10px 25px rgba(118, 185, 0, 0.6);
+        box-shadow: 0 10px 25px rgba(232, 33, 39, 0.6);
     }
     
     .popup-btn:active {
@@ -795,7 +795,7 @@ foreach ($plans_corriges as &$plan) {
         border-radius: 25px;
         padding: 40px 30px;
         text-align: center;
-        border: 3px solid var(--nvidia-green);
+        border: 3px solid var(--tesla-green);
         box-shadow: 0 25px 60px rgba(0, 0, 0, 0.5);
         animation: floaterScale 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
         position: relative;
@@ -820,13 +820,13 @@ foreach ($plans_corriges as &$plan) {
         left: -50%;
         width: 200%;
         height: 200%;
-        background: conic-gradient(transparent, rgba(118, 185, 0, 0.1), transparent 30%);
+        background: conic-gradient(transparent, rgba(232, 33, 39, 0.1), transparent 30%);
         animation: rotate 6s linear infinite;
     }
     
     .floater-icon {
         font-size: 80px;
-        color: var(--nvidia-green);
+        color: var(--tesla-green);
         margin-bottom: 25px;
         position: relative;
         z-index: 2;
@@ -845,7 +845,7 @@ foreach ($plans_corriges as &$plan) {
     .floater-title {
         font-size: 26px;
         font-weight: 700;
-        color: var(--nvidia-green);
+        color: var(--tesla-green);
         margin-bottom: 15px;
         position: relative;
         z-index: 2;
@@ -881,9 +881,9 @@ foreach ($plans_corriges as &$plan) {
     }
     
     .floater-btn-primary {
-        background: linear-gradient(135deg, var(--nvidia-green), var(--nvidia-dark-green));
+        background: linear-gradient(135deg, var(--tesla-green), var(--tesla-dark-green));
         color: var(--primary-white);
-        box-shadow: 0 6px 20px rgba(118, 185, 0, 0.4);
+        box-shadow: 0 6px 20px rgba(232, 33, 39, 0.4);
     }
     
     .floater-btn-secondary {
@@ -894,7 +894,7 @@ foreach ($plans_corriges as &$plan) {
     
     .floater-btn:hover {
         transform: translateY(-3px);
-        box-shadow: 0 10px 25px rgba(118, 185, 0, 0.5);
+        box-shadow: 0 10px 25px rgba(232, 33, 39, 0.5);
     }
     
     .floater-btn:active {
@@ -975,7 +975,7 @@ foreach ($plans_corriges as &$plan) {
     <div class="container">
         <div class="header">
             <div class="header-content">
-                <h1>NVIDIA Technologie</h1>
+                <h1>TESLA Technologie</h1>
                 <p>Développez votre patrimoine avec des actions de pointe</p>
             </div>
             

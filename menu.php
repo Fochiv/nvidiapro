@@ -11,14 +11,14 @@ if (!isset($_SESSION['user_id'])) {
 
 <style>
     :root {
-        /* Couleurs NVIDIA */
-        --accent-green: #76B900; /* Vert Pomme NVIDIA */
+        /* Couleurs TESLA */
+        --accent-green: #E82127; /* Rouge TESLA */
         --accent-black: #000000;
         --menu-bg: rgba(0, 0, 0, 0.95); /* Noir très sombre */
-        --menu-border: rgba(118, 185, 0, 0.5); /* Bordure verte subtile */
+        --menu-border: rgba(232, 33, 39, 0.5); /* Bordure verte subtile */
         --text-inactive: rgba(255, 255, 255, 0.6);
         --text-active: #ffffff;
-        --shadow-color: rgba(118, 185, 0, 0.4);
+        --shadow-color: rgba(232, 33, 39, 0.4);
     }
 
     /* Navbar aux dimensions originales avec effet glass - TOUJOURS VISIBLE */
@@ -82,12 +82,12 @@ if (!isset($_SESSION['user_id'])) {
 
     .nav-item:hover {
         color: var(--text-active);
-        background: rgba(118, 185, 0, 0.1); /* Hover vert discret */
+        background: rgba(232, 33, 39, 0.1); /* Hover vert discret */
         transform: translateY(-2px); /* Léger soulèvement */
     }
 
     .nav-item.active {
-        color: var(--accent-green); /* Texte actif en vert NVIDIA */
+        color: var(--accent-green); /* Texte actif en rouge TESLA */
         font-weight: bold;
     }
 
@@ -149,8 +149,8 @@ if (!isset($_SESSION['user_id'])) {
         background: linear-gradient(
             90deg,
             transparent,
-            rgba(118, 185, 0, 0.2),
-            rgba(118, 185, 0, 0.05),
+            rgba(232, 33, 39, 0.2),
+            rgba(232, 33, 39, 0.05),
             transparent
         );
         transition: left 0.4s ease-out;

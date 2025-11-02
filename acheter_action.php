@@ -91,13 +91,13 @@ $plan_desc = $plan['description'];
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Confirmation d'Investissement - NVIDIA Technologies</title>
+    <title>Confirmation d'Investissement - TESLA Technologies</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
-    /* VARIABLES THEME NVIDIA */
+    /* VARIABLES THEME TESLA */
     :root {
-        --primary-green: #76b900; /* NVIDIA Green */
-        --green-light: #90d300;
+        --primary-green: #E82127; /* TESLA Green */
+        --green-light: #ff4444;
         --green-dark: #5a8e00;
         --accent-gray: #4a4a4a; /* Dark Gray for accents */
         --text-dark: #1e1e1e;
@@ -135,7 +135,7 @@ $plan_desc = $plan['description'];
         width: 100%;
         height: 100%;
         background: 
-            radial-gradient(circle at 90% 10%, rgba(118, 185, 0, 0.08) 0%, transparent 50%),
+            radial-gradient(circle at 90% 10%, rgba(232, 33, 39, 0.08) 0%, transparent 50%),
             radial-gradient(circle at 10% 80%, rgba(74, 74, 74, 0.1) 0%, transparent 50%);
         z-index: -1;
         animation: float 20s ease-in-out infinite;
@@ -182,7 +182,7 @@ $plan_desc = $plan['description'];
         text-align: center;
         position: relative;
         overflow: hidden;
-        border-right: 4px solid var(--primary-green); /* Bordure NVIDIA */
+        border-right: 4px solid var(--primary-green); /* Bordure TESLA */
     }
     
     .confirmation-hero::before {
@@ -193,8 +193,8 @@ $plan_desc = $plan['description'];
         width: 100%;
         height: 100%;
         background: 
-            radial-gradient(circle at 15% 15%, rgba(118, 185, 0, 0.2) 0%, transparent 20%),
-            radial-gradient(circle at 85% 85%, rgba(118, 185, 0, 0.2) 0%, transparent 20%);
+            radial-gradient(circle at 15% 15%, rgba(232, 33, 39, 0.2) 0%, transparent 20%),
+            radial-gradient(circle at 85% 85%, rgba(232, 33, 39, 0.2) 0%, transparent 20%);
         z-index: 1;
     }
     
@@ -210,7 +210,7 @@ $plan_desc = $plan['description'];
         position: relative;
         z-index: 2;
         animation: iconPop 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
-        box-shadow: 0 10px 30px rgba(118, 185, 0, 0.5);
+        box-shadow: 0 10px 30px rgba(232, 33, 39, 0.5);
     }
     
     @keyframes iconPop {
@@ -275,7 +275,7 @@ $plan_desc = $plan['description'];
         gap: 20px;
         margin-bottom: 30px;
         padding-bottom: 20px;
-        border-bottom: 2px solid rgba(118, 185, 0, 0.15); /* Ligne de séparation verte légère */
+        border-bottom: 2px solid rgba(232, 33, 39, 0.15); /* Ligne de séparation verte légère */
     }
     
     .plan-image {
@@ -284,7 +284,7 @@ $plan_desc = $plan['description'];
         border-radius: 8px; /* Plus carré */
         overflow: hidden;
         border: 3px solid var(--primary-green);
-        box-shadow: 0 8px 20px rgba(118, 185, 0, 0.3);
+        box-shadow: 0 8px 20px rgba(232, 33, 39, 0.3);
         flex-shrink: 0;
     }
     
@@ -319,7 +319,7 @@ $plan_desc = $plan['description'];
         background: var(--text-light);
         border-radius: 10px;
         padding: 20px;
-        border-left: 5px solid var(--primary-green); /* Bande de couleur NVIDIA */
+        border-left: 5px solid var(--primary-green); /* Bande de couleur TESLA */
         transition: var(--transition);
         text-align: left;
         box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
@@ -327,7 +327,7 @@ $plan_desc = $plan['description'];
     
     .stat-card:hover {
         transform: translateY(-3px);
-        box-shadow: 0 8px 20px rgba(118, 185, 0, 0.15);
+        box-shadow: 0 8px 20px rgba(232, 33, 39, 0.15);
     }
     
     .stat-value {
@@ -433,13 +433,13 @@ $plan_desc = $plan['description'];
     .btn-primary {
         background: var(--primary-green);
         color: var(--hero-bg); /* Texte sombre sur le vert */
-        box-shadow: 0 6px 20px rgba(118, 185, 0, 0.4);
+        box-shadow: 0 6px 20px rgba(232, 33, 39, 0.4);
     }
     
     .btn-primary:hover {
         background: var(--green-light);
         transform: translateY(-3px);
-        box-shadow: 0 10px 25px rgba(118, 185, 0, 0.6);
+        box-shadow: 0 10px 25px rgba(232, 33, 39, 0.6);
     }
     
     .btn-secondary {
@@ -545,7 +545,7 @@ $plan_desc = $plan['description'];
             </div>
             <h1 class="hero-title">Investissement Confirmé !</h1>
             <p class="hero-subtitle">
-                Félicitations ! Votre plan d'investissement est maintenant actif chez NVIDIA Technologies.
+                Félicitations ! Votre plan d'investissement est maintenant actif chez TESLA Technologies.
             </p>
         </div>
         

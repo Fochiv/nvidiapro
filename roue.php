@@ -49,10 +49,10 @@ $devise = ($_SESSION['pays'] ?? 'Cameroun') == 'Cameroun' ? 'XAF' : 'XOF';
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     
     <style>
-        /* --- NOUVEAU THÈME NVIDIA --- */
+        /* --- NOUVEAU THÈME TESLA --- */
         :root {
             --primary-white: #ffffff;
-            --accent-green: #76b900; /* Vert NVIDIA */
+            --accent-green: #E82127; /* Rouge TESLA */
             --background-dark: #0f1c1f; /* Noir très foncé/anthracite */
             --button-red: #ff0000;
             --error: #ef4444; /* Rouge pour le temps restant */
@@ -95,7 +95,7 @@ $devise = ($_SESSION['pays'] ?? 'Cameroun') == 'Cameroun' ? 'XAF' : 'XOF';
             display: flex;
             justify-content: space-around;
             padding: 10px 0;
-            border: 5px solid var(--accent-green); /* Cadre vert NVIDIA */
+            border: 5px solid var(--accent-green); /* Cadre rouge TESLA */
             border-radius: 8px;
             background: #111;
         }
@@ -146,11 +146,11 @@ $devise = ($_SESSION['pays'] ?? 'Cameroun') == 'Cameroun' ? 'XAF' : 'XOF';
             pointer-events: none;
         }
         
-        /* Bouton Spin - Vert NVIDIA */
+        /* Bouton Spin - Rouge TESLA */
         .spin-button {
             width: 100%;
             max-width: 200px;
-            background: var(--accent-green); /* Vert NVIDIA */
+            background: var(--accent-green); /* Rouge TESLA */
             color: var(--primary-white);
             border: none;
             padding: 15px 30px;
@@ -159,7 +159,7 @@ $devise = ($_SESSION['pays'] ?? 'Cameroun') == 'Cameroun' ? 'XAF' : 'XOF';
             font-weight: 700;
             cursor: pointer;
             transition: all 0.2s;
-            box-shadow: 0 8px 15px rgba(118, 185, 0, 0.5);
+            box-shadow: 0 8px 15px rgba(232, 33, 39, 0.5);
             margin-top: 25px;
             text-transform: uppercase;
         }
@@ -173,7 +173,7 @@ $devise = ($_SESSION['pays'] ?? 'Cameroun') == 'Cameroun' ? 'XAF' : 'XOF';
         .solde-display {
             font-size: 16px;
             font-weight: 600;
-            color: var(--accent-green); /* Solde en vert NVIDIA */
+            color: var(--accent-green); /* Solde en rouge TESLA */
             margin-bottom: 20px;
         }
         
@@ -214,7 +214,7 @@ $devise = ($_SESSION['pays'] ?? 'Cameroun') == 'Cameroun' ? 'XAF' : 'XOF';
             background: var(--card-bg);
             padding: 30px;
             border-radius: 20px;
-            box-shadow: 0 15px 50px rgba(118, 185, 0, 0.6); /* Ombre verte */
+            box-shadow: 0 15px 50px rgba(232, 33, 39, 0.6); /* Ombre verte */
             border: 2px solid var(--accent-green);
             max-width: 350px;
             width: 90%;
@@ -230,7 +230,7 @@ $devise = ($_SESSION['pays'] ?? 'Cameroun') == 'Cameroun' ? 'XAF' : 'XOF';
         
         .result-icon {
             font-size: 50px;
-            color: var(--accent-green); /* Icône en vert NVIDIA */
+            color: var(--accent-green); /* Icône en rouge TESLA */
             margin-bottom: 15px;
             animation: bounce 0.8s infinite alternate;
         }
@@ -243,7 +243,7 @@ $devise = ($_SESSION['pays'] ?? 'Cameroun') == 'Cameroun' ? 'XAF' : 'XOF';
         .result-title {
             font-size: 24px;
             font-weight: 700;
-            color: var(--accent-green); /* Titre en vert NVIDIA */
+            color: var(--accent-green); /* Titre en rouge TESLA */
             margin-bottom: 10px;
         }
         

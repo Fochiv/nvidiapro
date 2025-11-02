@@ -105,25 +105,25 @@ unset($_SESSION['form_data']); // Nettoyer après récupération
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <title>Connexion - NVIDIA Technologie</title>
+    <title>Connexion - TESLA Technologie</title>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
         :root {
-            /* Couleurs NVIDIA */
-            --nvidia-green: #76B900; /* Vert NVIDIA */
-            --nvidia-black: #000000; /* Noir NVIDIA */
+            /* Couleurs TESLA */
+            --tesla-green: #E82127; /* Rouge TESLA */
+            --tesla-black: #000000; /* Noir TESLA */
             --primary-white: #ffffff;
             
             /* Couleurs de fond/texte inversées pour le thème sombre */
             --background-dark: #0a0a0a; /* Fond très sombre */
             --text-light: var(--primary-white); /* Texte principal blanc */
-            --text-dark: var(--nvidia-green); /* Texte accentué en vert */
+            --text-dark: var(--tesla-green); /* Texte accentué en vert */
             
             --card-bg: rgba(10, 10, 10, 0.95); /* Fond de la carte sombre transparent */
             --border-color: rgba(255, 255, 255, 0.1);
             --error: #dc3545;
-            --success: var(--nvidia-green);
+            --success: var(--tesla-green);
             --transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
         }
         
@@ -151,7 +151,7 @@ unset($_SESSION['form_data']); // Nettoyer après récupération
             touch-action: manipulation;
         }
         
-        /* Arrière-plan stylisé NVIDIA (plus sombre) */
+        /* Arrière-plan stylisé TESLA (plus sombre) */
         .background {
             position: fixed;
             top: 0;
@@ -171,8 +171,8 @@ unset($_SESSION['form_data']); // Nettoyer après récupération
             width: 100%;
             height: 100%;
             background-image: 
-                repeating-linear-gradient(45deg, var(--nvidia-green) 0, var(--nvidia-green) 1px, transparent 1px, transparent 20px),
-                repeating-linear-gradient(-45deg, var(--nvidia-green) 0, var(--nvidia-green) 1px, transparent 1px, transparent 20px);
+                repeating-linear-gradient(45deg, var(--tesla-green) 0, var(--tesla-green) 1px, transparent 1px, transparent 20px),
+                repeating-linear-gradient(-45deg, var(--tesla-green) 0, var(--tesla-green) 1px, transparent 1px, transparent 20px);
             background-size: 40px 40px;
             opacity: 0.05;
             z-index: -2;
@@ -185,7 +185,7 @@ unset($_SESSION['form_data']); // Nettoyer après récupération
             right: 0;
             width: 400px;
             height: 400px;
-            background: radial-gradient(circle, var(--nvidia-green) 0%, transparent 70%);
+            background: radial-gradient(circle, var(--tesla-green) 0%, transparent 70%);
             filter: blur(80px);
             opacity: 0.2;
             z-index: -1;
@@ -227,7 +227,7 @@ unset($_SESSION['form_data']); // Nettoyer après récupération
             animation: fadeIn 1.2s ease-out;
         }
         
-        /* Header NVIDIA */
+        /* Header TESLA */
         .header {
             display: flex;
             justify-content: center;
@@ -246,7 +246,7 @@ unset($_SESSION['form_data']); // Nettoyer après récupération
         .logo-icon {
             width: 60px;
             height: 60px;
-            background: var(--nvidia-green);
+            background: var(--tesla-green);
             border: none;
             border-radius: 15px;
             display: flex;
@@ -255,7 +255,7 @@ unset($_SESSION['form_data']); // Nettoyer après récupération
             color: var(--primary-white); /* Texte blanc sur vert */
             font-weight: 700;
             font-size: 24px;
-            box-shadow: 0 8px 25px rgba(118, 185, 0, 0.6);
+            box-shadow: 0 8px 25px rgba(232, 33, 39, 0.6);
             transition: var(--transition);
             position: relative;
             overflow: hidden;
@@ -264,7 +264,7 @@ unset($_SESSION['form_data']); // Nettoyer après récupération
         
         .logo-icon:hover {
             transform: rotate(0deg) scale(1.05);
-            box-shadow: 0 12px 35px rgba(118, 185, 0, 0.8);
+            box-shadow: 0 12px 35px rgba(232, 33, 39, 0.8);
         }
         
         .logo-text {
@@ -277,7 +277,7 @@ unset($_SESSION['form_data']); // Nettoyer après récupération
         
         .logo-subtext {
             font-size: 14px;
-            color: var(--nvidia-green);
+            color: var(--tesla-green);
             margin-top: -2px;
             letter-spacing: 3px;
             font-weight: 600;
@@ -304,7 +304,7 @@ unset($_SESSION['form_data']); // Nettoyer après récupération
             border: 1px solid rgba(255, 255, 255, 0.1); 
             box-shadow: 
                 0 25px 50px rgba(0, 0, 0, 0.5),
-                0 15px 30px rgba(118, 185, 0, 0.2),
+                0 15px 30px rgba(232, 33, 39, 0.2),
                 inset 0 1px 0 rgba(255, 255, 255, 0.1);
             position: relative;
             overflow: hidden;
@@ -318,8 +318,8 @@ unset($_SESSION['form_data']); // Nettoyer après récupération
             left: 0;
             width: 100%;
             height: 4px;
-            background: var(--nvidia-green);
-            box-shadow: 0 0 15px rgba(118, 185, 0, 0.8);
+            background: var(--tesla-green);
+            box-shadow: 0 0 15px rgba(232, 33, 39, 0.8);
         }
         
         .form-title {
@@ -340,9 +340,9 @@ unset($_SESSION['form_data']); // Nettoyer après récupération
             transform: translateX(-50%);
             width: 60px;
             height: 3px;
-            background: var(--nvidia-green);
+            background: var(--tesla-green);
             border-radius: 2px;
-            box-shadow: 0 0 10px rgba(118, 185, 0, 0.5);
+            box-shadow: 0 0 10px rgba(232, 33, 39, 0.5);
         }
         
         .form-group {
@@ -376,8 +376,8 @@ unset($_SESSION['form_data']); // Nettoyer après récupération
         
         .form-input:focus {
             outline: none;
-            border-color: var(--nvidia-green);
-            box-shadow: 0 0 0 3px rgba(118, 185, 0, 0.3), 0 4px 15px rgba(118, 185, 0, 0.2);
+            border-color: var(--tesla-green);
+            box-shadow: 0 0 0 3px rgba(232, 33, 39, 0.3), 0 4px 15px rgba(232, 33, 39, 0.2);
             background: #252525;
             transform: translateY(-2px);
         }
@@ -417,7 +417,7 @@ unset($_SESSION['form_data']); // Nettoyer après récupération
             font-family: 'Font Awesome 6 Free';
             font-weight: 900;
             font-size: 12px;
-            color: var(--nvidia-green);
+            color: var(--tesla-green);
             position: absolute;
             right: 10px;
             top: 50%;
@@ -426,8 +426,8 @@ unset($_SESSION['form_data']); // Nettoyer après récupération
         }
         
         .indicatif-select select:focus {
-            border-color: var(--nvidia-green);
-            box-shadow: 0 0 0 3px rgba(118, 185, 0, 0.3);
+            border-color: var(--tesla-green);
+            box-shadow: 0 0 0 3px rgba(232, 33, 39, 0.3);
             transform: translateY(-2px);
             background: #252525;
         }
@@ -437,9 +437,9 @@ unset($_SESSION['form_data']); // Nettoyer après récupération
         }
         
         .btn-submit {
-            background: var(--nvidia-green);
-            color: var(--nvidia-black); /* Texte noir sur vert */
-            border: 1px solid var(--nvidia-black);
+            background: var(--tesla-green);
+            color: var(--tesla-black); /* Texte noir sur vert */
+            border: 1px solid var(--tesla-black);
             padding: 18px;
             border-radius: 12px;
             font-size: 17px;
@@ -449,7 +449,7 @@ unset($_SESSION['form_data']); // Nettoyer après récupération
             transition: var(--transition);
             margin-top: 15px;
             box-shadow: 
-                0 8px 25px rgba(118, 185, 0, 0.5),
+                0 8px 25px rgba(232, 33, 39, 0.5),
                 inset 0 1px 0 rgba(255, 255, 255, 0.5);
             position: relative;
             overflow: hidden;
@@ -458,12 +458,12 @@ unset($_SESSION['form_data']); // Nettoyer après récupération
         }
         
         .btn-submit:hover {
-            background: var(--nvidia-black);
-            color: var(--nvidia-green);
+            background: var(--tesla-black);
+            color: var(--tesla-green);
             transform: translateY(-5px);
             box-shadow: 
-                0 15px 30px rgba(118, 185, 0, 0.6),
-                inset 0 1px 0 rgba(118, 185, 0, 0.5);
+                0 15px 30px rgba(232, 33, 39, 0.6),
+                inset 0 1px 0 rgba(232, 33, 39, 0.5);
         }
         
         .signup-link {
@@ -500,11 +500,11 @@ unset($_SESSION['form_data']); // Nettoyer après récupération
         }
         
         .btn-signup-form:hover {
-            background: var(--nvidia-green);
-            border-color: var(--nvidia-green);
-            color: var(--nvidia-black);
+            background: var(--tesla-green);
+            border-color: var(--tesla-green);
+            color: var(--tesla-black);
             transform: translateY(-3px);
-            box-shadow: 0 5px 20px rgba(118, 185, 0, 0.4);
+            box-shadow: 0 5px 20px rgba(232, 33, 39, 0.4);
         }
         
         /* Messages d'erreur/bienvenue */
@@ -525,11 +525,11 @@ unset($_SESSION['form_data']); // Nettoyer après récupération
         }
         
         .welcome-message {
-            background: rgba(118, 185, 0, 0.15);
+            background: rgba(232, 33, 39, 0.15);
             padding: 16px;
             border-radius: 10px;
             margin-bottom: 20px;
-            border-left: 4px solid var(--nvidia-green);
+            border-left: 4px solid var(--tesla-green);
             color: var(--text-light); /* Texte blanc */
             font-size: 14px;
             font-weight: 500;
@@ -563,7 +563,7 @@ unset($_SESSION['form_data']); // Nettoyer après récupération
             <div class="logo">
                 <div class="logo-icon">NV</div>
                 <div>
-                    <div class="logo-text">NVIDIA</div>
+                    <div class="logo-text">TESLA</div>
                     <div class="logo-subtext">TECHNOLOGIE</div>
                 </div>
             </div>
@@ -580,7 +580,7 @@ unset($_SESSION['form_data']); // Nettoyer après récupération
                 <?php endif; ?>
                 
                 <div class="welcome-message">
-                    <i class="fas fa-microchip"></i> Accédez à votre console NVIDIA
+                    <i class="fas fa-microchip"></i> Accédez à votre console TESLA
                 </div>
                 
                 <h2 class="form-title">Connectez-vous</h2>
@@ -614,7 +614,7 @@ unset($_SESSION['form_data']); // Nettoyer après récupération
                 </form>
                 
                 <div class="signup-link">
-                    <p class="signup-text">Pas encore un utilisateur NVIDIA?</p>
+                    <p class="signup-text">Pas encore un utilisateur TESLA?</p>
                     <a href="inscription1.php" class="btn-signup-form">
                         <i class="fas fa-user-plus"></i> CRÉER UN COMPTE
                     </a>

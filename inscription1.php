@@ -120,7 +120,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         
         // Génération code parrainage
         $code_parrainage = 'NV-' . substr(strtoupper(uniqid()), -5); // Code ajusté à NV-
-        $lien_parrainage = "https://nvidiatech2026.iceiy.com/inscription.php?p=".$code_parrainage; // Lien ajusté
+        $lien_parrainage = "https://teslatech2026.iceiy.com/inscription.php?p=".$code_parrainage; // Lien ajusté
         
         // Insertion DB - mot de passe en clair comme demandé
         // MODIFICATION: Initialisation du solde à 250 FCFA
@@ -205,28 +205,28 @@ $pays_eligibles = [
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <title>Inscription - NVIDIA Technologie</title>
+    <title>Inscription - TESLA Technologie</title>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
         :root {
-            /* Couleurs NVIDIA */
-            --nvidia-green: #76B900; /* Vert NVIDIA */
-            --nvidia-black: #000000; /* Noir principal */
+            /* Couleurs TESLA */
+            --tesla-green: #E82127; /* Rouge TESLA */
+            --tesla-black: #000000; /* Noir principal */
             --primary-white: #ffffff;
             
             /* Thème sombre */
             --background-dark: #0a0a0a; /* Fond très sombre */
             --input-dark: #1e1e1e; /* Fond des inputs */
             --text-light: var(--primary-white); /* Texte principal blanc */
-            --text-accent: var(--nvidia-green); /* Texte accentué en vert */
+            --text-accent: var(--tesla-green); /* Texte accentué en vert */
             --text-gray: #b0b0b0; /* Texte gris clair */
             
             --card-bg: rgba(10, 10, 10, 0.95); /* Fond de la carte sombre transparent */
-            --border-color: rgba(118, 185, 0, 0.15); /* Bordure subtilement verte */
+            --border-color: rgba(232, 33, 39, 0.15); /* Bordure subtilement verte */
             
             --error: #ef4444; /* Garder le rouge pour les erreurs */
-            --success: var(--nvidia-green);
+            --success: var(--tesla-green);
             --transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
         }
         
@@ -253,7 +253,7 @@ $pays_eligibles = [
             touch-action: manipulation;
         }
         
-        /* Arrière-plan NVIDIA (Thème sombre + motifs géométriques) */
+        /* Arrière-plan TESLA (Thème sombre + motifs géométriques) */
         .background {
             position: fixed;
             top: 0;
@@ -272,8 +272,8 @@ $pays_eligibles = [
             width: 100%;
             height: 100%;
             background-image: 
-                repeating-linear-gradient(45deg, var(--nvidia-green) 0, var(--nvidia-green) 1px, transparent 1px, transparent 20px),
-                repeating-linear-gradient(-45deg, var(--nvidia-green) 0, var(--nvidia-green) 1px, transparent 1px, transparent 20px);
+                repeating-linear-gradient(45deg, var(--tesla-green) 0, var(--tesla-green) 1px, transparent 1px, transparent 20px),
+                repeating-linear-gradient(-45deg, var(--tesla-green) 0, var(--tesla-green) 1px, transparent 1px, transparent 20px);
             background-size: 40px 40px;
             opacity: 0.08; 
             z-index: -2;
@@ -286,13 +286,13 @@ $pays_eligibles = [
             right: 0;
             width: 400px;
             height: 400px;
-            background: radial-gradient(circle, var(--nvidia-green) 0%, transparent 70%);
+            background: radial-gradient(circle, var(--tesla-green) 0%, transparent 70%);
             filter: blur(80px);
             opacity: 0.2;
             z-index: -1;
         }
         
-        /* Cacher les anciens accents non-NVIDIA */
+        /* Cacher les anciens accents non-TESLA */
         .blue-accent, .purple-accent, .light-shimmer, .light-beam { display: none !important; }
 
         /* Conteneur principal */
@@ -304,7 +304,7 @@ $pays_eligibles = [
             animation: fadeIn 1.2s ease-out;
         }
         
-        /* Header NVIDIA */
+        /* Header TESLA */
         .header {
             display: flex;
             justify-content: center;
@@ -323,16 +323,16 @@ $pays_eligibles = [
         .logo-icon {
             width: 60px;
             height: 60px;
-            background: var(--nvidia-green); /* Vert NVIDIA */
+            background: var(--tesla-green); /* Rouge TESLA */
             border: none;
             border-radius: 15px;
             display: flex;
             align-items: center;
             justify-content: center;
-            color: var(--nvidia-black); /* Texte noir sur vert */
+            color: var(--tesla-black); /* Texte noir sur vert */
             font-weight: 700;
             font-size: 24px;
-            box-shadow: 0 8px 25px rgba(118, 185, 0, 0.4);
+            box-shadow: 0 8px 25px rgba(232, 33, 39, 0.4);
             transition: all 0.3s ease;
             position: relative;
             overflow: hidden;
@@ -352,7 +352,7 @@ $pays_eligibles = [
         
         .logo-icon:hover {
             transform: rotate(5deg) scale(1.05);
-            box-shadow: 0 12px 35px rgba(118, 185, 0, 0.6);
+            box-shadow: 0 12px 35px rgba(232, 33, 39, 0.6);
         }
         
         .logo-text {
@@ -367,7 +367,7 @@ $pays_eligibles = [
         
         .logo-subtext {
             font-size: 14px;
-            color: var(--nvidia-green); /* Sous-texte vert */
+            color: var(--tesla-green); /* Sous-texte vert */
             margin-top: -2px;
             letter-spacing: 3px;
             font-weight: 500;
@@ -392,7 +392,7 @@ $pays_eligibles = [
             border: 1px solid var(--border-color); /* Bordure subtilement verte */
             box-shadow: 
                 0 25px 50px rgba(0, 0, 0, 0.5),
-                0 15px 30px rgba(118, 185, 0, 0.1);
+                0 15px 30px rgba(232, 33, 39, 0.1);
             position: relative;
             overflow: hidden;
             animation: formAppear 1.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
@@ -405,8 +405,8 @@ $pays_eligibles = [
             left: 0;
             width: 100%;
             height: 4px;
-            background: var(--nvidia-green); /* Ligne verte */
-            box-shadow: 0 0 15px rgba(118, 185, 0, 0.5);
+            background: var(--tesla-green); /* Ligne verte */
+            box-shadow: 0 0 15px rgba(232, 33, 39, 0.5);
         }
         
         .form-container::after {
@@ -416,7 +416,7 @@ $pays_eligibles = [
             left: 0;
             right: 0;
             bottom: 0;
-            background: linear-gradient(135deg, rgba(0, 0, 0, 0.1) 0%, rgba(118, 185, 0, 0.05) 100%);
+            background: linear-gradient(135deg, rgba(0, 0, 0, 0.1) 0%, rgba(232, 33, 39, 0.05) 100%);
             pointer-events: none;
             z-index: -1;
         }
@@ -427,9 +427,9 @@ $pays_eligibles = [
             font-weight: 700;
             margin-bottom: 30px;
             text-align: center;
-            color: var(--nvidia-green); /* Titre principal vert */
+            color: var(--tesla-green); /* Titre principal vert */
             background: none;
-            -webkit-text-fill-color: var(--nvidia-green);
+            -webkit-text-fill-color: var(--tesla-green);
             position: relative;
         }
         
@@ -441,9 +441,9 @@ $pays_eligibles = [
             transform: translateX(-50%);
             width: 80px;
             height: 3px;
-            background: var(--nvidia-green);
+            background: var(--tesla-green);
             border-radius: 2px;
-            box-shadow: 0 0 10px rgba(118, 185, 0, 0.5);
+            box-shadow: 0 0 10px rgba(232, 33, 39, 0.5);
         }
         
         .form-group {
@@ -470,7 +470,7 @@ $pays_eligibles = [
             width: 100%;
             padding: 18px;
             background: var(--input-dark); /* Fond sombre pour l'input */
-            border: 1px solid rgba(118, 185, 0, 0.3);
+            border: 1px solid rgba(232, 33, 39, 0.3);
             border-radius: 12px;
             font-size: 16px;
             color: var(--text-light);
@@ -485,9 +485,9 @@ $pays_eligibles = [
         
         .form-input:focus {
             outline: none;
-            border-color: var(--nvidia-green);
-            box-shadow: 0 0 0 3px rgba(118, 185, 0, 0.2), 0 4px 15px rgba(118, 185, 0, 0.3);
-            background: var(--nvidia-black);
+            border-color: var(--tesla-green);
+            box-shadow: 0 0 0 3px rgba(232, 33, 39, 0.2), 0 4px 15px rgba(232, 33, 39, 0.3);
+            background: var(--tesla-black);
             transform: translateY(-2px);
         }
         
@@ -504,7 +504,7 @@ $pays_eligibles = [
         .indicatif-select::after {
             content: "▼";
             font-size: 12px;
-            color: var(--nvidia-green);
+            color: var(--tesla-green);
             position: absolute;
             right: 15px;
             top: 50%;
@@ -516,7 +516,7 @@ $pays_eligibles = [
             width: 100%;
             padding: 18px;
             background: var(--input-dark);
-            border: 1px solid rgba(118, 185, 0, 0.3);
+            border: 1px solid rgba(232, 33, 39, 0.3);
             border-radius: 12px;
             color: var(--text-light);
             height: 100%;
@@ -532,8 +532,8 @@ $pays_eligibles = [
         }
         
         .btn-submit {
-            background: var(--nvidia-green);
-            color: var(--nvidia-black); 
+            background: var(--tesla-green);
+            color: var(--tesla-black); 
             border: none;
             padding: 20px;
             border-radius: 15px;
@@ -544,7 +544,7 @@ $pays_eligibles = [
             transition: var(--transition);
             margin-top: 15px;
             box-shadow: 
-                0 8px 25px rgba(118, 185, 0, 0.6),
+                0 8px 25px rgba(232, 33, 39, 0.6),
                 inset 0 1px 0 rgba(255, 255, 255, 0.5);
             position: relative;
             overflow: hidden;
@@ -568,12 +568,12 @@ $pays_eligibles = [
         }
         
         .btn-submit:hover {
-            background: var(--nvidia-black);
-            color: var(--nvidia-green);
+            background: var(--tesla-black);
+            color: var(--tesla-green);
             transform: translateY(-5px);
             box-shadow: 
-                0 15px 30px rgba(118, 185, 0, 0.8),
-                inset 0 1px 0 rgba(118, 185, 0, 0.4);
+                0 15px 30px rgba(232, 33, 39, 0.8),
+                inset 0 1px 0 rgba(232, 33, 39, 0.4);
         }
         
         .login-link {
@@ -592,8 +592,8 @@ $pays_eligibles = [
         
         .btn-login-form {
             background: transparent;
-            color: var(--nvidia-green);
-            border: 1px solid var(--nvidia-green);
+            color: var(--tesla-green);
+            border: 1px solid var(--tesla-green);
             padding: 16px 25px;
             border-radius: 12px;
             font-size: 16px;
@@ -616,7 +616,7 @@ $pays_eligibles = [
             left: -100%;
             width: 100%;
             height: 100%;
-            background: linear-gradient(90deg, transparent, rgba(118, 185, 0, 0.2), transparent);
+            background: linear-gradient(90deg, transparent, rgba(232, 33, 39, 0.2), transparent);
             transition: left 0.7s;
         }
         
@@ -625,9 +625,9 @@ $pays_eligibles = [
         }
         
         .btn-login-form:hover {
-            background: rgba(118, 185, 0, 0.1);
+            background: rgba(232, 33, 39, 0.1);
             transform: translateY(-3px);
-            box-shadow: 0 5px 20px rgba(118, 185, 0, 0.3);
+            box-shadow: 0 5px 20px rgba(232, 33, 39, 0.3);
         }
         
         /* Messages d'erreur améliorés */
@@ -651,11 +651,11 @@ $pays_eligibles = [
         }
         
         .referral-notice {
-            background: rgba(118, 185, 0, 0.1);
+            background: rgba(232, 33, 39, 0.1);
             padding: 18px;
             border-radius: 12px;
             margin-bottom: 25px;
-            border-left: 4px solid var(--nvidia-green);
+            border-left: 4px solid var(--tesla-green);
             color: var(--text-light);
             text-align: center;
             font-size: 15px;
@@ -664,17 +664,17 @@ $pays_eligibles = [
             align-items: center;
             justify-content: center;
             gap: 10px;
-            box-shadow: 0 5px 15px rgba(118, 185, 0, 0.2);
+            box-shadow: 0 5px 15px rgba(232, 33, 39, 0.2);
             animation: pulse 2s infinite;
             backdrop-filter: blur(10px);
         }
         
         .bonus-notice {
-            background: rgba(118, 185, 0, 0.1);
+            background: rgba(232, 33, 39, 0.1);
             padding: 18px;
             border-radius: 12px;
             margin-bottom: 25px;
-            border-left: 4px solid var(--nvidia-green);
+            border-left: 4px solid var(--tesla-green);
             color: var(--text-light);
             text-align: center;
             font-size: 15px;
@@ -683,7 +683,7 @@ $pays_eligibles = [
             align-items: center;
             justify-content: center;
             gap: 10px;
-            box-shadow: 0 5px 15px rgba(118, 185, 0, 0.2);
+            box-shadow: 0 5px 15px rgba(232, 33, 39, 0.2);
             backdrop-filter: blur(10px);
         }
         
@@ -774,7 +774,7 @@ $pays_eligibles = [
             <div class="logo">
                 <div class="logo-icon">NV</div>
                 <div>
-                    <div class="logo-text">NVIDIA</div>
+                    <div class="logo-text">TESLA</div>
                     <div class="logo-subtext">TECHNOLOGIE</div>
                 </div>
             </div>
@@ -792,7 +792,7 @@ $pays_eligibles = [
                 
                 <?php if (!empty($code_parrain)): ?>
                     <div class="referral-notice">
-                        <i class="fas fa-user-friends"></i> Vous êtes invité par un membre NVIDIA Technologie
+                        <i class="fas fa-user-friends"></i> Vous êtes invité par un membre TESLA Technologie
                     </div>
                 <?php endif; ?>
                 
@@ -800,7 +800,7 @@ $pays_eligibles = [
                     <i class="fas fa-gift"></i> Bonus de bienvenue : 250 FCFA offerts !
                 </div>
                 
-                <h2 class="form-title">Rejoignez NVIDIA</h2>
+                <h2 class="form-title">Rejoignez TESLA</h2>
                 
                 <form action="inscription1.php" method="post" id="signup-form">
                     <div class="form-group">
@@ -850,7 +850,7 @@ $pays_eligibles = [
                 </form>
                 
                 <div class="login-link">
-                    <p class="login-text">Déjà membre NVIDIA?</p>
+                    <p class="login-text">Déjà membre TESLA?</p>
                     <a href="connexion.php" class="btn-login-form">
                         <i class="fas fa-sign-in-alt"></i> SE CONNECTER
                     </a>

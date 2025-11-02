@@ -125,17 +125,17 @@ try {
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
-    <title>Mon équipe - NVIDIA Technologie</title> <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Mon équipe - TESLA Technologie</title> <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <style>
         :root {
-            /* Couleurs NVIDIA (Vert, Noir, Charbon) */
+            /* Couleurs TESLA (Vert, Noir, Charbon) */
             --primary-black: #111111; /* Fond principal plus sombre */
             --soft-black: #1a1a1a;    /* Pour le fond des cartes */
             --light-gray: #2c2c2c;    /* Pour les bordures et séparateurs */
-            --accent-green: #76b900;  /* Le vert emblématique de NVIDIA */
-            --green-light: #90d300;
+            --accent-green: #E82127;  /* Le vert emblématique de TESLA */
+            --green-light: #ff4444;
             --green-dark: #5a8c00;
             --text-light: #ffffff;    /* Texte principal blanc */
             --text-gray: #a0a0a0;     /* Texte secondaire/gris */
@@ -177,8 +177,8 @@ try {
             height: 100%;
             /* Gradient radial subtil */
             background: 
-                radial-gradient(circle at 10% 20%, rgba(118, 185, 0, 0.1) 0%, transparent 20%),
-                radial-gradient(circle at 90% 80%, rgba(118, 185, 0, 0.08) 0%, transparent 20%),
+                radial-gradient(circle at 10% 20%, rgba(232, 33, 39, 0.1) 0%, transparent 20%),
+                radial-gradient(circle at 90% 80%, rgba(232, 33, 39, 0.08) 0%, transparent 20%),
                 linear-gradient(135deg, var(--primary-black) 0%, var(--soft-black) 100%);
             z-index: -3;
         }
@@ -191,9 +191,9 @@ try {
             height: 100%;
             /* Motif Hexagonal subtil en vert */
             background-image: 
-                linear-gradient(100deg, rgba(118, 185, 0, 0.05) 1px, transparent 1px),
-                linear-gradient(20deg, rgba(118, 185, 0, 0.05) 1px, transparent 1px),
-                linear-gradient(90deg, rgba(118, 185, 0, 0.05) 1px, transparent 1px);
+                linear-gradient(100deg, rgba(232, 33, 39, 0.05) 1px, transparent 1px),
+                linear-gradient(20deg, rgba(232, 33, 39, 0.05) 1px, transparent 1px),
+                linear-gradient(90deg, rgba(232, 33, 39, 0.05) 1px, transparent 1px);
             background-size: 40px 40px;
             z-index: -2;
             opacity: 0.8; /* Réduire l'opacité pour que ce soit subtil */
@@ -232,7 +232,7 @@ try {
             color: var(--primary-black); /* Le texte dans l'icône est noir pour le contraste */
             font-weight: bold;
             font-size: 18px;
-            box-shadow: 0 8px 25px rgba(118, 185, 0, 0.4);
+            box-shadow: 0 8px 25px rgba(232, 33, 39, 0.4);
         }
         
         .logo-text {
@@ -265,14 +265,14 @@ try {
             border-radius: 16px;
             padding: 20px;
             box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
-            border: 1px solid rgba(118, 185, 0, 0.1); /* Bordure subtile en vert */
+            border: 1px solid rgba(232, 33, 39, 0.1); /* Bordure subtile en vert */
             text-align: center;
             transition: var(--transition);
         }
         
         .stat-card:hover {
             transform: translateY(-5px);
-            box-shadow: 0 15px 35px rgba(118, 185, 0, 0.2);
+            box-shadow: 0 15px 35px rgba(232, 33, 39, 0.2);
         }
         
         .stat-value {
@@ -295,7 +295,7 @@ try {
             padding: 20px;
             margin-bottom: 20px;
             box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
-            border: 1px solid rgba(118, 185, 0, 0.1);
+            border: 1px solid rgba(232, 33, 39, 0.1);
             animation: slideInUp 0.6s ease-out 0.4s both;
         }
         
@@ -318,7 +318,7 @@ try {
             padding: 20px;
             margin-bottom: 20px;
             box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
-            border: 1px solid rgba(118, 185, 0, 0.1);
+            border: 1px solid rgba(232, 33, 39, 0.1);
             animation: slideInUp 0.6s ease-out 0.6s both;
         }
         
@@ -339,8 +339,8 @@ try {
         .referral-link {
             flex: 1;
             /* Fond sombre/charbon */
-            background: rgba(118, 185, 0, 0.05); 
-            border: 1px solid rgba(118, 185, 0, 0.2);
+            background: rgba(232, 33, 39, 0.05); 
+            border: 1px solid rgba(232, 33, 39, 0.2);
             border-radius: 10px;
             padding: 12px 15px;
             font-size: 14px;
@@ -369,7 +369,7 @@ try {
         
         .copy-btn:hover {
             transform: translateY(-2px);
-            box-shadow: 0 5px 15px rgba(118, 185, 0, 0.3);
+            box-shadow: 0 5px 15px rgba(232, 33, 39, 0.3);
         }
         
         /* Section statistiques de parrainage */
@@ -379,7 +379,7 @@ try {
             padding: 20px;
             margin-bottom: 20px;
             box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
-            border: 1px solid rgba(118, 185, 0, 0.1);
+            border: 1px solid rgba(232, 33, 39, 0.1);
             animation: slideInUp 0.6s ease-out 0.8s both;
         }
         
@@ -396,14 +396,14 @@ try {
             align-items: center;
             gap: 15px;
             padding: 15px;
-            background: rgba(118, 185, 0, 0.05); /* Fond très léger en vert */
+            background: rgba(232, 33, 39, 0.05); /* Fond très léger en vert */
             border-radius: 12px;
             margin-bottom: 10px;
             transition: var(--transition);
         }
         
         .level-item:hover {
-            background: rgba(118, 185, 0, 0.1);
+            background: rgba(232, 33, 39, 0.1);
         }
         
         .level-number {
@@ -463,7 +463,7 @@ try {
             padding: 20px;
             margin-bottom: 20px;
             box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
-            border: 1px solid rgba(118, 185, 0, 0.1);
+            border: 1px solid rgba(232, 33, 39, 0.1);
             animation: slideInUp 0.6s ease-out 1s both;
         }
         
@@ -485,7 +485,7 @@ try {
             justify-content: space-between;
             align-items: center;
             padding: 12px 0;
-            border-bottom: 1px solid rgba(118, 185, 0, 0.1);
+            border-bottom: 1px solid rgba(232, 33, 39, 0.1);
         }
         
         .direct-item:last-child {
@@ -521,7 +521,7 @@ try {
             color: var(--primary-black); /* Texte en noir */
             padding: 12px 24px;
             border-radius: 25px;
-            box-shadow: 0 8px 25px rgba(118, 185, 0, 0.4);
+            box-shadow: 0 8px 25px rgba(232, 33, 39, 0.4);
             font-family: 'Inter', sans-serif;
             font-weight: 600;
             font-size: 14px;
@@ -565,7 +565,7 @@ try {
         }
         
         .directs-list::-webkit-scrollbar-track {
-            background: rgba(118, 185, 0, 0.1);
+            background: rgba(232, 33, 39, 0.1);
             border-radius: 10px;
         }
         
@@ -608,7 +608,7 @@ try {
             <div class="logo">
                 <div class="logo-icon">NV</div> 
                 <div>
-                    <div class="logo-text">NVIDIA</div> 
+                    <div class="logo-text">TESLA</div> 
                     <div class="logo-subtext">TECHNOLOGIE</div> 
                 </div>
             </div>
@@ -628,7 +628,7 @@ try {
         
         <div class="message-section">
             <div class="message-content">
-                Pour chaque personne que vous invitez à investir sur <span class="highlight">NVIDIA Technologie</span>, vous gagnez 
+                Pour chaque personne que vous invitez à investir sur <span class="highlight">TESLA Technologie</span>, vous gagnez 
                 <span class="highlight">20%</span> de son investissement, <span class="highlight">5%</span> de l'investissement de ses filleuls, 
                 et <span class="highlight">2%</span> de l'investissement des filleuls de troisième génération.
             </div>

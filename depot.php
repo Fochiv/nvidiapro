@@ -88,19 +88,19 @@ $pays_operateurs = [
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dépôt - NVIDIA Technology</title>
+    <title>Dépôt - TESLA Technology</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
     :root {
         --primary-black: #0a0a0a;
         --soft-black: #121212;
         --dark-gray: #1f2937;
-        --accent-green-primary: #76b900;
+        --accent-green-primary: #E82127;
         --accent-green-secondary: #00e676;
         --text-light: #ffffff;
         --text-muted: #94a3b8;
         --card-bg: rgba(18, 18, 18, 0.85);
-        --border-color: rgba(118, 185, 0, 0.15);
+        --border-color: rgba(232, 33, 39, 0.15);
         --error: #ef4444;
         --success: var(--accent-green-secondary);
         --transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
@@ -137,9 +137,9 @@ $pays_operateurs = [
         width: 100%;
         height: 100%;
         background-image: 
-            linear-gradient(30deg, rgba(118, 185, 0, 0.08) 12%, transparent 12.5%, transparent 87%, rgba(118, 185, 0, 0.08) 87.5%, rgba(118, 185, 0, 0.08) 0),
+            linear-gradient(30deg, rgba(232, 33, 39, 0.08) 12%, transparent 12.5%, transparent 87%, rgba(232, 33, 39, 0.08) 87.5%, rgba(232, 33, 39, 0.08) 0),
             linear-gradient(150deg, rgba(0, 230, 118, 0.08) 12%, transparent 12.5%, transparent 87%, rgba(0, 230, 118, 0.08) 87.5%, rgba(0, 230, 118, 0.08) 0),
-            linear-gradient(60deg, rgba(118, 185, 0, 0.1) 25%, transparent 25.5%, transparent 75%, rgba(118, 185, 0, 0.1) 75%, rgba(118, 185, 0, 0.1) 0);
+            linear-gradient(60deg, rgba(232, 33, 39, 0.1) 25%, transparent 25.5%, transparent 75%, rgba(232, 33, 39, 0.1) 75%, rgba(232, 33, 39, 0.1) 0);
         background-size: 100px 175px;
         background-position: 0 0, 50px 87.5px, 0 0;
         z-index: -2;
@@ -158,7 +158,7 @@ $pays_operateurs = [
         right: 0;
         width: 400px;
         height: 400px;
-        background: radial-gradient(circle, rgba(118, 185, 0, 0.2) 0%, transparent 70%);
+        background: radial-gradient(circle, rgba(232, 33, 39, 0.2) 0%, transparent 70%);
         filter: blur(80px);
         z-index: -1;
     }
@@ -206,7 +206,7 @@ $pays_operateurs = [
         align-items: center;
         justify-content: center;
         margin: 0 auto 15px;
-        box-shadow: 0 8px 25px rgba(118, 185, 0, 0.4);
+        box-shadow: 0 8px 25px rgba(232, 33, 39, 0.4);
         position: relative;
         overflow: hidden;
     }
@@ -252,7 +252,7 @@ $pays_operateurs = [
         background: var(--card-bg);
         border-radius: 20px;
         padding: 25px;
-        box-shadow: 0 10px 30px rgba(118, 185, 0, 0.2);
+        box-shadow: 0 10px 30px rgba(232, 33, 39, 0.2);
         border: 1px solid var(--border-color);
         animation: fadeInUp 0.8s ease-out;
     }
@@ -302,7 +302,7 @@ $pays_operateurs = [
     input:focus, select:focus {
         outline: none;
         border-color: var(--accent-green-primary);
-        box-shadow: 0 0 0 3px rgba(118, 185, 0, 0.1);
+        box-shadow: 0 0 0 3px rgba(232, 33, 39, 0.1);
     }
     
     select {
@@ -337,13 +337,13 @@ $pays_operateurs = [
         font-weight: 700;
         cursor: pointer;
         transition: var(--transition);
-        box-shadow: 0 6px 20px rgba(118, 185, 0, 0.4);
+        box-shadow: 0 6px 20px rgba(232, 33, 39, 0.4);
         margin-top: 10px;
     }
     
     .submit-btn:hover {
         transform: translateY(-3px);
-        box-shadow: 0 10px 25px rgba(118, 185, 0, 0.6);
+        box-shadow: 0 10px 25px rgba(232, 33, 39, 0.6);
     }
     
     .submit-btn:active {
@@ -396,8 +396,8 @@ $pays_operateurs = [
     }
     
     .info-box {
-        background: rgba(118, 185, 0, 0.1);
-        border: 1px solid rgba(118, 185, 0, 0.2);
+        background: rgba(232, 33, 39, 0.1);
+        border: 1px solid rgba(232, 33, 39, 0.2);
         border-radius: 12px;
         padding: 15px;
         margin-bottom: 20px;
@@ -444,7 +444,7 @@ $pays_operateurs = [
     }
     
     .spinner {
-        border: 3px solid rgba(118, 185, 0, 0.2);
+        border: 3px solid rgba(232, 33, 39, 0.2);
         border-top: 3px solid var(--accent-green-primary);
         border-radius: 50%;
         width: 40px;

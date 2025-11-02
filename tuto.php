@@ -32,13 +32,13 @@ $whatsapp_invest = "https://t.me/sonycanal/21";
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <title>Tutoriels - NVIDIA Technology</title>
+    <title>Tutoriels - TESLA Technology</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <style>
-        /* Thème NVIDIA (sombre et vert) */
+        /* Thème TESLA (sombre et vert) */
         :root {
-            --primary: #76b900; /* Vert émeraude NVIDIA */
+            --primary: #E82127; /* Vert émeraude TESLA */
             --primary-light: #eef4e6;
             --primary-dark: #5e9300; /* Vert foncé */
             --secondary: #00bcd4; /* Cyan pour contraste */
@@ -52,9 +52,9 @@ $whatsapp_invest = "https://t.me/sonycanal/21";
             --warning: #ffc107;
             --error: #f44336;
             --border-radius: 12px;
-            --box-shadow: 0 4px 18px rgba(118, 185, 0, 0.15); /* Ombre verte subtile */
+            --box-shadow: 0 4px 18px rgba(232, 33, 39, 0.15); /* Ombre verte subtile */
             --transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
-            --tech-glow: rgba(118, 185, 0, 0.4); /* Utilisé pour le bouton central */
+            --tech-glow: rgba(232, 33, 39, 0.4); /* Utilisé pour le bouton central */
         }
         
         * {
@@ -188,7 +188,7 @@ $whatsapp_invest = "https://t.me/sonycanal/21";
         
         .tutorial-btn:hover {
             transform: translateY(-3px);
-            box-shadow: 0 8px 20px rgba(118, 185, 0, 0.2);
+            box-shadow: 0 8px 20px rgba(232, 33, 39, 0.2);
             border-color: var(--primary-dark);
         }
         
@@ -247,7 +247,7 @@ $whatsapp_invest = "https://t.me/sonycanal/21";
         .btn-primary:hover {
             background: var(--primary-dark);
             transform: translateY(-2px);
-            box-shadow: 0 6px 16px rgba(118, 185, 0, 0.3);
+            box-shadow: 0 6px 16px rgba(232, 33, 39, 0.3);
         }
         
         .btn-secondary {
@@ -268,7 +268,7 @@ $whatsapp_invest = "https://t.me/sonycanal/21";
         }
         
         .btn-outline:hover {
-            background: rgba(118, 185, 0, 0.1);
+            background: rgba(232, 33, 39, 0.1);
         }
         
         /* Liste d'astuces améliorée */
@@ -290,7 +290,7 @@ $whatsapp_invest = "https://t.me/sonycanal/21";
         
         .tip-item:hover {
             transform: translateY(-3px);
-            box-shadow: 0 8px 20px rgba(118, 185, 0, 0.2);
+            box-shadow: 0 8px 20px rgba(232, 33, 39, 0.2);
             border-left-color: var(--primary);
         }
         
@@ -330,7 +330,7 @@ $whatsapp_invest = "https://t.me/sonycanal/21";
         
         .step:hover {
             transform: translateY(-3px);
-            box-shadow: 0 8px 20px rgba(118, 185, 0, 0.2);
+            box-shadow: 0 8px 20px rgba(232, 33, 39, 0.2);
         }
         
         .step-number {
@@ -368,7 +368,7 @@ $whatsapp_invest = "https://t.me/sonycanal/21";
         .info-box {
             margin-top: 30px;
             padding: 20px;
-            background: rgba(118, 185, 0, 0.1); /* Fond vert très léger */
+            background: rgba(232, 33, 39, 0.1); /* Fond vert très léger */
             border-radius: var(--border-radius);
             border-left: 4px solid var(--primary);
             box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
@@ -422,7 +422,7 @@ $whatsapp_invest = "https://t.me/sonycanal/21";
           display: flex;
           align-items: center;
           justify-content: center;
-          box-shadow: 0 6px 20px rgba(118, 185, 0, 0.4);
+          box-shadow: 0 6px 20px rgba(232, 33, 39, 0.4);
           cursor: pointer;
           z-index: 9999;
           transition: transform 0.3s, box-shadow 0.3s;
@@ -434,7 +434,7 @@ $whatsapp_invest = "https://t.me/sonycanal/21";
 
         .floating-draggable-btn:hover {
           transform: scale(1.1);
-          box-shadow: 0 8px 25px rgba(118, 185, 0, 0.6);
+          box-shadow: 0 8px 25px rgba(232, 33, 39, 0.6);
         }
 
         /* Style pour le bouton Retour */
@@ -451,7 +451,7 @@ $whatsapp_invest = "https://t.me/sonycanal/21";
             display: flex;
             align-items: center;
             justify-content: center;
-            box-shadow: 0 4px 12px rgba(118, 185, 0, 0.3);
+            box-shadow: 0 4px 12px rgba(232, 33, 39, 0.3);
             transition: all 0.3s ease;
             border: none;
             cursor: pointer;
@@ -482,14 +482,14 @@ $whatsapp_invest = "https://t.me/sonycanal/21";
         .nav-item:hover {
             color: var(--primary);
             background: linear-gradient(90deg, #1c1c1c 60%, #181818 100%);
-            box-shadow: 0 2px 8px 0 rgba(118, 185, 0, 0.1);
+            box-shadow: 0 2px 8px 0 rgba(232, 33, 39, 0.1);
         }
 
         .nav-center {
             /* ... (styles de nav-center ajustés pour le thème sombre) ... */
             background: linear-gradient(135deg, var(--primary) 65%, var(--primary-dark) 100%);
             color: var(--dark); /* Texte noir sur bouton vert */
-            box-shadow: 0 5px 18px var(--tech-glow), 0 2px 8px 0 rgba(118, 185, 0, 0.2);
+            box-shadow: 0 5px 18px var(--tech-glow), 0 2px 8px 0 rgba(232, 33, 39, 0.2);
             border: 3.5px solid #1a1a1a;
         }
         
@@ -552,7 +552,7 @@ $whatsapp_invest = "https://t.me/sonycanal/21";
    
         <div class="tutorial-content">
             <?php if ($active_section === 'depot'): ?>
-                <h1 class="section-title">Dépôt sur NVIDIA Technology</h1>
+                <h1 class="section-title">Dépôt sur TESLA Technology</h1>
                 <p class="section-description">
                     Effectuez un dépôt en toute sécurité sur votre compte en suivant ce guide étape par étape.
                     Les fonds sont crédités instantanément.
@@ -776,7 +776,7 @@ $whatsapp_invest = "https://t.me/sonycanal/21";
                 </div>
                 
                 <div class="info-box">
-                    <h3><i class="fas fa-chart-line"></i> Pourquoi investir avec NVIDIA Technology?</h3>
+                    <h3><i class="fas fa-chart-line"></i> Pourquoi investir avec TESLA Technology?</h3>
                     <ul class="styled-list">
                         <li>Rendements élevés et réguliers</li>
                         <li>Plans d'investissement flexibles</li>
@@ -934,7 +934,7 @@ $whatsapp_invest = "https://t.me/sonycanal/21";
             tips.forEach(tip => {
                 tip.addEventListener('mouseenter', function() {
                     this.style.transform = 'translateY(-5px)';
-                    this.style.boxShadow = '0 15px 30px rgba(118, 185, 0, 0.15)'; // Ombre verte
+                    this.style.boxShadow = '0 15px 30px rgba(232, 33, 39, 0.15)'; // Ombre verte
                 });
                 
                 tip.addEventListener('mouseleave', function() {

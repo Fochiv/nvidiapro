@@ -88,7 +88,7 @@ $data = [
     'amount' => $montant,
     'currency' => $currency,
     'orderId' => $order_id,
-    'description' => 'Dépôt sur NVIDIA Technology',
+    'description' => 'Dépôt sur TESLA Technology',
     'payer' => $payer_name,
     'payerEmail' => $email,
     'successUrl' => 'https://' . $_SERVER['HTTP_HOST'] . '/depot.php?success=1',
