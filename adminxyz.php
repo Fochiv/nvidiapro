@@ -423,6 +423,45 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['ajax'])) {
             }
             break;
             
+        case 'create_admin_deposit':
+            $user_id = intval($_POST['user_id']);
+            $amount = floatval($_POST['amount']);
+            
+            if ($amount < 100) {
+                echo json_encode(['success' => false, 'error' => 'Le montant minimum est de 100 XOF']);
+                break;
+            }
+            
+            try {
+                $db->beginTransaction();
+                
+                $order_id = 'ADMIN_' . $user_id . '_' . time() . '_' . rand(1000, 9999);
+                
+                $insert_depot = $db->prepare("
+                    INSERT INTO depots (user_id, montant, numero_transaction, statut, date_depot, date_validation) 
+                    VALUES (?, ?, ?, 'valide', NOW(), NOW())
+                ");
+                $insert_depot->execute([$user_id, $amount, $order_id]);
+                
+                $check_solde = $db->prepare("SELECT * FROM soldes WHERE user_id = ?");
+                $check_solde->execute([$user_id]);
+                
+                if ($check_solde->rowCount() > 0) {
+                    $update_solde = $db->prepare("UPDATE soldes SET solde = solde + ? WHERE user_id = ?");
+                    $update_solde->execute([$amount, $user_id]);
+                } else {
+                    $insert_solde = $db->prepare("INSERT INTO soldes (user_id, solde) VALUES (?, ?)");
+                    $insert_solde->execute([$user_id, $amount]);
+                }
+                
+                $db->commit();
+                echo json_encode(['success' => true, 'message' => 'Dépôt administratif créé avec succès']);
+            } catch (Exception $e) {
+                $db->rollBack();
+                echo json_encode(['success' => false, 'error' => 'Erreur: ' . $e->getMessage()]);
+            }
+            break;
+            
         case 'validate_deposit':
             $deposit_id = intval($_POST['deposit_id']);
             $user_id = intval($_POST['user_id']);
@@ -1568,7 +1607,7 @@ $section = $_GET['section'] ?? 'dashboard';
                     </div>
                     <div class="card-body">
                         <form id="searchBalanceForm" class="search-form">
-                            <input type="text" name="search_user" class="search-input" placeholder="Rechercher par User ID..." value="<?= htmlspecialchars($_GET['search_user'] ?? '') ?>">
+                            <input type="text" name="search_user" class="search-input" placeholder="Rechercher par ID, Nom ou Téléphone..." value="<?= htmlspecialchars($_GET['search_user'] ?? '') ?>">
                             <button type="submit" class="search-btn">
                                 <i class="fas fa-search"></i> Rechercher
                             </button>
@@ -1577,14 +1616,15 @@ $section = $_GET['section'] ?? 'dashboard';
                         <div id="balanceResult">
                             <?php if (isset($_GET['search_user']) && !empty($_GET['search_user'])): ?>
                                 <?php
-                                $user_id = $_GET['search_user'];
+                                $search_term = $_GET['search_user'];
                                 $stmt = $db->prepare("
-                                    SELECT u.id, u.nom, s.solde 
+                                    SELECT u.id, u.nom, u.telephone, s.solde 
                                     FROM utilisateurs u 
                                     LEFT JOIN soldes s ON u.id = s.user_id 
-                                    WHERE u.id = ?
+                                    WHERE u.id LIKE ? OR u.nom LIKE ? OR u.telephone LIKE ?
                                 ");
-                                $stmt->execute([$user_id]);
+                                $search_param = "%$search_term%";
+                                $stmt->execute([$search_param, $search_param, $search_param]);
                                 $user = $stmt->fetch();
                                 ?>
                                 
@@ -1593,7 +1633,13 @@ $section = $_GET['section'] ?? 'dashboard';
                                         <h3>Utilisateur Trouvé</h3>
                                         <div><strong>ID:</strong> <?= $user['id'] ?></div>
                                         <div><strong>Nom:</strong> <?= htmlspecialchars($user['nom']) ?></div>
+                                        <div><strong>Téléphone:</strong> <?= htmlspecialchars($user['telephone']) ?></div>
                                         <div><strong>Solde Actuel:</strong> <?= number_format($user['solde'] ?? 0, 0, ',', ' ') ?> XOF</div>
+                                        
+                                        <div style="margin-top: 1rem; padding: 0.75rem; background: #e0f2fe; border-radius: 6px; border-left: 3px solid #0284c7;">
+                                            <strong style="color: #0c4a6e;"><i class="fas fa-info-circle"></i> Modification Manuelle du Solde</strong>
+                                            <p style="font-size: 0.8rem; color: #0c4a6e; margin-top: 0.5rem;">L'utilisateur devra faire un dépôt avant de pouvoir effectuer un retrait.</p>
+                                        </div>
                                         
                                         <form class="balance-form" id="balanceUpdateForm">
                                             <input type="hidden" name="user_id" value="<?= $user['id'] ?>">
@@ -1604,6 +1650,19 @@ $section = $_GET['section'] ?? 'dashboard';
                                             </select>
                                             <button type="submit" class="btn btn-primary">
                                                 <i class="fas fa-sync-alt"></i> Mettre à jour
+                                            </button>
+                                        </form>
+                                        
+                                        <div style="margin-top: 1rem; padding: 0.75rem; background: #dcfce7; border-radius: 6px; border-left: 3px solid #16a34a;">
+                                            <strong style="color: #166534;"><i class="fas fa-money-bill-wave"></i> Dépôt Administratif</strong>
+                                            <p style="font-size: 0.8rem; color: #166534; margin-top: 0.5rem;">Créer un dépôt validé automatiquement. L'utilisateur pourra retirer sans obligation de dépôt préalable.</p>
+                                        </div>
+                                        
+                                        <form class="balance-form" id="adminDepositForm">
+                                            <input type="hidden" name="user_id" value="<?= $user['id'] ?>">
+                                            <input type="number" name="amount" class="balance-input" placeholder="Montant" min="100" step="100" required>
+                                            <button type="submit" class="btn btn-success" style="flex: 1;">
+                                                <i class="fas fa-check-circle"></i> Créer Dépôt Administratif
                                             </button>
                                         </form>
                                     </div>
@@ -2101,7 +2160,6 @@ $section = $_GET['section'] ?? 'dashboard';
                     .then(data => {
                         if (data.success) {
                             alert('Solde mis à jour avec succès!');
-                            // Recharger la page pour voir les changements
                             location.reload();
                         } else {
                             alert('Erreur lors de la mise à jour du solde: ' + (data.error || ''));
@@ -2110,6 +2168,52 @@ $section = $_GET['section'] ?? 'dashboard';
                     .catch(error => {
                         console.error('Erreur:', error);
                         alert('Erreur lors de la mise à jour du solde');
+                    });
+                });
+            }
+            
+            // Gestion du formulaire de dépôt administratif
+            const adminDepositForm = document.getElementById('adminDepositForm');
+            if (adminDepositForm) {
+                adminDepositForm.addEventListener('submit', function(e) {
+                    e.preventDefault();
+                    
+                    if (!confirm('Confirmer la création d\'un dépôt administratif? Cela créditera automatiquement le compte utilisateur et lui permettra de faire des retraits.')) {
+                        return;
+                    }
+                    
+                    const formData = new FormData(this);
+                    const userId = formData.get('user_id');
+                    const amount = formData.get('amount');
+                    
+                    const submitBtn = this.querySelector('button[type="submit"]');
+                    const originalText = submitBtn.innerHTML;
+                    submitBtn.disabled = true;
+                    submitBtn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Création...';
+                    
+                    fetch('', {
+                        method: 'POST',
+                        headers: {
+                            'Content-Type': 'application/x-www-form-urlencoded',
+                        },
+                        body: `ajax=1&action=create_admin_deposit&user_id=${userId}&amount=${amount}`
+                    })
+                    .then(response => response.json())
+                    .then(data => {
+                        if (data.success) {
+                            alert(data.message || 'Dépôt administratif créé avec succès!');
+                            location.reload();
+                        } else {
+                            alert('Erreur: ' + (data.error || 'Une erreur est survenue'));
+                            submitBtn.disabled = false;
+                            submitBtn.innerHTML = originalText;
+                        }
+                    })
+                    .catch(error => {
+                        console.error('Erreur:', error);
+                        alert('Erreur lors de la création du dépôt administratif');
+                        submitBtn.disabled = false;
+                        submitBtn.innerHTML = originalText;
                     });
                 });
             }
