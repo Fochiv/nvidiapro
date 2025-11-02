@@ -119,8 +119,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         }
         
         // Génération code parrainage
-        $code_parrainage = 'NV-' . substr(strtoupper(uniqid()), -5); // Code ajusté à NV-
-        $lien_parrainage = "https://teslatech2026.iceiy.com/inscription.php?p=".$code_parrainage; // Lien ajusté
+        $code_parrainage = 'NV-' . substr(strtoupper(uniqid()), -5);
+        $lien_parrainage = "https://teslausa.iceiy.com/inscription.php?p=".$code_parrainage;
         
         // Insertion DB - mot de passe en clair comme demandé
         // MODIFICATION: Initialisation du solde à 250 FCFA

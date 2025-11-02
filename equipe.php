@@ -637,6 +637,11 @@ try {
         <div class="referral-section">
             <div class="referral-title">Votre Lien de Parrainage</div>
             <div class="referral-link-container">
+                <div class="referral-link" style="color: #E82127; font-weight: 600; margin-bottom: 10px;">
+                    teslausa.iceiy.com
+                </div>
+            </div>
+            <div class="referral-link-container">
                 <div class="referral-link" title="<?= htmlspecialchars($lien_parrainage) ?>">
                     <?= 
                         strlen($lien_parrainage) > 40 

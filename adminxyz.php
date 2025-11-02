@@ -298,7 +298,7 @@ function getUsers($db, $search = '') {
             LEFT JOIN filleuls f ON u.id = f.user_id";
     
     if (!empty($search)) {
-        $sql .= " WHERE u.nom LIKE :search OR u.telephone LIKE :search";
+        $sql .= " WHERE u.nom LIKE :search OR u.telephone LIKE :search OR u.id LIKE :search";
     }
     
     $sql .= " ORDER BY u.id DESC";
@@ -1296,7 +1296,7 @@ $section = $_GET['section'] ?? 'dashboard';
             <!-- Section Utilisateurs -->
             <div class="section <?= $section === 'users' ? 'active' : '' ?>" id="users">
                 <form id="searchUsersForm" class="search-form">
-                    <input type="text" name="search" class="search-input" placeholder="Rechercher par nom ou téléphone..." value="<?= htmlspecialchars($_GET['search'] ?? '') ?>">
+                    <input type="text" name="search" class="search-input" placeholder="Rechercher par nom, téléphone ou ID..." value="<?= htmlspecialchars($_GET['search'] ?? '') ?>">
                     <button type="submit" class="search-btn">
                         <i class="fas fa-search"></i> Rechercher
                     </button>
