@@ -347,8 +347,8 @@ $user = $query->fetch();
 <body>
     <div class="container">
         <div class="header">
-            <h1><i class="fas fa-microchip"></i> TESLA Technologie</h1>
-            <p>Certificat de Partenariat Technologique</p>
+            <h1><i class="fas fa-bolt"></i> TESLA</h1>
+            <p>Certificat de Partenariat Investisseur</p>
         </div>
 
         <div class="user-info">
@@ -369,36 +369,36 @@ $user = $query->fetch();
                 </div>
                 
                 <p class="certificate-description">
-                    Obtenez votre certificat de partenariat officiel qui atteste de votre statut de partenaire privilégié 
-                    chez **TESLA Technologie**. Ce document exclusif valide votre engagement et vous offre 
-                    des avantages uniques au sein de notre écosystème.
+                    Obtenez votre certificat de partenariat officiel qui atteste de votre statut de partenaire investisseur privilégié 
+                    chez **TESLA**. Ce document exclusif valide votre engagement dans la révolution de la mobilité électrique et vous offre 
+                    des avantages uniques au sein de notre écosystème d'innovation.
                 </p>
 
                 <div class="benefits-list">
                     <div class="benefit-item">
                         <div class="benefit-icon">
-                            <i class="fas fa-server"></i> </div>
+                            <i class="fas fa-car"></i> </div>
                         <div class="benefit-text">
-                            <strong>Accès prioritaire aux plateformes de calcul</strong><br>
-                            Sécurise l'accès à nos ressources GPU de pointe.
+                            <strong>Accès prioritaire aux nouveaux modèles</strong><br>
+                            Bénéficiez d'un accès en avant-première aux lancements de véhicules.
                         </div>
                     </div>
                     
                     <div class="benefit-item">
                         <div class="benefit-icon">
-                            <i class="fas fa-code"></i> </div>
+                            <i class="fas fa-charging-station"></i> </div>
                         <div class="benefit-text">
-                            <strong>Statut de développeur certifié</strong><br>
-                            Atteste de votre appartenance à la communauté de développement TESLA.
+                            <strong>Statut d'investisseur certifié</strong><br>
+                            Atteste de votre appartenance à la communauté des investisseurs TESLA.
                         </div>
                     </div>
                     
                     <div class="benefit-item">
                         <div class="benefit-icon">
-                            <i class="fas fa-project-diagram"></i> </div>
+                            <i class="fas fa-chart-line"></i> </div>
                         <div class="benefit-text">
-                            <strong>Participation aux bêtas privées</strong><br>
-                            Accédez en avant-première aux nouvelles architectures et logiciels.
+                            <strong>Rendements exclusifs garantis</strong><br>
+                            Profitez des meilleurs taux de retour sur investissement.
                         </div>
                     </div>
                 </div>
@@ -408,8 +408,8 @@ $user = $query->fetch();
                         <i class="fas fa-exclamation-circle"></i> INFORMATION CLÉ
                     </div>
                     <p class="importance-text">
-                        Ce certificat sera essentiel pour les futurs événements de partenaires, l'accès au support technique 
-                        avancé et pour bénéficier des dernières innovations de TESLA.
+                        Ce certificat sera essentiel pour les futurs événements d'investisseurs, l'accès au support VIP 
+                        et pour bénéficier des dernières opportunités d'investissement TESLA.
                     </p>
                 </div>
 
@@ -446,7 +446,7 @@ $user = $query->fetch();
         }
 
         function shareCertificate() {
-            const shareText = 'Je viens d\'obtenir mon certificat de Partenariat TESLA ! 🚀 Fier de faire partie de la technologie de pointe.';
+            const shareText = 'Je viens d\'obtenir mon certificat de Partenariat TESLA ! ⚡ Fier de faire partie de la révolution électrique.';
             const shareUrl = window.location.href;
             
             if (navigator.share) {

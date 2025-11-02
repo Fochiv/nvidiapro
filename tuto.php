@@ -18,13 +18,13 @@ $sections = [
     'taches' => 'Tâches'
 ];
 
-// Liens des tutoriels (conservés)
-$telegram_depot_xaf = "https://t.me/sonycanal/22";
-$whatsapp_depot_xaf = "https://whatsapp.com/channel/0029VbBJRF13gvWScRNojl3e/118";
-$telegram_depot_xof = "https://t.me/sonycanal/23"; 
-$whatsapp_depot_xof = "https://whatsapp.com/channel/0029VbBJRF13gvWScRNojl3e/118";
-$telegram_invest = "https://t.me/sonycanal/21";
-$whatsapp_invest = "https://t.me/sonycanal/21";
+// Liens des tutoriels Tesla
+$telegram_depot_xaf = "https://t.me/teslaprojectmusk";
+$whatsapp_depot_xaf = "https://chat.whatsapp.com/FXxiB87KkPG0mFxNYEG7Hc?mode=wwt";
+$telegram_depot_xof = "https://t.me/teslaprojectmusk"; 
+$whatsapp_depot_xof = "https://chat.whatsapp.com/FXxiB87KkPG0mFxNYEG7Hc?mode=wwt";
+$telegram_invest = "https://t.me/teslaprojectmusk";
+$whatsapp_invest = "https://chat.whatsapp.com/FXxiB87KkPG0mFxNYEG7Hc?mode=wwt";
 ?>
 
 <!DOCTYPE html>
