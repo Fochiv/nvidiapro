@@ -78,17 +78,17 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['message']) && isset($
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <title>Accueil - TESLA Technology</title>
+    <title>Accueil - Allianz Investissement</title>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
-    /* VARIABLES MODIFIÉES POUR LE THÈME TESLA */
+    /* VARIABLES MODIFIÉES POUR LE THÈME Allianz */
     :root {
         --primary-white: #ffffff;
         --soft-white: #f8fafc;
         --warm-white: #fefefe;
         --light-gray: #1a1a1a; /* Fond sombre */
-        --accent-green: #E82127; /* Rouge TESLA */
+        --accent-green: #0038A8; /* Rouge Allianz */
         --green-light: #ff4444;
         --green-dark: #aa1111;
         --text-dark: #e0e0e0; /* Texte clair sur fond sombre */
@@ -240,7 +240,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['message']) && isset($
         gap: 12px;
     }
     
-    /* Logo - Utilisation du rouge TESLA */
+    /* Logo - Utilisation du rouge Allianz */
     .logo-icon {
         width: 45px;
         height: 45px;
@@ -322,7 +322,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['message']) && isset($
         justify-content: space-between; 
     }
     
-    .premium-card::before { /* Modification de before en after pour correspondre au style TESLA */
+    .premium-card::before { /* Modification de before en after pour correspondre au style Allianz */
         content: '';
         position: absolute;
         top: 0;
@@ -1512,7 +1512,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['message']) && isset($
             <div class="logo">
                 <div class="logo-icon">NV</div>
                 <div>
-                    <div class="logo-text">TESLA</div>
+                    <div class="logo-text">Allianz</div>
                     <div class="logo-subtext">TECHNOLOGIE</div>
                 </div>
             </div>
@@ -1521,13 +1521,13 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['message']) && isset($
         <div class="photos-section">
             <div class="photos-title">
                 <i class="fas fa-images"></i>
-                TESLA Technologie
+                Allianz Investissement
             </div>
             
             <div class="photo-slider" id="photoSlider">
                 <div class="photo-slides">
                     <div class="photo-slide active">
-                        <img src="photo1.jpg" class="photo-image" alt="TESLA Technology">
+                        <img src="photo1.jpg" class="photo-image" alt="Allianz Investissement">
                         <div class="photo-overlay">
                             <div class="photo-title">Investissez dans l'Innovation</div>
                             <div class="photo-subtitle">Leader mondial de la technologie</div>
@@ -1553,7 +1553,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['message']) && isset($
                     <div class="photo-slide">
                         <img src="photo4.jpg" class="photo-image" alt="Actions VIP">
                         <div class="photo-overlay">
-                            <div class="photo-title">Actions VIP TESLA</div>
+                            <div class="photo-title">Actions VIP Allianz</div>
                             <div class="photo-subtitle">Investissements exclusifs dès le 14 octobre</div>
                         </div>
                     </div>
@@ -1567,9 +1567,9 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['message']) && isset($
                     </div>
                     
                     <div class="photo-slide">
-                        <img src="photo6.jpg" class="photo-image" alt="Opportunités TESLA">
+                        <img src="photo6.jpg" class="photo-image" alt="Opportunités Allianz">
                         <div class="photo-overlay">
-                            <div class="photo-title">Opportunités TESLA</div>
+                            <div class="photo-title">Opportunités Allianz</div>
                             <div class="photo-subtitle">Diversifiez votre portefeuille</div>
                         </div>
                     </div>
@@ -1722,9 +1722,9 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['message']) && isset($
     <div class="welcome-popup" id="welcomePopup">
         <div class="welcome-content">
             <div class="welcome-header">
-                <h3>TESLA Technologie</h3>
+                <h3>Allianz Investissement</h3>
                 <div class="welcome-message">
-                    TESLA est le leader mondial de la technologie de l'informatique accélérée et de l'intelligence artificielle. Nous proposons désormais d'investir dans nos actions VIP dès le 14 octobre.
+                    Allianz est le leader mondial de la technologie de l'informatique accélérée et de l'intelligence artificielle. Nous proposons désormais d'investir dans nos actions VIP dès le 14 octobre.
                 </div>
                 <button class="welcome-close-top" onclick="closeWelcomePopup()">&times;</button>
             </div>
@@ -1757,12 +1757,12 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['message']) && isset($
     <div class="popup" id="telegramPopup">
         <div class="popup-content">
             <div class="popup-header">
-                <h3>Rejoignez notre Communauté TESLA</h3>
+                <h3>Rejoignez notre Communauté Allianz</h3>
                 <button class="popup-close" onclick="closePopup('telegramPopup')">&times;</button>
             </div>
             <div class="popup-body">
                 <p class="popup-text">
-                    Restez connecté avec la communauté TESLA et ne manquez aucune opportunité d'investissement!
+                    Restez connecté avec la communauté Allianz et ne manquez aucune opportunité d'investissement!
                 </p>
                 <div class="community-buttons">
                     <a href="https://t.me/officielcanalBlackRock" class="community-btn community-btn-telegram">
@@ -1794,7 +1794,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['message']) && isset($
                 <form id="postForm" enctype="multipart/form-data" method="POST">
                     <div class="form-group">
                         <label class="form-label" for="postMessage">Message</label>
-                        <textarea id="postMessage" name="message" class="form-textarea" placeholder="Partagez votre expérience TESLA..." required></textarea>
+                        <textarea id="postMessage" name="message" class="form-textarea" placeholder="Partagez votre expérience Allianz..." required></textarea>
                     </div>
                     
                     <div class="form-group">

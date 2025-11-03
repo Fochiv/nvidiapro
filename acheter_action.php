@@ -91,12 +91,12 @@ $plan_desc = $plan['description'];
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Confirmation d'Investissement - TESLA Technologies</title>
+    <title>Confirmation d'Investissement - Allianz Investissements</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
-    /* VARIABLES THEME TESLA */
+    /* VARIABLES THEME Allianz */
     :root {
-        --primary-green: #E82127; /* TESLA Green */
+        --primary-green: #0038A8; /* Allianz Green */
         --green-light: #ff4444;
         --green-dark: #5a8e00;
         --accent-gray: #4a4a4a; /* Dark Gray for accents */
@@ -182,7 +182,7 @@ $plan_desc = $plan['description'];
         text-align: center;
         position: relative;
         overflow: hidden;
-        border-right: 4px solid var(--primary-green); /* Bordure TESLA */
+        border-right: 4px solid var(--primary-green); /* Bordure Allianz */
     }
     
     .confirmation-hero::before {
@@ -319,7 +319,7 @@ $plan_desc = $plan['description'];
         background: var(--text-light);
         border-radius: 10px;
         padding: 20px;
-        border-left: 5px solid var(--primary-green); /* Bande de couleur TESLA */
+        border-left: 5px solid var(--primary-green); /* Bande de couleur Allianz */
         transition: var(--transition);
         text-align: left;
         box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
@@ -545,7 +545,7 @@ $plan_desc = $plan['description'];
             </div>
             <h1 class="hero-title">Investissement Confirmé !</h1>
             <p class="hero-subtitle">
-                Félicitations ! Votre plan d'investissement est maintenant actif chez TESLA Technologies.
+                Félicitations ! Votre plan d'investissement est maintenant actif chez Allianz Investissements.
             </p>
         </div>
         

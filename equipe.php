@@ -125,16 +125,16 @@ try {
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
-    <title>Mon équipe - TESLA Technologie</title> <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Mon équipe - Allianz Investissement</title> <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <style>
         :root {
-            /* Couleurs TESLA (Vert, Noir, Charbon) */
+            /* Couleurs Allianz (Vert, Noir, Charbon) */
             --primary-black: #111111; /* Fond principal plus sombre */
             --soft-black: #1a1a1a;    /* Pour le fond des cartes */
             --light-gray: #2c2c2c;    /* Pour les bordures et séparateurs */
-            --accent-green: #E82127;  /* Le vert emblématique de TESLA */
+            --accent-green: #0038A8;  /* Le vert emblématique de Allianz */
             --green-light: #ff4444;
             --green-dark: #5a8c00;
             --text-light: #ffffff;    /* Texte principal blanc */
@@ -608,7 +608,7 @@ try {
             <div class="logo">
                 <div class="logo-icon">NV</div> 
                 <div>
-                    <div class="logo-text">TESLA</div> 
+                    <div class="logo-text">Allianz</div> 
                     <div class="logo-subtext">TECHNOLOGIE</div> 
                 </div>
             </div>
@@ -628,7 +628,7 @@ try {
         
         <div class="message-section">
             <div class="message-content">
-                Pour chaque personne que vous invitez à investir sur <span class="highlight">TESLA Technologie</span>, vous gagnez 
+                Pour chaque personne que vous invitez à investir sur <span class="highlight">Allianz Investissement</span>, vous gagnez 
                 <span class="highlight">20%</span> de son investissement, <span class="highlight">5%</span> de l'investissement de ses filleuls, 
                 et <span class="highlight">2%</span> de l'investissement des filleuls de troisième génération.
             </div>
@@ -637,7 +637,7 @@ try {
         <div class="referral-section">
             <div class="referral-title">Votre Lien de Parrainage</div>
             <div class="referral-link-container">
-                <div class="referral-link" style="color: #E82127; font-weight: 600; margin-bottom: 10px;">
+                <div class="referral-link" style="color: #0038A8; font-weight: 600; margin-bottom: 10px;">
                     teslausa.iceiy.com
                 </div>
             </div>

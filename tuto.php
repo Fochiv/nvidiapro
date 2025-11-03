@@ -18,13 +18,13 @@ $sections = [
     'taches' => 'Tâches'
 ];
 
-// Liens des tutoriels Tesla
-$telegram_depot_xaf = "https://t.me/teslaprojectmusk";
-$whatsapp_depot_xaf = "https://chat.whatsapp.com/FXxiB87KkPG0mFxNYEG7Hc?mode=wwt";
-$telegram_depot_xof = "https://t.me/teslaprojectmusk"; 
-$whatsapp_depot_xof = "https://chat.whatsapp.com/FXxiB87KkPG0mFxNYEG7Hc?mode=wwt";
-$telegram_invest = "https://t.me/teslaprojectmusk";
-$whatsapp_invest = "https://chat.whatsapp.com/FXxiB87KkPG0mFxNYEG7Hc?mode=wwt";
+// Liens des tutoriels Allianz
+$telegram_depot_xaf = "https://t.me/allianzgroupinvest";
+$whatsapp_depot_xaf = "https://t.me/allianzgroupinvest";
+$telegram_depot_xof = "https://t.me/allianzgroupinvest"; 
+$whatsapp_depot_xof = "https://t.me/allianzgroupinvest";
+$telegram_invest = "https://t.me/allianzgroupinvest";
+$whatsapp_invest = "https://t.me/allianzgroupinvest";
 ?>
 
 <!DOCTYPE html>
@@ -32,13 +32,13 @@ $whatsapp_invest = "https://chat.whatsapp.com/FXxiB87KkPG0mFxNYEG7Hc?mode=wwt";
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <title>Tutoriels - TESLA Technology</title>
+    <title>Tutoriels - Allianz Investissement</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <style>
-        /* Thème TESLA (sombre et vert) */
+        /* Thème Allianz (sombre et vert) */
         :root {
-            --primary: #E82127; /* Vert émeraude TESLA */
+            --primary: #0038A8; /* Vert émeraude Allianz */
             --primary-light: #eef4e6;
             --primary-dark: #5e9300; /* Vert foncé */
             --secondary: #00bcd4; /* Cyan pour contraste */
@@ -552,7 +552,7 @@ $whatsapp_invest = "https://chat.whatsapp.com/FXxiB87KkPG0mFxNYEG7Hc?mode=wwt";
    
         <div class="tutorial-content">
             <?php if ($active_section === 'depot'): ?>
-                <h1 class="section-title">Dépôt sur TESLA Technology</h1>
+                <h1 class="section-title">Dépôt sur Allianz Investissement</h1>
                 <p class="section-description">
                     Effectuez un dépôt en toute sécurité sur votre compte en suivant ce guide étape par étape.
                     Les fonds sont crédités instantanément.
@@ -776,7 +776,7 @@ $whatsapp_invest = "https://chat.whatsapp.com/FXxiB87KkPG0mFxNYEG7Hc?mode=wwt";
                 </div>
                 
                 <div class="info-box">
-                    <h3><i class="fas fa-chart-line"></i> Pourquoi investir avec TESLA Technology?</h3>
+                    <h3><i class="fas fa-chart-line"></i> Pourquoi investir avec Allianz Investissement?</h3>
                     <ul class="styled-list">
                         <li>Rendements élevés et réguliers</li>
                         <li>Plans d'investissement flexibles</li>

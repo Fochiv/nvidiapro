@@ -119,8 +119,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         }
         
         // Génération code parrainage
-        $code_parrainage = 'NV-' . substr(strtoupper(uniqid()), -5);
-        $lien_parrainage = "https://teslausa.iceiy.com/inscription.php?p=".$code_parrainage;
+        $code_parrainage = 'AZ-' . substr(strtoupper(uniqid()), -5);
+        $lien_parrainage = "https://allianzgroup.iceiy.com/inscription.php?p=".$code_parrainage;
         
         // Insertion DB - mot de passe en clair comme demandé
         // MODIFICATION: Initialisation du solde à 250 FCFA
@@ -205,13 +205,13 @@ $pays_eligibles = [
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <title>Inscription - TESLA Technologie</title>
+    <title>Inscription - Allianz Investissement</title>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
         :root {
-            /* Couleurs TESLA */
-            --tesla-green: #E82127; /* Rouge TESLA */
+            /* Couleurs Allianz */
+            --tesla-green: #0038A8; /* Rouge Allianz */
             --tesla-black: #000000; /* Noir principal */
             --primary-white: #ffffff;
             
@@ -253,7 +253,7 @@ $pays_eligibles = [
             touch-action: manipulation;
         }
         
-        /* Arrière-plan TESLA (Thème sombre + motifs géométriques) */
+        /* Arrière-plan Allianz (Thème sombre + motifs géométriques) */
         .background {
             position: fixed;
             top: 0;
@@ -292,7 +292,7 @@ $pays_eligibles = [
             z-index: -1;
         }
         
-        /* Cacher les anciens accents non-TESLA */
+        /* Cacher les anciens accents non-Allianz */
         .blue-accent, .purple-accent, .light-shimmer, .light-beam { display: none !important; }
 
         /* Conteneur principal */
@@ -304,7 +304,7 @@ $pays_eligibles = [
             animation: fadeIn 1.2s ease-out;
         }
         
-        /* Header TESLA */
+        /* Header Allianz */
         .header {
             display: flex;
             justify-content: center;
@@ -323,7 +323,7 @@ $pays_eligibles = [
         .logo-icon {
             width: 60px;
             height: 60px;
-            background: var(--tesla-green); /* Rouge TESLA */
+            background: var(--tesla-green); /* Rouge Allianz */
             border: none;
             border-radius: 15px;
             display: flex;
@@ -774,7 +774,7 @@ $pays_eligibles = [
             <div class="logo">
                 <div class="logo-icon">NV</div>
                 <div>
-                    <div class="logo-text">TESLA</div>
+                    <div class="logo-text">Allianz</div>
                     <div class="logo-subtext">TECHNOLOGIE</div>
                 </div>
             </div>
@@ -792,7 +792,7 @@ $pays_eligibles = [
                 
                 <?php if (!empty($code_parrain)): ?>
                     <div class="referral-notice">
-                        <i class="fas fa-user-friends"></i> Vous êtes invité par un membre TESLA Technologie
+                        <i class="fas fa-user-friends"></i> Vous êtes invité par un membre Allianz Investissement
                     </div>
                 <?php endif; ?>
                 
@@ -800,7 +800,7 @@ $pays_eligibles = [
                     <i class="fas fa-gift"></i> Bonus de bienvenue : 250 FCFA offerts !
                 </div>
                 
-                <h2 class="form-title">Rejoignez TESLA</h2>
+                <h2 class="form-title">Rejoignez Allianz</h2>
                 
                 <form action="inscription1.php" method="post" id="signup-form">
                     <div class="form-group">
@@ -850,7 +850,7 @@ $pays_eligibles = [
                 </form>
                 
                 <div class="login-link">
-                    <p class="login-text">Déjà membre TESLA?</p>
+                    <p class="login-text">Déjà membre Allianz?</p>
                     <a href="connexion.php" class="btn-login-form">
                         <i class="fas fa-sign-in-alt"></i> SE CONNECTER
                     </a>

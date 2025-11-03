@@ -49,10 +49,10 @@ $devise = ($_SESSION['pays'] ?? 'Cameroun') == 'Cameroun' ? 'XAF' : 'XOF';
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     
     <style>
-        /* --- NOUVEAU THÈME TESLA --- */
+        /* --- NOUVEAU THÈME Allianz --- */
         :root {
             --primary-white: #ffffff;
-            --accent-green: #E82127; /* Rouge TESLA */
+            --accent-green: #0038A8; /* Rouge Allianz */
             --background-dark: #0f1c1f; /* Noir très foncé/anthracite */
             --button-red: #ff0000;
             --error: #ef4444; /* Rouge pour le temps restant */
@@ -95,7 +95,7 @@ $devise = ($_SESSION['pays'] ?? 'Cameroun') == 'Cameroun' ? 'XAF' : 'XOF';
             display: flex;
             justify-content: space-around;
             padding: 10px 0;
-            border: 5px solid var(--accent-green); /* Cadre rouge TESLA */
+            border: 5px solid var(--accent-green); /* Cadre rouge Allianz */
             border-radius: 8px;
             background: #111;
         }
@@ -146,11 +146,11 @@ $devise = ($_SESSION['pays'] ?? 'Cameroun') == 'Cameroun' ? 'XAF' : 'XOF';
             pointer-events: none;
         }
         
-        /* Bouton Spin - Rouge TESLA */
+        /* Bouton Spin - Rouge Allianz */
         .spin-button {
             width: 100%;
             max-width: 200px;
-            background: var(--accent-green); /* Rouge TESLA */
+            background: var(--accent-green); /* Rouge Allianz */
             color: var(--primary-white);
             border: none;
             padding: 15px 30px;
@@ -173,7 +173,7 @@ $devise = ($_SESSION['pays'] ?? 'Cameroun') == 'Cameroun' ? 'XAF' : 'XOF';
         .solde-display {
             font-size: 16px;
             font-weight: 600;
-            color: var(--accent-green); /* Solde en rouge TESLA */
+            color: var(--accent-green); /* Solde en rouge Allianz */
             margin-bottom: 20px;
         }
         
@@ -230,7 +230,7 @@ $devise = ($_SESSION['pays'] ?? 'Cameroun') == 'Cameroun' ? 'XAF' : 'XOF';
         
         .result-icon {
             font-size: 50px;
-            color: var(--accent-green); /* Icône en rouge TESLA */
+            color: var(--accent-green); /* Icône en rouge Allianz */
             margin-bottom: 15px;
             animation: bounce 0.8s infinite alternate;
         }
@@ -243,7 +243,7 @@ $devise = ($_SESSION['pays'] ?? 'Cameroun') == 'Cameroun' ? 'XAF' : 'XOF';
         .result-title {
             font-size: 24px;
             font-weight: 700;
-            color: var(--accent-green); /* Titre en rouge TESLA */
+            color: var(--accent-green); /* Titre en rouge Allianz */
             margin-bottom: 10px;
         }
         

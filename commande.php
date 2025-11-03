@@ -35,17 +35,17 @@ function joursRestants($date_fin) {
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <title>Mes Portefeuilles - TESLA Technologies</title>
+    <title>Mes Portefeuilles - Allianz Investissements</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght=600;700&display=swap" rel="stylesheet">
     <style>
-        /* Couleurs et Thème TESLA */
+        /* Couleurs et Thème Allianz */
         :root {
             --primary-black: #000000;
             --soft-black: #1a1a1a;
             --warm-gray: #1f1f1f;
             --dark-gray: #333333;
-            --accent-green: #E82127; /* Rouge TESLA */
+            --accent-green: #0038A8; /* Rouge Allianz */
             --green-light: #90d800;
             --green-dark: #5c8e00;
             --text-light-green: #90ff00;
@@ -58,7 +58,7 @@ function joursRestants($date_fin) {
             --warning: #f59e0b;
             --error: #ef4444;
             --transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-            --tesla-green: #E82127;
+            --tesla-green: #0038A8;
             --deep-black: #000000;
         }
         
@@ -88,7 +88,7 @@ function joursRestants($date_fin) {
             -webkit-user-select: none;
         }
         
-        /* Arrière-plan inspiré TESLA - Thème sombre */
+        /* Arrière-plan inspiré Allianz - Thème sombre */
         .background {
             position: fixed;
             top: 0;
@@ -119,7 +119,7 @@ function joursRestants($date_fin) {
         }
         
         .blue-accent, .purple-accent {
-            display: none; /* Supprimé ou remplacé pour le thème TESLA */
+            display: none; /* Supprimé ou remplacé pour le thème Allianz */
         }
 
         .green-accent-corner {
@@ -182,7 +182,7 @@ function joursRestants($date_fin) {
             transition: all 0.3s ease;
             position: relative;
             overflow: hidden;
-            /* Style inspiré du symbole de l'œil TESLA */
+            /* Style inspiré du symbole de l'œil Allianz */
             border: 2px solid var(--primary-black); 
         }
         
@@ -544,7 +544,7 @@ function joursRestants($date_fin) {
             <div class="logo">
                 <div class="logo-icon">N</div>
                 <div>
-                    <div class="logo-text">TESLA</div>
+                    <div class="logo-text">Allianz</div>
                     <div class="logo-subtext">TECHNOLOGIES</div>
                 </div>
             </div>
@@ -563,7 +563,7 @@ function joursRestants($date_fin) {
                 <div class="no-portfolios">
                     <i class="fas fa-folder-open"></i>
                     <h3>Aucun investissement actif</h3>
-                    <p>Vous n'avez pas encore créé d'action d'investissement avec TESLA Technologies.</p>
+                    <p>Vous n'avez pas encore créé d'action d'investissement avec Allianz Investissements.</p>
                     <a href="investissement.php" class="invest-btn">INVESTIR MAINTENANT</a>
                 </div>
             <?php else: ?>

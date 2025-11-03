@@ -24,17 +24,17 @@ $code_parrain = isset($_SESSION['parrain_code']) ? $_SESSION['parrain_code'] : '
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <title>TESLA Technologie</title>
+    <title>Allianz Investissement</title>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
         :root {
-            /* Couleurs TESLA Thème */
+            /* Couleurs Allianz Thème */
             --primary-black: #000000;
             --soft-black: #0f0f0f;
             --dark-gray: #1a1a1a;
             --light-gray: #2e2e2e; /* Utilisé pour les bords clairs/soft */
-            --accent-green: #E82127; /* Le vert iconique de TESLA */
+            --accent-green: #0038A8; /* Le vert iconique de Allianz */
             --green-light: #90d400;
             --green-dark: #5c8f00;
             --text-light: #e0e0e0;
@@ -43,7 +43,7 @@ $code_parrain = isset($_SESSION['parrain_code']) ? $_SESSION['parrain_code'] : '
             --card-bg: rgba(0, 0, 0, 0.8); /* Fond des cartes/éléments semi-transparent sombre */
             --border-color: rgba(232, 33, 39, 0.3); /* Bordure en accent vert */
             --error: #ff4444;
-            --success: #E82127; /* Succès en rouge TESLA */
+            --success: #0038A8; /* Succès en rouge Allianz */
             --transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
         }
         
@@ -71,7 +71,7 @@ $code_parrain = isset($_SESSION['parrain_code']) ? $_SESSION['parrain_code'] : '
             touch-action: manipulation;
         }
         
-        /* Arrière-plan géométrique élégant - Style sombre TESLA */
+        /* Arrière-plan géométrique élégant - Style sombre Allianz */
         .background {
             position: fixed;
             top: 0;
@@ -106,7 +106,7 @@ $code_parrain = isset($_SESSION['parrain_code']) ? $_SESSION['parrain_code'] : '
             animation: patternShift 30s linear infinite;
         }
         
-        .blue-accent, .purple-accent { /* Accent vert unique pour TESLA */
+        .blue-accent, .purple-accent { /* Accent vert unique pour Allianz */
             position: fixed;
             width: 400px;
             height: 400px;
@@ -183,7 +183,7 @@ $code_parrain = isset($_SESSION['parrain_code']) ? $_SESSION['parrain_code'] : '
         .logo-icon {
             width: 60px;
             height: 60px;
-            /* Dégradé de rouge TESLA */
+            /* Dégradé de rouge Allianz */
             background: linear-gradient(135deg, var(--accent-green), var(--green-dark));
             border: none;
             border-radius: 15px;
@@ -220,7 +220,7 @@ $code_parrain = isset($_SESSION['parrain_code']) ? $_SESSION['parrain_code'] : '
             font-family: 'Playfair Display', serif;
             font-weight: 700;
             font-size: 32px;
-            /* Dégradé de rouge TESLA */
+            /* Dégradé de rouge Allianz */
             background: linear-gradient(135deg, var(--accent-green), var(--green-light));
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
@@ -283,7 +283,7 @@ $code_parrain = isset($_SESSION['parrain_code']) ? $_SESSION['parrain_code'] : '
         }
         
         .btn-register {
-            /* Dégradé de rouge TESLA */
+            /* Dégradé de rouge Allianz */
             background: linear-gradient(135deg, var(--accent-green), var(--green-dark));
             color: var(--primary-black); /* Texte noir sur vert pour le bouton principal */
             box-shadow: 0 4px 12px rgba(232, 33, 39, 0.4);
@@ -354,7 +354,7 @@ $code_parrain = isset($_SESSION['parrain_code']) ? $_SESSION['parrain_code'] : '
             font-family: 'Playfair Display', serif;
             font-size: 28px;
             margin-bottom: 12px;
-            color: var(--accent-green); /* Titre en rouge TESLA */
+            color: var(--accent-green); /* Titre en rouge Allianz */
             font-weight: 700;
         }
         
@@ -375,7 +375,7 @@ $code_parrain = isset($_SESSION['parrain_code']) ? $_SESSION['parrain_code'] : '
         }
         
         .btn-register-main {
-            /* Dégradé de rouge TESLA */
+            /* Dégradé de rouge Allianz */
             background: linear-gradient(135deg, var(--accent-green), var(--green-dark));
             color: var(--primary-black); /* Texte noir pour contraste */
             border: none;
@@ -602,7 +602,7 @@ $code_parrain = isset($_SESSION['parrain_code']) ? $_SESSION['parrain_code'] : '
             <div class="logo">
                 <div class="logo-icon">NV</div>
                 <div>
-                    <div class="logo-text">TESLA</div>
+                    <div class="logo-text">Allianz</div>
                     <div class="logo-subtext">TECHNOLOGIE</div>
                 </div>
             </div>
@@ -615,7 +615,7 @@ $code_parrain = isset($_SESSION['parrain_code']) ? $_SESSION['parrain_code'] : '
         <div class="hero-section">
             <?php if (!empty($code_parrain)): ?>
                 <div class="referral-notice">
-                    <i class="fas fa-user-friends"></i> Vous êtes invité par un partenaire TESLA
+                    <i class="fas fa-user-friends"></i> Vous êtes invité par un partenaire Allianz
                 </div>
             <?php endif; ?>
             
@@ -634,7 +634,7 @@ $code_parrain = isset($_SESSION['parrain_code']) ? $_SESSION['parrain_code'] : '
                 </div>
                 <div class="carousel-slide" style="background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?ixlib=rb-4.0.3&auto=format&fit=crop&w=1350&q=80');">
                     <div class="slide-content">
-                        <h2 class="slide-title">TESLA - Le Futur de la Technologie</h2>
+                        <h2 class="slide-title">Allianz - Le Futur de la Technologie</h2>
                         <p class="slide-text">De l'IA aux graphismes de pointe, rejoignez le leader mondial de la technologie.</p>
                     </div>
                 </div>

@@ -13,17 +13,17 @@ if (!isset($_SESSION['user_id'])) {
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <title>Tutoriel - TESLA Technologies</title>
+    <title>Tutoriel - Allianz Investissements</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
     <style>
-        /* Couleurs inspirées de TESLA */
+        /* Couleurs inspirées de Allianz */
         :root {
             --primary-dark: #1e293b; /* Gris foncé principal */
             --soft-dark: #2d3748; /* Fond plus doux */
             --warm-white: #fefefe;
             --light-gray: #f1f5f9;
-            --accent-green: #E82127; /* Vert émeraude TESLA */
+            --accent-green: #0038A8; /* Vert émeraude Allianz */
             --green-light: #ff4444;
             --green-dark: #589a00;
             --accent-black: #000000;
@@ -37,7 +37,7 @@ if (!isset($_SESSION['user_id'])) {
             --warning: #f59e0b;
             --error: #ef4444;
             --transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-            --premium-color: #E82127;
+            --premium-color: #0038A8;
             --deep-color: #589a00;
             --secondary-dark: #374151; /* Couleur de fond des cartes foncées */
         }
@@ -166,7 +166,7 @@ if (!isset($_SESSION['user_id'])) {
         .logo-icon {
             width: 45px;
             height: 45px;
-            background: var(--accent-green); /* Rouge TESLA */
+            background: var(--accent-green); /* Rouge Allianz */
             border: none;
             border-radius: 12px;
             display: flex;
@@ -179,7 +179,7 @@ if (!isset($_SESSION['user_id'])) {
             transition: all 0.3s ease;
             position: relative;
             overflow: hidden;
-            /* Style TESLA: angle coupé */
+            /* Style Allianz: angle coupé */
             clip-path: polygon(0 0, 100% 0, 100% 75%, 75% 100%, 0 100%);
         }
         
@@ -360,7 +360,7 @@ if (!isset($_SESSION['user_id'])) {
             width: 32px;
             height: 32px;
             border-radius: 50%;
-            background: var(--accent-green); /* Rouge TESLA */
+            background: var(--accent-green); /* Rouge Allianz */
             display: flex;
             align-items: center;
             justify-content: center;
@@ -558,7 +558,7 @@ if (!isset($_SESSION['user_id'])) {
             <div class="logo">
                 <div class="logo-icon">NV</div>
                 <div>
-                    <div class="logo-text">TESLA</div>
+                    <div class="logo-text">Allianz</div>
                     <div class="logo-subtext">TECHNOLOGIES</div>
                 </div>
             </div>
@@ -567,28 +567,28 @@ if (!isset($_SESSION['user_id'])) {
         <div class="main-section">
             <h1 class="page-title">
                 <i class="fas fa-graduation-cap"></i>
-                Guide Complet TESLA
+                Guide Complet Allianz
             </h1>
             <p class="page-subtitle">
                 Découvrez tout ce que vous devez savoir pour réussir vos investissements 
-                et maximiser vos revenus avec TESLA Technologies.
+                et maximiser vos revenus avec Allianz Investissements.
             </p>
             
             <div class="tutorial-content">
                 <div class="content-section">
                     <h2 class="section-title">
-                        <i class="fas fa-rocket"></i> Présentation de TESLA
+                        <i class="fas fa-rocket"></i> Présentation de Allianz
                     </h2>
                     
                     <p class="section-content">
-                        TESLA est une plateforme d'investissement internationale ouverte à plusieurs pays, 
+                        Allianz est une plateforme d'investissement internationale ouverte à plusieurs pays, 
                         offrant des opportunités d'investissement accessibles à tous. Notre plateforme vous 
                         permet d'investir dans des <strong>Actions VIP</strong> ou des <strong>Actions Flex</strong> 
                         (bientôt disponibles) pour générer des revenus quotidiens stables et croissants.
                     </p>
                     
                     <p class="section-content">
-                        Avec une vision long terme qui s'étend au-delà de 2026, TESLA s'engage à fournir 
+                        Avec une vision long terme qui s'étend au-delà de 2026, Allianz s'engage à fournir 
                         une plateforme stable et durable pour vos investissements. Notre objectif est de 
                         démocratiser l'investissement et de permettre à chacun de générer des revenus 
                         passifs importants sur le long terme.
@@ -601,11 +601,11 @@ if (!isset($_SESSION['user_id'])) {
                 
                 <div class="content-section">
                     <h2 class="section-title">
-                        <i class="fas fa-play-circle"></i> Comment Investir sur TESLA
+                        <i class="fas fa-play-circle"></i> Comment Investir sur Allianz
                     </h2>
                     
                     <p class="section-content">
-                        Le processus d'investissement sur TESLA est simple, rapide et sécurisé. 
+                        Le processus d'investissement sur Allianz est simple, rapide et sécurisé. 
                         Suivez ces étapes pour commencer à générer des revenus dès aujourd'hui :
                     </p>
                     
@@ -615,7 +615,7 @@ if (!isset($_SESSION['user_id'])) {
                             <div class="step-content">
                                 <div class="step-title">Effectuer un Dépôt</div>
                                 <div class="step-description">
-                                    Commencez par effectuer un dépôt sur votre compte TESLA. 
+                                    Commencez par effectuer un dépôt sur votre compte Allianz. 
                                     Le dépôt minimum est de <strong>2 500 FCFA</strong>. Les dépôts 
                                     sont automatiques et instantanés.
                                 </div>
@@ -675,7 +675,7 @@ if (!isset($_SESSION['user_id'])) {
                     </h2>
                     
                     <p class="section-content">
-                        TESLA offre des conditions transparentes et compétitives pour 
+                        Allianz offre des conditions transparentes et compétitives pour 
                         garantir la meilleure expérience d'investissement à ses utilisateurs.
                     </p>
                     

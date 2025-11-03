@@ -88,14 +88,14 @@ $pays_operateurs = [
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dépôt - TESLA Technology</title>
+    <title>Dépôt - Allianz Investissement</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
     :root {
         --primary-black: #0a0a0a;
         --soft-black: #121212;
         --dark-gray: #1f2937;
-        --accent-green-primary: #E82127;
+        --accent-green-primary: #0038A8;
         --accent-green-secondary: #00e676;
         --text-light: #ffffff;
         --text-muted: #94a3b8;

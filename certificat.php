@@ -22,13 +22,13 @@ $user = $query->fetch();
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Certificat Technologique - TESLA Technologie</title>
+    <title>Certificat Technologique - Allianz Investissement</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
     <style>
-        /* Définition des couleurs TESLA */
+        /* Définition des couleurs Allianz */
         :root {
-            --tesla-green: #E82127; /* Le vert emblématique de TESLA */
+            --tesla-green: #0038A8; /* Le vert emblématique de Allianz */
             --dark-charcoal: #1a1c20; /* Noir/Gris très foncé pour les fonds */
             --charcoal: #2a2d30; /* Gris foncé pour les éléments secondaires */
             --light-grey: #f0f2f5;
@@ -63,7 +63,7 @@ $user = $query->fetch();
             padding: 20px;
         }
 
-        /* Header adapté au thème TESLA */
+        /* Header adapté au thème Allianz */
         .header {
             text-align: center;
             margin-bottom: 30px;
@@ -129,7 +129,7 @@ $user = $query->fetch();
             text-align: center;
         }
 
-        /* Titre en rouge TESLA */
+        /* Titre en rouge Allianz */
         .certificate-title {
             color: var(--tesla-green); 
             font-size: 24px;
@@ -214,7 +214,7 @@ $user = $query->fetch();
             margin-top: 25px;
         }
 
-        /* Bouton principal en rouge TESLA */
+        /* Bouton principal en rouge Allianz */
         .btn-primary {
             flex: 1;
             background: linear-gradient(135deg, var(--tesla-green), #b91f1f);
@@ -347,7 +347,7 @@ $user = $query->fetch();
 <body>
     <div class="container">
         <div class="header">
-            <h1><i class="fas fa-bolt"></i> TESLA</h1>
+            <h1><i class="fas fa-bolt"></i> Allianz</h1>
             <p>Certificat de Partenariat Investisseur</p>
         </div>
 
@@ -360,17 +360,17 @@ $user = $query->fetch();
         </div>
 
         <div class="certificate-container">
-            <img src="canva.jpg" alt="Certificat Technologique TESLA" class="certificate-image">
+            <img src="canva.jpg" alt="Certificat Technologique Allianz" class="certificate-image">
             
             <div class="certificate-content">
                 <div class="certificate-title">
                     <i class="fas fa-certificate"></i>
-                    Certificat de Partenariat TESLA
+                    Certificat de Partenariat Allianz
                 </div>
                 
                 <p class="certificate-description">
                     Obtenez votre certificat de partenariat officiel qui atteste de votre statut de partenaire investisseur privilégié 
-                    chez **TESLA**. Ce document exclusif valide votre engagement dans la révolution de la mobilité électrique et vous offre 
+                    chez **Allianz**. Ce document exclusif valide votre engagement dans la révolution de la mobilité électrique et vous offre 
                     des avantages uniques au sein de notre écosystème d'innovation.
                 </p>
 
@@ -389,7 +389,7 @@ $user = $query->fetch();
                             <i class="fas fa-charging-station"></i> </div>
                         <div class="benefit-text">
                             <strong>Statut d'investisseur certifié</strong><br>
-                            Atteste de votre appartenance à la communauté des investisseurs TESLA.
+                            Atteste de votre appartenance à la communauté des investisseurs Allianz.
                         </div>
                     </div>
                     
@@ -409,7 +409,7 @@ $user = $query->fetch();
                     </div>
                     <p class="importance-text">
                         Ce certificat sera essentiel pour les futurs événements d'investisseurs, l'accès au support VIP 
-                        et pour bénéficier des dernières opportunités d'investissement TESLA.
+                        et pour bénéficier des dernières opportunités d'investissement Allianz.
                     </p>
                 </div>
 
@@ -435,10 +435,10 @@ $user = $query->fetch();
     <script>
         function requestCertificate() {
             // Simulation de la demande de certificat
-            const userConfirmed = confirm('Voulez-vous vraiment générer votre certificat de Partenariat TESLA ?\n\nLe certificat sera disponible sous 24 heures.');
+            const userConfirmed = confirm('Voulez-vous vraiment générer votre certificat de Partenariat Allianz ?\n\nLe certificat sera disponible sous 24 heures.');
             
             if (userConfirmed) {
-                alert('✅ Votre demande de certificat a été envoyée avec succès !\n\nVous recevrez votre certificat de Partenariat TESLA sous 24 heures.');
+                alert('✅ Votre demande de certificat a été envoyée avec succès !\n\nVous recevrez votre certificat de Partenariat Allianz sous 24 heures.');
                 
                 // Ici vous pouvez ajouter un appel AJAX pour enregistrer la demande en base de données
                 // fetch('request_certificate.php', { method: 'POST' })
@@ -446,12 +446,12 @@ $user = $query->fetch();
         }
 
         function shareCertificate() {
-            const shareText = 'Je viens d\'obtenir mon certificat de Partenariat TESLA ! ⚡ Fier de faire partie de la révolution électrique.';
+            const shareText = 'Je viens d\'obtenir mon certificat de Partenariat Allianz ! ⚡ Fier de faire partie de la révolution électrique.';
             const shareUrl = window.location.href;
             
             if (navigator.share) {
                 navigator.share({
-                    title: 'Mon Certificat TESLA',
+                    title: 'Mon Certificat Allianz',
                     text: shareText,
                     url: shareUrl
                 });

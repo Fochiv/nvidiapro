@@ -116,15 +116,15 @@ $methodes_noms = [
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portefeuille - TESLA Technologie</title>
+    <title>Portefeuille - Allianz Investissement</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
     :root {
-        /* Couleurs TESLA */
+        /* Couleurs Allianz */
         --primary-white: #ffffff;
         --soft-white: #f8fafc;
         --light-gray: #f1f5f9;
-        --accent-green: #E82127; /* Rouge TESLA */
+        --accent-green: #0038A8; /* Rouge Allianz */
         --green-light: #ff4444;
         --green-dark: #5a8a00;
         --accent-cyan: #00CC7C; /* Cyan secondaire */
@@ -389,7 +389,7 @@ $methodes_noms = [
     .info-card h2 {
         font-size: 18px;
         font-weight: 700;
-        color: var(--accent-green); /* Couleur TESLA */
+        color: var(--accent-green); /* Couleur Allianz */
         margin-bottom: 15px;
         display: flex;
         align-items: center;
@@ -494,7 +494,7 @@ $methodes_noms = [
     }
     
     .submit-btn {
-        /* Dégradé Vert/Cyan TESLA */
+        /* Dégradé Vert/Cyan Allianz */
         background: linear-gradient(135deg, var(--accent-green), var(--accent-cyan));
         color: var(--dark-bg); /* Texte très foncé sur bouton clair */
         border: none;
@@ -762,7 +762,7 @@ $methodes_noms = [
         <div class="header">
             <div class="header-logo">
                 <div class="logo-icon">NV</div> <div>
-                    <div class="logo-text">TESLA</div>
+                    <div class="logo-text">Allianz</div>
                     <div class="logo-subtext">Technologie</div>
                 </div>
             </div>
@@ -774,7 +774,7 @@ $methodes_noms = [
             
             <div class="header-content">
                 <h1>Mon Portefeuille</h1>
-                <p>Gérez votre compte de retrait TESLA Technologie</p>
+                <p>Gérez votre compte de retrait Allianz Investissement</p>
             </div>
         </div>
         
@@ -799,11 +799,11 @@ $methodes_noms = [
                     Information importante
                 </h2>
                 <p>
-                    Cette page vous permet d'enregistrer votre portefeuille de retrait **TESLA Technologie**. 
+                    Cette page vous permet d'enregistrer votre portefeuille de retrait **Allianz Investissement**. 
                     C'est le compte sur lequel vous allez recevoir vos retraits.
                 </p>
                 <p style="margin-top: 10px; font-size: 13px; color: var(--error);">
-                    <strong>Attention :</strong> En cas d'erreur dans le numéro, TESLA Technologie ne peut pas être tenu responsable.
+                    <strong>Attention :</strong> En cas d'erreur dans le numéro, Allianz Investissement ne peut pas être tenu responsable.
                 </p>
             </div>
             

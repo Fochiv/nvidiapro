@@ -119,14 +119,14 @@ $custom_id = $user['code_parrainage'];
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Compte - TESLA</title>
+    <title>Compte - Allianz</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
     :root {
         --primary-black: #0a0a0a; /* Fond principal */
         --soft-black: #121212; /* Fond du corps */
         --dark-gray: #1f2937; /* Couleur secondaire foncée */
-        --accent-green-primary: #E82127; /* TESLA Green */
+        --accent-green-primary: #0038A8; /* Allianz Green */
         --accent-green-secondary: #00e676; /* Neon Green pour les gradients/succès */
         --text-light: #ffffff; /* Couleur de texte principale */
         --text-muted: #94a3b8; /* Couleur de texte secondaire */
@@ -1079,7 +1079,7 @@ $custom_id = $user['code_parrainage'];
             <div class="header-logo">
                 <div class="logo-icon">NV</div>
                 <div>
-                    <div class="logo-text">TESLA</div>
+                    <div class="logo-text">Allianz</div>
                     <div class="logo-subtext">TECHNOLOGIE</div>
                 </div>
             </div>

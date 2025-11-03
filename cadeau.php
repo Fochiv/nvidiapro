@@ -33,7 +33,7 @@ $filleuls_inscrits = $stmt->fetchColumn();
 if ($filleuls_actifs >= 10 || $filleuls_inscrits >= 50) {
     $est_eligible = true;
 } else {
-    $message_eligibilite = "Pour créer vos propres codes cadeau, vous devez avoir soit 10 filleuls actifs (ayant investi), soit 50 filleuls inscrits sur TESLA Technologies.";
+    $message_eligibilite = "Pour créer vos propres codes cadeau, vous devez avoir soit 10 filleuls actifs (ayant investi), soit 50 filleuls inscrits sur Allianz Investissements.";
 }
 
 // Gestion de l'utilisation d'un code cadeau
@@ -99,17 +99,17 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['creer_code'])) {
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
-    <title>Cadeaux - TESLA Technologies</title>
+    <title>Cadeaux - Allianz Investissements</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <style>
-        /* Définition des couleurs TESLA */
+        /* Définition des couleurs Allianz */
         :root {
             --primary-black: #121212; /* Fond sombre */
             --soft-dark: #1e1e1e;
             --light-gray: #333333; /* Fond des cartes/éléments */
-            --accent-green: #E82127; /* Rouge TESLA principal */
+            --accent-green: #0038A8; /* Rouge Allianz principal */
             --green-light: #94d82f;
             --green-dark: #aa1111;
             --accent-blue: #3b82f6; /* Garde le bleu pour certaines alertes/éléments secondaires */
@@ -479,7 +479,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['creer_code'])) {
         }
         
         .alert.success {
-            /* Succès en rouge TESLA */
+            /* Succès en rouge Allianz */
             background: rgba(232, 33, 39, 0.15);
             border: 1px solid rgba(232, 33, 39, 0.3);
             color: var(--accent-green);
@@ -568,7 +568,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['creer_code'])) {
             <div class="logo">
                 <div class="logo-icon">NV</div>
                 <div>
-                    <div class="logo-text">TESLA Technologies</div>
+                    <div class="logo-text">Allianz Investissements</div>
                     <div class="logo-subtext">CADEAUX</div>
                 </div>
             </div>
@@ -661,7 +661,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['creer_code'])) {
             <form method="POST">
                 <div class="form-group">
                     <label class="form-label" for="code_cadeau">Code cadeau</label>
-                    <input type="text" id="code_cadeau" name="code_cadeau" class="form-input" placeholder="Ex: TESLA2025" required>
+                    <input type="text" id="code_cadeau" name="code_cadeau" class="form-input" placeholder="Ex: Allianz2025" required>
                 </div>
                 
                 <button type="submit" class="submit-btn">

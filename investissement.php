@@ -44,18 +44,18 @@ foreach ($plans_corriges as &$plan) {
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Investissement - TESLA Technologie</title>
+    <title>Investissement - Allianz Investissement</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
     :root {
-        /* Couleurs TESLA / Thème Sombre */
+        /* Couleurs Allianz / Thème Sombre */
         --primary-white: #ffffff;
         --soft-white: #f8fafc;
         --warm-white: #fefefe;
         --light-gray: #f1f5f9;
 
-        /* Couleurs TESLA */
-        --tesla-green: #E82127; /* Vert signature */
+        /* Couleurs Allianz */
+        --tesla-green: #0038A8; /* Vert signature */
         --tesla-dark-green: #588A00;
         --accent-dark: #1e293b; /* Bleu très foncé pour le contraste */
         --dark-bg: #0f172a; /* Fond très sombre */
@@ -975,7 +975,7 @@ foreach ($plans_corriges as &$plan) {
     <div class="container">
         <div class="header">
             <div class="header-content">
-                <h1>TESLA Technologie</h1>
+                <h1>Allianz Investissement</h1>
                 <p>Développez votre patrimoine avec des actions de pointe</p>
             </div>
             

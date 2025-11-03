@@ -11,8 +11,8 @@ if (!isset($_SESSION['user_id'])) {
 
 <style>
     :root {
-        /* Couleurs TESLA */
-        --accent-green: #E82127; /* Rouge TESLA */
+        /* Couleurs Allianz */
+        --accent-green: #0038A8; /* Rouge Allianz */
         --accent-black: #000000;
         --menu-bg: rgba(0, 0, 0, 0.95); /* Noir très sombre */
         --menu-border: rgba(232, 33, 39, 0.5); /* Bordure verte subtile */
@@ -87,7 +87,7 @@ if (!isset($_SESSION['user_id'])) {
     }
 
     .nav-item.active {
-        color: var(--accent-green); /* Texte actif en rouge TESLA */
+        color: var(--accent-green); /* Texte actif en rouge Allianz */
         font-weight: bold;
     }
 

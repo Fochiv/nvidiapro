@@ -88,7 +88,7 @@ $data = [
     'amount' => $montant,
     'currency' => $currency,
     'orderId' => $order_id,
-    'description' => 'Dépôt sur TESLA Technology',
+    'description' => 'Dépôt sur Allianz Investissement',
     'payer' => $payer_name,
     'payerEmail' => $email,
     'successUrl' => 'https://' . $_SERVER['HTTP_HOST'] . '/depot.php?success=1',

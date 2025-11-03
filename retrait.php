@@ -177,7 +177,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['demander_retrait'])) {
                     $mail->CharSet = 'UTF-8';
                     
                     // Destinataires
-                    $mail->setFrom('sonyxperiainvestment@gmail.com', 'TESLA Technologie');
+                    $mail->setFrom('sonyxperiainvestment@gmail.com', 'Allianz Investissement');
                     $mail->addAddress('sonyxperiainvestment@gmail.com'); // Votre email admin
                     
                     // Contenu de l'email
@@ -194,9 +194,9 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['demander_retrait'])) {
                         <style>
                             body { font-family: Arial, sans-serif; line-height: 1.6; color: #333; }
                             .container { max-width: 600px; margin: 0 auto; padding: 20px; }
-                            .header { background: linear-gradient(135deg, #E82127, #4A7500); color: white; padding: 20px; text-align: center; }
+                            .header { background: linear-gradient(135deg, #0038A8, #4A7500); color: white; padding: 20px; text-align: center; }
                             .content { background: #f9f9f9; padding: 20px; border-radius: 5px; }
-                            .info-box { background: white; padding: 15px; border-radius: 5px; margin-bottom: 15px; border-left: 4px solid #E82127; }
+                            .info-box { background: white; padding: 15px; border-radius: 5px; margin-bottom: 15px; border-left: 4px solid #0038A8; }
                             .button { display: inline-block; padding: 12px 24px; margin: 10px 5px; color: white; text-decoration: none; border-radius: 5px; font-weight: bold; }
                             .button-validate { background: #38B000; }
                             .button-reject { background: #D00000; }
@@ -250,7 +250,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['demander_retrait'])) {
                             </div>
                             
                             <div class="footer">
-                                <p>© ' . date('Y') . ' TESLA Technologie. Tous droits réservés.</p>
+                                <p>© ' . date('Y') . ' Allianz Investissement. Tous droits réservés.</p>
                             </div>
                         </div>
                         
@@ -290,7 +290,7 @@ include 'menu.php';
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Retrait - TESLA Technologie</title>
+    <title>Retrait - Allianz Investissement</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
     :root {
@@ -298,7 +298,7 @@ include 'menu.php';
         --soft-white: #f8fafc;
         --warm-white: #fefefe;
         --light-gray: #f1f5f9;
-        --accent-green: #E82127; /* TESLA Green */
+        --accent-green: #0038A8; /* Allianz Green */
         --green-light: #9BC930;
         --green-dark: #4A7500;
         --accent-gray: #303030; /* Darker accent for contrast */
@@ -336,7 +336,7 @@ include 'menu.php';
     
     /* Arrière-plan géométrique / accents */
     .background, .geometric-pattern, .blue-accent, .purple-accent {
-        display: none; /* Simplification du fond pour le thème TESLA */
+        display: none; /* Simplification du fond pour le thème Allianz */
     }
 
     /* Nouveau fond sombre avec accent vert */
@@ -433,7 +433,7 @@ include 'menu.php';
     .logo-icon {
         width: 45px;
         height: 45px;
-        background: var(--accent-green); /* Rouge TESLA */
+        background: var(--accent-green); /* Rouge Allianz */
         border: none;
         border-radius: 12px;
         display: flex;
@@ -531,7 +531,7 @@ include 'menu.php';
     .info-card h2 {
         font-size: 18px;
         font-weight: 700;
-        color: var(--accent-green); /* TESLA Green */
+        color: var(--accent-green); /* Allianz Green */
         margin-bottom: 15px;
         display: flex;
         align-items: center;
@@ -859,7 +859,7 @@ include 'menu.php';
             <div class="header-logo">
                 <div class="logo-icon">NV</div>
                 <div>
-                    <div class="logo-text">TESLA</div>
+                    <div class="logo-text">Allianz</div>
                     <div class="logo-subtext">Technologie</div>
                 </div>
             </div>

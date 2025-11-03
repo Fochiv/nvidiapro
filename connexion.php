@@ -105,14 +105,14 @@ unset($_SESSION['form_data']); // Nettoyer après récupération
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <title>Connexion - TESLA Technologie</title>
+    <title>Connexion - Allianz Investissement</title>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
         :root {
-            /* Couleurs TESLA */
-            --tesla-green: #E82127; /* Rouge TESLA */
-            --tesla-black: #000000; /* Noir TESLA */
+            /* Couleurs Allianz */
+            --tesla-green: #0038A8; /* Rouge Allianz */
+            --tesla-black: #000000; /* Noir Allianz */
             --primary-white: #ffffff;
             
             /* Couleurs de fond/texte inversées pour le thème sombre */
@@ -151,7 +151,7 @@ unset($_SESSION['form_data']); // Nettoyer après récupération
             touch-action: manipulation;
         }
         
-        /* Arrière-plan stylisé TESLA (plus sombre) */
+        /* Arrière-plan stylisé Allianz (plus sombre) */
         .background {
             position: fixed;
             top: 0;
@@ -227,7 +227,7 @@ unset($_SESSION['form_data']); // Nettoyer après récupération
             animation: fadeIn 1.2s ease-out;
         }
         
-        /* Header TESLA */
+        /* Header Allianz */
         .header {
             display: flex;
             justify-content: center;
@@ -563,7 +563,7 @@ unset($_SESSION['form_data']); // Nettoyer après récupération
             <div class="logo">
                 <div class="logo-icon">NV</div>
                 <div>
-                    <div class="logo-text">TESLA</div>
+                    <div class="logo-text">Allianz</div>
                     <div class="logo-subtext">TECHNOLOGIE</div>
                 </div>
             </div>
@@ -580,7 +580,7 @@ unset($_SESSION['form_data']); // Nettoyer après récupération
                 <?php endif; ?>
                 
                 <div class="welcome-message">
-                    <i class="fas fa-microchip"></i> Accédez à votre console TESLA
+                    <i class="fas fa-microchip"></i> Accédez à votre console Allianz
                 </div>
                 
                 <h2 class="form-title">Connectez-vous</h2>
@@ -614,7 +614,7 @@ unset($_SESSION['form_data']); // Nettoyer après récupération
                 </form>
                 
                 <div class="signup-link">
-                    <p class="signup-text">Pas encore un utilisateur TESLA?</p>
+                    <p class="signup-text">Pas encore un utilisateur Allianz?</p>
                     <a href="inscription1.php" class="btn-signup-form">
                         <i class="fas fa-user-plus"></i> CRÉER UN COMPTE
                     </a>

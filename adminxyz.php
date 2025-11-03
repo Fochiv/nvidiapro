@@ -1616,16 +1616,22 @@ $section = $_GET['section'] ?? 'dashboard';
                         <div id="balanceResult">
                             <?php if (isset($_GET['search_user']) && !empty($_GET['search_user'])): ?>
                                 <?php
-                                $search_term = $_GET['search_user'];
-                                $stmt = $db->prepare("
-                                    SELECT u.id, u.nom, u.telephone, s.solde 
-                                    FROM utilisateurs u 
-                                    LEFT JOIN soldes s ON u.id = s.user_id 
-                                    WHERE u.id LIKE ? OR u.nom LIKE ? OR u.telephone LIKE ?
-                                ");
-                                $search_param = "%$search_term%";
-                                $stmt->execute([$search_param, $search_param, $search_param]);
-                                $user = $stmt->fetch();
+                                $search_term = trim($_GET['search_user']);
+                                try {
+                                    $stmt = $db->prepare("
+                                        SELECT u.id, u.nom, u.telephone, s.solde 
+                                        FROM utilisateurs u 
+                                        LEFT JOIN soldes s ON u.id = s.user_id 
+                                        WHERE CAST(u.id AS CHAR) LIKE ? OR u.nom LIKE ? OR u.telephone LIKE ?
+                                        LIMIT 1
+                                    ");
+                                    $search_param = "%$search_term%";
+                                    $stmt->execute([$search_param, $search_param, $search_param]);
+                                    $user = $stmt->fetch();
+                                } catch (Exception $e) {
+                                    $user = false;
+                                    error_log("Erreur recherche utilisateur: " . $e->getMessage());
+                                }
                                 ?>
                                 
                                 <?php if ($user): ?>
