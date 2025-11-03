@@ -64,7 +64,7 @@ foreach ($plans_corriges as &$plan) {
         --text-mid: #94a3b8; /* Texte gris */
         --border-dark: rgba(255, 255, 255, 0.1); /* Bordure légère */
 
-        --error: #ef4444;
+        --error: #0038A8;
         --success: #10b981;
         --transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
     }
@@ -97,7 +97,7 @@ foreach ($plans_corriges as &$plan) {
         left: 0;
         width: 100%;
         height: 100%;
-        background: radial-gradient(circle at 10% 20%, rgba(232, 33, 39, 0.08) 0%, transparent 20%),
+        background: radial-gradient(circle at 10% 20%, rgba(0, 56, 168, 0.08) 0%, transparent 20%),
             radial-gradient(circle at 90% 80%, rgba(30, 41, 59, 0.2) 0%, transparent 20%);
         z-index: -3;
     }
@@ -123,7 +123,7 @@ foreach ($plans_corriges as &$plan) {
         right: 0;
         width: 400px;
         height: 400px;
-        background: radial-gradient(circle, rgba(232, 33, 39, 0.2) 0%, transparent 70%);
+        background: radial-gradient(circle, rgba(0, 56, 168, 0.2) 0%, transparent 70%);
         filter: blur(80px);
         z-index: -1;
     }
@@ -234,7 +234,7 @@ foreach ($plans_corriges as &$plan) {
         left: -100%;
         width: 100%;
         height: 100%;
-        background: linear-gradient(90deg, transparent, rgba(232, 33, 39, 0.1), transparent);
+        background: linear-gradient(90deg, transparent, rgba(0, 56, 168, 0.1), transparent);
         transition: left 0.6s ease;
     }
     
@@ -246,7 +246,7 @@ foreach ($plans_corriges as &$plan) {
         background: linear-gradient(135deg, var(--tesla-green), var(--tesla-dark-green));
         color: var(--primary-white);
         transform: scale(1.05);
-        box-shadow: 0 4px 15px rgba(232, 33, 39, 0.4);
+        box-shadow: 0 4px 15px rgba(0, 56, 168, 0.4);
     }
     
     /* Contenu principal */
@@ -275,7 +275,7 @@ foreach ($plans_corriges as &$plan) {
         background: var(--dark-card-bg);
         border-radius: 16px;
         padding: 20px;
-        border: 1px solid rgba(232, 33, 39, 0.2);
+        border: 1px solid rgba(0, 56, 168, 0.2);
         position: relative;
         overflow: hidden;
         opacity: 0;
@@ -320,7 +320,7 @@ foreach ($plans_corriges as &$plan) {
     .plan-card:hover {
         border-color: var(--tesla-green);
         transform: translateY(-8px) scale(1.02);
-        box-shadow: 0 15px 35px rgba(232, 33, 39, 0.2);
+        box-shadow: 0 15px 35px rgba(0, 56, 168, 0.2);
     }
     
     .plan-card:hover::before {
@@ -427,7 +427,7 @@ foreach ($plans_corriges as &$plan) {
         overflow: hidden;
         position: relative;
         transition: var(--transition);
-        box-shadow: 0 4px 15px rgba(232, 33, 39, 0.2);
+        box-shadow: 0 4px 15px rgba(0, 56, 168, 0.2);
     }
     
     .plan-image img {
@@ -439,7 +439,7 @@ foreach ($plans_corriges as &$plan) {
     
     .plan-card:hover .plan-image {
         transform: rotate(5deg) scale(1.1);
-        box-shadow: 0 8px 25px rgba(232, 33, 39, 0.3);
+        box-shadow: 0 8px 25px rgba(0, 56, 168, 0.3);
     }
     
     .plan-card:hover .plan-image img {
@@ -448,21 +448,21 @@ foreach ($plans_corriges as &$plan) {
     
     /* Barre d'action */
     .action-bar {
-        background: rgba(232, 33, 39, 0.05); /* Arrière-plan subtil */
+        background: rgba(0, 56, 168, 0.05); /* Arrière-plan subtil */
         border-radius: 12px;
         padding: 15px;
         display: flex;
         align-items: center;
         justify-content: space-between;
-        border: 1px solid rgba(232, 33, 39, 0.2);
+        border: 1px solid rgba(0, 56, 168, 0.2);
         position: relative;
         overflow: hidden;
         transition: var(--transition);
     }
     
     .plan-card:hover .action-bar {
-        background: rgba(232, 33, 39, 0.1);
-        border-color: rgba(232, 33, 39, 0.4);
+        background: rgba(0, 56, 168, 0.1);
+        border-color: rgba(0, 56, 168, 0.4);
     }
     
     .plan-prix {
@@ -486,7 +486,7 @@ foreach ($plans_corriges as &$plan) {
         position: relative;
         overflow: hidden;
         z-index: 2;
-        box-shadow: 0 4px 15px rgba(232, 33, 39, 0.3);
+        box-shadow: 0 4px 15px rgba(0, 56, 168, 0.3);
     }
     
     .btn-investir::before {
@@ -502,7 +502,7 @@ foreach ($plans_corriges as &$plan) {
     
     .btn-investir:hover {
         transform: translateY(-2px) scale(1.05);
-        box-shadow: 0 6px 20px rgba(232, 33, 39, 0.5);
+        box-shadow: 0 6px 20px rgba(0, 56, 168, 0.5);
     }
     
     .btn-investir:hover::before {
@@ -515,7 +515,7 @@ foreach ($plans_corriges as &$plan) {
         padding: 80px 30px;
         background: var(--dark-card-bg);
         border-radius: 20px;
-        border: 3px dashed rgba(232, 33, 39, 0.4);
+        border: 3px dashed rgba(0, 56, 168, 0.4);
         margin-top: 20px;
         animation: pulseGlow 2s ease-in-out infinite;
         position: relative;
@@ -525,12 +525,12 @@ foreach ($plans_corriges as &$plan) {
     
     @keyframes pulseGlow {
         0%, 100% {
-            border-color: rgba(232, 33, 39, 0.4);
-            box-shadow: 0 0 20px rgba(232, 33, 39, 0.1);
+            border-color: rgba(0, 56, 168, 0.4);
+            box-shadow: 0 0 20px rgba(0, 56, 168, 0.1);
         }
         50% {
-            border-color: rgba(232, 33, 39, 0.6);
-            box-shadow: 0 0 30px rgba(232, 33, 39, 0.2);
+            border-color: rgba(0, 56, 168, 0.6);
+            box-shadow: 0 0 30px rgba(0, 56, 168, 0.2);
         }
     }
     
@@ -541,7 +541,7 @@ foreach ($plans_corriges as &$plan) {
         left: -50%;
         width: 200%;
         height: 200%;
-        background: conic-gradient(transparent, rgba(232, 33, 39, 0.1), transparent 30%);
+        background: conic-gradient(transparent, rgba(0, 56, 168, 0.1), transparent 30%);
         animation: rotate 4s linear infinite;
     }
     
@@ -676,17 +676,17 @@ foreach ($plans_corriges as &$plan) {
     }
     
     .popup-detail {
-        background: rgba(232, 33, 39, 0.05);
+        background: rgba(0, 56, 168, 0.05);
         padding: 15px;
         border-radius: 10px;
         text-align: center;
-        border: 1px solid rgba(232, 33, 39, 0.1);
+        border: 1px solid rgba(0, 56, 168, 0.1);
         transition: transform 0.3s ease;
     }
     
     .popup-detail:hover {
         transform: translateY(-3px);
-        background: rgba(232, 33, 39, 0.08);
+        background: rgba(0, 56, 168, 0.08);
     }
     
     .popup-detail-valeur {
@@ -714,12 +714,12 @@ foreach ($plans_corriges as &$plan) {
         transition: var(--transition);
         position: relative;
         overflow: hidden;
-        box-shadow: 0 6px 20px rgba(232, 33, 39, 0.4);
+        box-shadow: 0 6px 20px rgba(0, 56, 168, 0.4);
     }
     
     .popup-btn:hover {
         transform: translateY(-3px);
-        box-shadow: 0 10px 25px rgba(232, 33, 39, 0.6);
+        box-shadow: 0 10px 25px rgba(0, 56, 168, 0.6);
     }
     
     .popup-btn:active {
@@ -820,7 +820,7 @@ foreach ($plans_corriges as &$plan) {
         left: -50%;
         width: 200%;
         height: 200%;
-        background: conic-gradient(transparent, rgba(232, 33, 39, 0.1), transparent 30%);
+        background: conic-gradient(transparent, rgba(0, 56, 168, 0.1), transparent 30%);
         animation: rotate 6s linear infinite;
     }
     
@@ -883,7 +883,7 @@ foreach ($plans_corriges as &$plan) {
     .floater-btn-primary {
         background: linear-gradient(135deg, var(--tesla-green), var(--tesla-dark-green));
         color: var(--primary-white);
-        box-shadow: 0 6px 20px rgba(232, 33, 39, 0.4);
+        box-shadow: 0 6px 20px rgba(0, 56, 168, 0.4);
     }
     
     .floater-btn-secondary {
@@ -894,7 +894,7 @@ foreach ($plans_corriges as &$plan) {
     
     .floater-btn:hover {
         transform: translateY(-3px);
-        box-shadow: 0 10px 25px rgba(232, 33, 39, 0.5);
+        box-shadow: 0 10px 25px rgba(0, 56, 168, 0.5);
     }
     
     .floater-btn:active {

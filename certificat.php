@@ -28,7 +28,7 @@ $user = $query->fetch();
     <style>
         /* Définition des couleurs Allianz */
         :root {
-            --tesla-green: #0038A8; /* Le vert emblématique de Allianz */
+            --tesla-green: #0038A8; /* Le bleu emblématique de Allianz */
             --dark-charcoal: #1a1c20; /* Noir/Gris très foncé pour les fonds */
             --charcoal: #2a2d30; /* Gris foncé pour les éléments secondaires */
             --light-grey: #f0f2f5;
@@ -86,7 +86,7 @@ $user = $query->fetch();
             width: 200%;
             height: 200%;
             /* Effet subtil avec la couleur verte */
-            background: radial-gradient(circle, rgba(232, 33, 39, 0.1) 0%, transparent 70%); 
+            background: radial-gradient(circle, rgba(0, 56, 168, 0.1) 0%, transparent 70%); 
             animation: float 6s ease-in-out infinite;
         }
 
@@ -162,7 +162,7 @@ $user = $query->fetch();
             margin-bottom: 15px;
             padding: 12px;
             /* Fond légèrement plus clair que le conteneur */
-            background: rgba(232, 33, 39, 0.05); 
+            background: rgba(0, 56, 168, 0.05); 
             border-radius: 10px;
             border-left: 4px solid var(--tesla-green); /* Barre latérale verte */
         }
@@ -184,7 +184,7 @@ $user = $query->fetch();
         /* Boîte d'importance en couleur d'avertissement technologique */
         .importance-box {
             background: linear-gradient(135deg, #2c3e50, #34495e); /* Nuance de gris-bleu foncé */
-            border: 2px solid #f39c12; /* Bordure orange/ambre pour l'alerte */
+            border: 2px solid #5DADE2; /* Bordure orange/ambre pour l'alerte */
             border-radius: 15px;
             padding: 20px;
             margin: 25px 0;
@@ -192,7 +192,7 @@ $user = $query->fetch();
         }
 
         .importance-title {
-            color: #f39c12;
+            color: #5DADE2;
             font-size: 18px;
             font-weight: 700;
             margin-bottom: 10px;
@@ -217,7 +217,7 @@ $user = $query->fetch();
         /* Bouton principal en rouge Allianz */
         .btn-primary {
             flex: 1;
-            background: linear-gradient(135deg, var(--tesla-green), #b91f1f);
+            background: linear-gradient(135deg, var(--tesla-green), #2874A6);
             color: var(--dark-charcoal); /* Texte sombre sur fond clair (vert) */
             border: none;
             padding: 16px;
@@ -230,12 +230,12 @@ $user = $query->fetch();
             align-items: center;
             justify-content: center;
             gap: 10px;
-            box-shadow: 0 6px 20px rgba(232, 33, 39, 0.4);
+            box-shadow: 0 6px 20px rgba(0, 56, 168, 0.4);
         }
 
         .btn-primary:hover {
             transform: translateY(-3px);
-            box-shadow: 0 8px 25px rgba(232, 33, 39, 0.5);
+            box-shadow: 0 8px 25px rgba(0, 56, 168, 0.5);
             background: var(--tesla-green);
         }
 
@@ -370,7 +370,7 @@ $user = $query->fetch();
                 
                 <p class="certificate-description">
                     Obtenez votre certificat de partenariat officiel qui atteste de votre statut de partenaire investisseur privilégié 
-                    chez **Allianz**. Ce document exclusif valide votre engagement dans la révolution de la mobilité électrique et vous offre 
+                    chez **Allianz**. Ce document exclusif valide votre engagement dans la excellence de l'investissement financier et vous offre 
                     des avantages uniques au sein de notre écosystème d'innovation.
                 </p>
 
@@ -380,7 +380,7 @@ $user = $query->fetch();
                             <i class="fas fa-car"></i> </div>
                         <div class="benefit-text">
                             <strong>Accès prioritaire aux nouveaux modèles</strong><br>
-                            Bénéficiez d'un accès en avant-première aux lancements de véhicules.
+                            Bénéficiez d'un accès en avant-première aux lancements de produits d'investissement.
                         </div>
                     </div>
                     

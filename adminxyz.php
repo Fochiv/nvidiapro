@@ -55,7 +55,7 @@ if ($require_security_code) {
                 --primary: #3b82f6;
                 --primary-dark: #1d4ed8;
                 --accent: #8b5cf6;
-                --danger: #ef4444;
+                --danger: #0038A8;
                 --light: #f8fafc;
                 --dark: #1e293b;
                 --text: #334155;
@@ -790,7 +790,7 @@ $section = $_GET['section'] ?? 'dashboard';
             --primary-light: #dbeafe;
             --accent: #8b5cf6;
             --success: #10b981;
-            --danger: #ef4444;
+            --danger: #0038A8;
             --warning: #f59e0b;
             --info: #06b6d4;
             --dark: #1e293b;
@@ -1659,7 +1659,7 @@ $section = $_GET['section'] ?? 'dashboard';
                                             </button>
                                         </form>
                                         
-                                        <div style="margin-top: 1rem; padding: 0.75rem; background: #dcfce7; border-radius: 6px; border-left: 3px solid #16a34a;">
+                                        <div style="margin-top: 1rem; padding: 0.75rem; background: #dcfce7; border-radius: 6px; border-left: 3px solid #2874A6;">
                                             <strong style="color: #166534;"><i class="fas fa-money-bill-wave"></i> Dépôt Administratif</strong>
                                             <p style="font-size: 0.8rem; color: #166534; margin-top: 0.5rem;">Créer un dépôt validé automatiquement. L'utilisateur pourra retirer sans obligation de dépôt préalable.</p>
                                         </div>

@@ -34,15 +34,15 @@ $code_parrain = isset($_SESSION['parrain_code']) ? $_SESSION['parrain_code'] : '
             --soft-black: #0f0f0f;
             --dark-gray: #1a1a1a;
             --light-gray: #2e2e2e; /* Utilisé pour les bords clairs/soft */
-            --accent-green: #0038A8; /* Le vert iconique de Allianz */
-            --green-light: #90d400;
-            --green-dark: #5c8f00;
+            --accent-green: #0038A8; /* Le bleu iconique de Allianz */
+            --green-light: #5DADE2;
+            --green-dark: #2874A6;
             --text-light: #e0e0e0;
             --text-gray: #aaaaaa;
             --text-dark: #ffffff; /* Texte principal en blanc pour le fond sombre */
             --card-bg: rgba(0, 0, 0, 0.8); /* Fond des cartes/éléments semi-transparent sombre */
-            --border-color: rgba(232, 33, 39, 0.3); /* Bordure en accent vert */
-            --error: #ff4444;
+            --border-color: rgba(0, 56, 168, 0.3); /* Bordure en accent vert */
+            --error: #0038A8;
             --success: #0038A8; /* Succès en rouge Allianz */
             --transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
         }
@@ -79,10 +79,10 @@ $code_parrain = isset($_SESSION['parrain_code']) ? $_SESSION['parrain_code'] : '
             width: 100%;
             height: 100%;
             background: 
-                radial-gradient(circle at 10% 20%, rgba(232, 33, 39, 0.1) 0%, transparent 20%),
-                radial-gradient(circle at 90% 80%, rgba(232, 33, 39, 0.1) 0%, transparent 20%),
-                radial-gradient(circle at 20% 30%, rgba(232, 33, 39, 0.05) 0%, transparent 50%),
-                radial-gradient(circle at 80% 70%, rgba(232, 33, 39, 0.05) 0%, transparent 50%),
+                radial-gradient(circle at 10% 20%, rgba(0, 56, 168, 0.1) 0%, transparent 20%),
+                radial-gradient(circle at 90% 80%, rgba(0, 56, 168, 0.1) 0%, transparent 20%),
+                radial-gradient(circle at 20% 30%, rgba(0, 56, 168, 0.05) 0%, transparent 50%),
+                radial-gradient(circle at 80% 70%, rgba(0, 56, 168, 0.05) 0%, transparent 50%),
                 linear-gradient(135deg, var(--soft-black) 0%, var(--primary-black) 100%);
             z-index: -3;
         }
@@ -94,12 +94,12 @@ $code_parrain = isset($_SESSION['parrain_code']) ? $_SESSION['parrain_code'] : '
             width: 100%;
             height: 100%;
             background-image: 
-                linear-gradient(30deg, rgba(232, 33, 39, 0.05) 12%, transparent 12.5%, transparent 87%, rgba(232, 33, 39, 0.05) 87.5%, rgba(232, 33, 39, 0.05) 0),
-                linear-gradient(150deg, rgba(232, 33, 39, 0.05) 12%, transparent 12.5%, transparent 87%, rgba(232, 33, 39, 0.05) 87.5%, rgba(232, 33, 39, 0.05) 0),
-                linear-gradient(30deg, rgba(232, 33, 39, 0.03) 12%, transparent 12.5%, transparent 87%, rgba(232, 33, 39, 0.03) 87.5%, rgba(232, 33, 39, 0.03) 0),
-                linear-gradient(150deg, rgba(232, 33, 39, 0.03) 12%, transparent 12.5%, transparent 87%, rgba(232, 33, 39, 0.03) 87.5%, rgba(232, 33, 39, 0.03) 0),
-                linear-gradient(60deg, rgba(232, 33, 39, 0.08) 25%, transparent 25.5%, transparent 75%, rgba(232, 33, 39, 0.08) 75%, rgba(232, 33, 39, 0.08) 0),
-                linear-gradient(60deg, rgba(232, 33, 39, 0.08) 25%, transparent 25.5%, transparent 75%, rgba(232, 33, 39, 0.08) 75%, rgba(232, 33, 39, 0.08) 0);
+                linear-gradient(30deg, rgba(0, 56, 168, 0.05) 12%, transparent 12.5%, transparent 87%, rgba(0, 56, 168, 0.05) 87.5%, rgba(0, 56, 168, 0.05) 0),
+                linear-gradient(150deg, rgba(0, 56, 168, 0.05) 12%, transparent 12.5%, transparent 87%, rgba(0, 56, 168, 0.05) 87.5%, rgba(0, 56, 168, 0.05) 0),
+                linear-gradient(30deg, rgba(0, 56, 168, 0.03) 12%, transparent 12.5%, transparent 87%, rgba(0, 56, 168, 0.03) 87.5%, rgba(0, 56, 168, 0.03) 0),
+                linear-gradient(150deg, rgba(0, 56, 168, 0.03) 12%, transparent 12.5%, transparent 87%, rgba(0, 56, 168, 0.03) 87.5%, rgba(0, 56, 168, 0.03) 0),
+                linear-gradient(60deg, rgba(0, 56, 168, 0.08) 25%, transparent 25.5%, transparent 75%, rgba(0, 56, 168, 0.08) 75%, rgba(0, 56, 168, 0.08) 0),
+                linear-gradient(60deg, rgba(0, 56, 168, 0.08) 25%, transparent 25.5%, transparent 75%, rgba(0, 56, 168, 0.08) 75%, rgba(0, 56, 168, 0.08) 0);
             background-size: 100px 175px;
             background-position: 0 0, 0 0, 50px 87.5px, 50px 87.5px, 0 0, 50px 87.5px;
             z-index: -2;
@@ -110,7 +110,7 @@ $code_parrain = isset($_SESSION['parrain_code']) ? $_SESSION['parrain_code'] : '
             position: fixed;
             width: 400px;
             height: 400px;
-            background: radial-gradient(circle, rgba(232, 33, 39, 0.15) 0%, transparent 70%);
+            background: radial-gradient(circle, rgba(0, 56, 168, 0.15) 0%, transparent 70%);
             filter: blur(60px);
             z-index: -1;
         }
@@ -134,9 +134,9 @@ $code_parrain = isset($_SESSION['parrain_code']) ? $_SESSION['parrain_code'] : '
             background: linear-gradient(
                 125deg,
                 transparent 0%,
-                rgba(232, 33, 39, 0.08) 40%,
-                rgba(232, 33, 39, 0.15) 50%, /* L'effet le plus brillant en vert */
-                rgba(232, 33, 39, 0.08) 60%,
+                rgba(0, 56, 168, 0.08) 40%,
+                rgba(0, 56, 168, 0.15) 50%, /* L'effet le plus brillant en vert */
+                rgba(0, 56, 168, 0.08) 60%,
                 transparent 100%
             );
             opacity: 0.3;
@@ -183,7 +183,7 @@ $code_parrain = isset($_SESSION['parrain_code']) ? $_SESSION['parrain_code'] : '
         .logo-icon {
             width: 60px;
             height: 60px;
-            /* Dégradé de rouge Allianz */
+            /* Dégradé de bleu Allianz */
             background: linear-gradient(135deg, var(--accent-green), var(--green-dark));
             border: none;
             border-radius: 15px;
@@ -193,7 +193,7 @@ $code_parrain = isset($_SESSION['parrain_code']) ? $_SESSION['parrain_code'] : '
             color: var(--primary-black); /* Icône texte en noir pour contraste */
             font-weight: bold;
             font-size: 24px;
-            box-shadow: 0 8px 25px rgba(232, 33, 39, 0.4);
+            box-shadow: 0 8px 25px rgba(0, 56, 168, 0.4);
             transition: all 0.3s ease;
             position: relative;
             overflow: hidden;
@@ -213,14 +213,14 @@ $code_parrain = isset($_SESSION['parrain_code']) ? $_SESSION['parrain_code'] : '
         
         .logo-icon:hover {
             transform: rotate(5deg) scale(1.05);
-            box-shadow: 0 12px 35px rgba(232, 33, 39, 0.6);
+            box-shadow: 0 12px 35px rgba(0, 56, 168, 0.6);
         }
         
         .logo-text {
             font-family: 'Playfair Display', serif;
             font-weight: 700;
             font-size: 32px;
-            /* Dégradé de rouge Allianz */
+            /* Dégradé de bleu Allianz */
             background: linear-gradient(135deg, var(--accent-green), var(--green-light));
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
@@ -277,21 +277,21 @@ $code_parrain = isset($_SESSION['parrain_code']) ? $_SESSION['parrain_code'] : '
         }
         
         .btn-login:hover {
-            background: rgba(232, 33, 39, 0.1);
+            background: rgba(0, 56, 168, 0.1);
             transform: translateY(-2px);
-            box-shadow: 0 4px 12px rgba(232, 33, 39, 0.3);
+            box-shadow: 0 4px 12px rgba(0, 56, 168, 0.3);
         }
         
         .btn-register {
-            /* Dégradé de rouge Allianz */
+            /* Dégradé de bleu Allianz */
             background: linear-gradient(135deg, var(--accent-green), var(--green-dark));
             color: var(--primary-black); /* Texte noir sur vert pour le bouton principal */
-            box-shadow: 0 4px 12px rgba(232, 33, 39, 0.4);
+            box-shadow: 0 4px 12px rgba(0, 56, 168, 0.4);
         }
         
         .btn-register:hover {
             transform: translateY(-2px) scale(1.03);
-            box-shadow: 0 6px 16px rgba(232, 33, 39, 0.5);
+            box-shadow: 0 6px 16px rgba(0, 56, 168, 0.5);
         }
         
         /* Section principale */
@@ -313,7 +313,7 @@ $code_parrain = isset($_SESSION['parrain_code']) ? $_SESSION['parrain_code'] : '
             overflow: hidden;
             position: relative;
             box-shadow: 
-                0 25px 50px rgba(232, 33, 39, 0.15),
+                0 25px 50px rgba(0, 56, 168, 0.15),
                 0 15px 30px rgba(0, 0, 0, 0.5);
             margin-bottom: 30px;
             border: 1px solid var(--border-color);
@@ -375,7 +375,7 @@ $code_parrain = isset($_SESSION['parrain_code']) ? $_SESSION['parrain_code'] : '
         }
         
         .btn-register-main {
-            /* Dégradé de rouge Allianz */
+            /* Dégradé de bleu Allianz */
             background: linear-gradient(135deg, var(--accent-green), var(--green-dark));
             color: var(--primary-black); /* Texte noir pour contraste */
             border: none;
@@ -386,7 +386,7 @@ $code_parrain = isset($_SESSION['parrain_code']) ? $_SESSION['parrain_code'] : '
             cursor: pointer;
             transition: var(--transition);
             box-shadow: 
-                0 8px 25px rgba(232, 33, 39, 0.6),
+                0 8px 25px rgba(0, 56, 168, 0.6),
                 inset 0 1px 0 rgba(255, 255, 255, 0.3);
             position: relative;
             overflow: hidden;
@@ -412,14 +412,14 @@ $code_parrain = isset($_SESSION['parrain_code']) ? $_SESSION['parrain_code'] : '
         .btn-register-main:hover {
             transform: translateY(-4px) scale(1.04);
             box-shadow: 
-                0 15px 30px rgba(232, 33, 39, 0.8),
+                0 15px 30px rgba(0, 56, 168, 0.8),
                 inset 0 1px 0 rgba(255, 255, 255, 0.4);
         }
 
         /* Message de parrainage */
         .referral-notice {
             /* Thème sombre et accent vert */
-            background: linear-gradient(135deg, rgba(232, 33, 39, 0.15), rgba(0, 0, 0, 0.5));
+            background: linear-gradient(135deg, rgba(0, 56, 168, 0.15), rgba(0, 0, 0, 0.5));
             padding: 18px;
             border-radius: 12px;
             margin-bottom: 25px;
@@ -432,7 +432,7 @@ $code_parrain = isset($_SESSION['parrain_code']) ? $_SESSION['parrain_code'] : '
             align-items: center;
             justify-content: center;
             gap: 10px;
-            box-shadow: 0 5px 15px rgba(232, 33, 39, 0.2);
+            box-shadow: 0 5px 15px rgba(0, 56, 168, 0.2);
             animation: pulse 2s infinite;
             backdrop-filter: blur(10px);
             max-width: 500px;
@@ -600,7 +600,7 @@ $code_parrain = isset($_SESSION['parrain_code']) ? $_SESSION['parrain_code'] : '
     <div class="main-container">
         <div class="header">
             <div class="logo">
-                <div class="logo-icon">NV</div>
+                <div class="logo-icon">AZ</div>
                 <div>
                     <div class="logo-text">Allianz</div>
                     <div class="logo-subtext">TECHNOLOGIE</div>

@@ -15,10 +15,10 @@ if (!isset($_SESSION['user_id'])) {
         --accent-green: #0038A8; /* Rouge Allianz */
         --accent-black: #000000;
         --menu-bg: rgba(0, 0, 0, 0.95); /* Noir très sombre */
-        --menu-border: rgba(232, 33, 39, 0.5); /* Bordure verte subtile */
+        --menu-border: rgba(0, 56, 168, 0.5); /* Bordure verte subtile */
         --text-inactive: rgba(255, 255, 255, 0.6);
         --text-active: #ffffff;
-        --shadow-color: rgba(232, 33, 39, 0.4);
+        --shadow-color: rgba(0, 56, 168, 0.4);
     }
 
     /* Navbar aux dimensions originales avec effet glass - TOUJOURS VISIBLE */
@@ -82,7 +82,7 @@ if (!isset($_SESSION['user_id'])) {
 
     .nav-item:hover {
         color: var(--text-active);
-        background: rgba(232, 33, 39, 0.1); /* Hover vert discret */
+        background: rgba(0, 56, 168, 0.1); /* Hover vert discret */
         transform: translateY(-2px); /* Léger soulèvement */
     }
 
@@ -149,8 +149,8 @@ if (!isset($_SESSION['user_id'])) {
         background: linear-gradient(
             90deg,
             transparent,
-            rgba(232, 33, 39, 0.2),
-            rgba(232, 33, 39, 0.05),
+            rgba(0, 56, 168, 0.2),
+            rgba(0, 56, 168, 0.05),
             transparent
         );
         transition: left 0.4s ease-out;

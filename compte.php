@@ -127,12 +127,12 @@ $custom_id = $user['code_parrainage'];
         --soft-black: #121212; /* Fond du corps */
         --dark-gray: #1f2937; /* Couleur secondaire foncée */
         --accent-green-primary: #0038A8; /* Allianz Green */
-        --accent-green-secondary: #00e676; /* Neon Green pour les gradients/succès */
+        --accent-green-secondary: #5DADE2; /* Neon Green pour les gradients/succès */
         --text-light: #ffffff; /* Couleur de texte principale */
         --text-muted: #94a3b8; /* Couleur de texte secondaire */
         --card-bg: rgba(18, 18, 18, 0.85); /* Fond de carte foncé */
-        --border-color: rgba(232, 33, 39, 0.15); /* Bordure subtile verte */
-        --error: #ef4444;
+        --border-color: rgba(0, 56, 168, 0.15); /* Bordure subtile verte */
+        --error: #0038A8;
         --success: var(--accent-green-secondary);
         --transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
     }
@@ -176,9 +176,9 @@ $custom_id = $user['code_parrainage'];
         height: 100%;
         /* Motif géométrique avec l'accent vert */
         background-image: 
-            linear-gradient(30deg, rgba(232, 33, 39, 0.08) 12%, transparent 12.5%, transparent 87%, rgba(232, 33, 39, 0.08) 87.5%, rgba(232, 33, 39, 0.08) 0),
+            linear-gradient(30deg, rgba(0, 56, 168, 0.08) 12%, transparent 12.5%, transparent 87%, rgba(0, 56, 168, 0.08) 87.5%, rgba(0, 56, 168, 0.08) 0),
             linear-gradient(150deg, rgba(0, 230, 118, 0.08) 12%, transparent 12.5%, transparent 87%, rgba(0, 230, 118, 0.08) 87.5%, rgba(0, 230, 118, 0.08) 0),
-            linear-gradient(60deg, rgba(232, 33, 39, 0.1) 25%, transparent 25.5%, transparent 75%, rgba(232, 33, 39, 0.1) 75%, rgba(232, 33, 39, 0.1) 0);
+            linear-gradient(60deg, rgba(0, 56, 168, 0.1) 25%, transparent 25.5%, transparent 75%, rgba(0, 56, 168, 0.1) 75%, rgba(0, 56, 168, 0.1) 0);
         background-size: 100px 175px;
         background-position: 0 0, 50px 87.5px, 0 0;
         z-index: -2;
@@ -192,7 +192,7 @@ $custom_id = $user['code_parrainage'];
         right: 0;
         width: 400px;
         height: 400px;
-        background: radial-gradient(circle, rgba(232, 33, 39, 0.2) 0%, transparent 70%);
+        background: radial-gradient(circle, rgba(0, 56, 168, 0.2) 0%, transparent 70%);
         filter: blur(80px);
         z-index: -1;
     }
@@ -220,7 +220,7 @@ $custom_id = $user['code_parrainage'];
         padding: 25px 20px 70px 20px;
         animation: headerSlide 1s ease-out;
         border-radius: 0 0 20px 20px;
-        box-shadow: 0 8px 25px rgba(232, 33, 39, 0.4); /* Ombre verte */
+        box-shadow: 0 8px 25px rgba(0, 56, 168, 0.4); /* Ombre verte */
     }
     
     .header::before {
@@ -288,7 +288,7 @@ $custom_id = $user['code_parrainage'];
         color: var(--text-light);
         font-weight: bold;
         font-size: 18px;
-        box-shadow: 0 8px 25px rgba(232, 33, 39, 0.4);
+        box-shadow: 0 8px 25px rgba(0, 56, 168, 0.4);
         transition: all 0.3s ease;
         position: relative;
         overflow: hidden;
@@ -362,7 +362,7 @@ $custom_id = $user['code_parrainage'];
         background: var(--card-bg);
         border-radius: 15px;
         padding: 15px;
-        box-shadow: 0 8px 25px rgba(232, 33, 39, 0.3); /* Ombre verte */
+        box-shadow: 0 8px 25px rgba(0, 56, 168, 0.3); /* Ombre verte */
         border: 2px solid var(--accent-green-primary);
         animation: menuSlideUp 0.8s ease-out 0.5s both;
         align-items: center;
@@ -410,7 +410,7 @@ $custom_id = $user['code_parrainage'];
     
     .progress-container {
         width: 100%;
-        background: rgba(232, 33, 39, 0.1);
+        background: rgba(0, 56, 168, 0.1);
         border-radius: 10px;
         height: 12px;
         overflow: hidden;
@@ -457,7 +457,7 @@ $custom_id = $user['code_parrainage'];
         background: var(--card-bg);
         border-radius: 16px;
         padding: 18px;
-        box-shadow: 0 8px 20px rgba(232, 33, 39, 0.15);
+        box-shadow: 0 8px 20px rgba(0, 56, 168, 0.15);
         border: 1px solid var(--border-color);
         text-align: center;
         transition: var(--transition);
@@ -465,7 +465,7 @@ $custom_id = $user['code_parrainage'];
     
     .balance-card:hover {
         transform: translateY(-5px);
-        box-shadow: 0 12px 25px rgba(232, 33, 39, 0.3);
+        box-shadow: 0 12px 25px rgba(0, 56, 168, 0.3);
     }
     
     .balance-title {
@@ -505,7 +505,7 @@ $custom_id = $user['code_parrainage'];
         font-size: 14px;
         cursor: pointer;
         transition: var(--transition);
-        box-shadow: 0 6px 20px rgba(232, 33, 39, 0.4);
+        box-shadow: 0 6px 20px rgba(0, 56, 168, 0.4);
         display: flex;
         align-items: center;
         justify-content: center;
@@ -514,7 +514,7 @@ $custom_id = $user['code_parrainage'];
     
     .action-button:hover {
         transform: translateY(-3px);
-        box-shadow: 0 10px 25px rgba(232, 33, 39, 0.6);
+        box-shadow: 0 10px 25px rgba(0, 56, 168, 0.6);
     }
     
     .action-button:active {
@@ -546,7 +546,7 @@ $custom_id = $user['code_parrainage'];
         border-radius: 16px;
         padding: 0;
         margin: 0 20px 20px 20px;
-        box-shadow: 0 8px 20px rgba(232, 33, 39, 0.15);
+        box-shadow: 0 8px 20px rgba(0, 56, 168, 0.15);
         border: 1px solid var(--border-color);
         overflow: hidden;
         animation: fadeInUp 1.4s ease-out;
@@ -568,7 +568,7 @@ $custom_id = $user['code_parrainage'];
     }
     
     .menu-item:hover {
-        background: rgba(232, 33, 39, 0.1);
+        background: rgba(0, 56, 168, 0.1);
         padding-left: 25px;
     }
     
@@ -576,7 +576,7 @@ $custom_id = $user['code_parrainage'];
         width: 40px;
         height: 40px;
         border-radius: 10px;
-        background: rgba(232, 33, 39, 0.1);
+        background: rgba(0, 56, 168, 0.1);
         display: flex;
         align-items: center;
         justify-content: center;
@@ -675,12 +675,12 @@ $custom_id = $user['code_parrainage'];
     
     .status-valide {
         background: #0d301b;
-        color: #00e676;
+        color: #5DADE2;
     }
     
     .status-rejete {
         background: #58151c;
-        color: #ef4444;
+        color: #0038A8;
     }
     
     .empty-transactions {
@@ -701,8 +701,8 @@ $custom_id = $user['code_parrainage'];
     .filter-btn {
         flex: 1;
         min-width: 100px;
-        background: rgba(232, 33, 39, 0.1);
-        border: 1px solid rgba(232, 33, 39, 0.2);
+        background: rgba(0, 56, 168, 0.1);
+        border: 1px solid rgba(0, 56, 168, 0.2);
         border-radius: 10px;
         padding: 10px 12px;
         font-weight: 600;
@@ -718,7 +718,7 @@ $custom_id = $user['code_parrainage'];
     }
     
     .filter-btn:hover {
-        background: rgba(232, 33, 39, 0.2);
+        background: rgba(0, 56, 168, 0.2);
         transform: translateY(-2px);
     }
     
@@ -726,7 +726,7 @@ $custom_id = $user['code_parrainage'];
         background: linear-gradient(135deg, var(--accent-green-primary), var(--accent-green-secondary));
         color: var(--text-light);
         border-color: var(--accent-green-primary);
-        box-shadow: 0 4px 12px rgba(232, 33, 39, 0.3);
+        box-shadow: 0 4px 12px rgba(0, 56, 168, 0.3);
     }
 
     /* ID utilisateur */
@@ -758,7 +758,7 @@ $custom_id = $user['code_parrainage'];
     }
     
     .copy-btn {
-        background: rgba(232, 33, 39, 0.1);
+        background: rgba(0, 56, 168, 0.1);
         border: none;
         border-radius: 8px;
         padding: 6px 12px;
@@ -770,7 +770,7 @@ $custom_id = $user['code_parrainage'];
     }
     
     .copy-btn:hover {
-        background: rgba(232, 33, 39, 0.3);
+        background: rgba(0, 56, 168, 0.3);
     }
     
     /* Bouton Service Client Flottant */
@@ -786,7 +786,7 @@ $custom_id = $user['code_parrainage'];
         display: flex;
         align-items: center;
         justify-content: center;
-        box-shadow: 0 8px 25px rgba(232, 33, 39, 0.4);
+        box-shadow: 0 8px 25px rgba(0, 56, 168, 0.4);
         cursor: pointer;
         z-index: 99;
         transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
@@ -812,19 +812,19 @@ $custom_id = $user['code_parrainage'];
     
     @keyframes pulse {
         0% {
-            box-shadow: 0 8px 25px rgba(232, 33, 39, 0.4);
+            box-shadow: 0 8px 25px rgba(0, 56, 168, 0.4);
         }
         50% {
-            box-shadow: 0 0 0 15px rgba(232, 33, 39, 0.2);
+            box-shadow: 0 0 0 15px rgba(0, 56, 168, 0.2);
         }
         100% {
-            box-shadow: 0 8px 25px rgba(232, 33, 39, 0.4);
+            box-shadow: 0 8px 25px rgba(0, 56, 168, 0.4);
         }
     }
     
     .floating-service:hover {
         transform: scale(1.05);
-        box-shadow: 0 12px 30px rgba(232, 33, 39, 0.6);
+        box-shadow: 0 12px 30px rgba(0, 56, 168, 0.6);
     }
     
     .floating-service:hover i {
@@ -855,7 +855,7 @@ $custom_id = $user['code_parrainage'];
         border-radius: 20px;
         overflow: hidden;
         animation: popupIn 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-        box-shadow: 0 25px 50px rgba(232, 33, 39, 0.3);
+        box-shadow: 0 25px 50px rgba(0, 56, 168, 0.3);
         border: 2px solid var(--accent-green-primary);
         max-height: 85vh;
         overflow-y: auto;
@@ -928,7 +928,7 @@ $custom_id = $user['code_parrainage'];
         font-size: 24px;
         font-weight: 700;
         background: rgba(0, 0, 0, 0.4);
-        border: 1px solid rgba(232, 33, 39, 0.3);
+        border: 1px solid rgba(0, 56, 168, 0.3);
         border-radius: 10px;
         transition: var(--transition);
         color: var(--text-light);
@@ -937,7 +937,7 @@ $custom_id = $user['code_parrainage'];
     .pin-input:focus {
         outline: none;
         border-color: var(--accent-green-primary);
-        box-shadow: 0 0 0 2px rgba(232, 33, 39, 0.2);
+        box-shadow: 0 0 0 2px rgba(0, 56, 168, 0.2);
     }
     
     .submit-btn {
@@ -952,12 +952,12 @@ $custom_id = $user['code_parrainage'];
         transition: var(--transition);
         width: 100%;
         margin-top: 10px;
-        box-shadow: 0 4px 12px rgba(232, 33, 39, 0.3);
+        box-shadow: 0 4px 12px rgba(0, 56, 168, 0.3);
     }
     
     .submit-btn:hover {
         transform: translateY(-2px);
-        box-shadow: 0 6px 15px rgba(232, 33, 39, 0.4);
+        box-shadow: 0 6px 15px rgba(0, 56, 168, 0.4);
     }
     
     /* Animations */
@@ -1077,7 +1077,7 @@ $custom_id = $user['code_parrainage'];
     <div class="container">
         <div class="header">
             <div class="header-logo">
-                <div class="logo-icon">NV</div>
+                <div class="logo-icon">AZ</div>
                 <div>
                     <div class="logo-text">Allianz</div>
                     <div class="logo-subtext">TECHNOLOGIE</div>

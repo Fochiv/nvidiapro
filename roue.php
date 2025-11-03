@@ -54,8 +54,8 @@ $devise = ($_SESSION['pays'] ?? 'Cameroun') == 'Cameroun' ? 'XAF' : 'XOF';
             --primary-white: #ffffff;
             --accent-green: #0038A8; /* Rouge Allianz */
             --background-dark: #0f1c1f; /* Noir très foncé/anthracite */
-            --button-red: #ff0000;
-            --error: #ef4444; /* Rouge pour le temps restant */
+            --button-red: #0038A8;
+            --error: #0038A8; /* Rouge pour le temps restant */
             --card-bg: rgba(10, 20, 20, 0.95);
         }
         
@@ -159,7 +159,7 @@ $devise = ($_SESSION['pays'] ?? 'Cameroun') == 'Cameroun' ? 'XAF' : 'XOF';
             font-weight: 700;
             cursor: pointer;
             transition: all 0.2s;
-            box-shadow: 0 8px 15px rgba(232, 33, 39, 0.5);
+            box-shadow: 0 8px 15px rgba(0, 56, 168, 0.5);
             margin-top: 25px;
             text-transform: uppercase;
         }
@@ -214,7 +214,7 @@ $devise = ($_SESSION['pays'] ?? 'Cameroun') == 'Cameroun' ? 'XAF' : 'XOF';
             background: var(--card-bg);
             padding: 30px;
             border-radius: 20px;
-            box-shadow: 0 15px 50px rgba(232, 33, 39, 0.6); /* Ombre verte */
+            box-shadow: 0 15px 50px rgba(0, 56, 168, 0.6); /* Ombre verte */
             border: 2px solid var(--accent-green);
             max-width: 350px;
             width: 90%;
@@ -265,7 +265,7 @@ $devise = ($_SESSION['pays'] ?? 'Cameroun') == 'Cameroun' ? 'XAF' : 'XOF';
             '<i class="fas fa-bell"></i>',   
             '<i class="fas fa-dollar-sign"></i>', 
             '<span>BAR</span>',             
-            '<span style="color:#ef4444;">7</span>', // Gros gain (1500/2000 F)             
+            '<span style="color:#0038A8;">7</span>', // Gros gain (1500/2000 F)             
         ];
         
         // Hauteur d'un symbole en pixels (doit correspondre au CSS)

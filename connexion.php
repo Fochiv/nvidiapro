@@ -255,7 +255,7 @@ unset($_SESSION['form_data']); // Nettoyer après récupération
             color: var(--primary-white); /* Texte blanc sur vert */
             font-weight: 700;
             font-size: 24px;
-            box-shadow: 0 8px 25px rgba(232, 33, 39, 0.6);
+            box-shadow: 0 8px 25px rgba(0, 56, 168, 0.6);
             transition: var(--transition);
             position: relative;
             overflow: hidden;
@@ -264,7 +264,7 @@ unset($_SESSION['form_data']); // Nettoyer après récupération
         
         .logo-icon:hover {
             transform: rotate(0deg) scale(1.05);
-            box-shadow: 0 12px 35px rgba(232, 33, 39, 0.8);
+            box-shadow: 0 12px 35px rgba(0, 56, 168, 0.8);
         }
         
         .logo-text {
@@ -304,7 +304,7 @@ unset($_SESSION['form_data']); // Nettoyer après récupération
             border: 1px solid rgba(255, 255, 255, 0.1); 
             box-shadow: 
                 0 25px 50px rgba(0, 0, 0, 0.5),
-                0 15px 30px rgba(232, 33, 39, 0.2),
+                0 15px 30px rgba(0, 56, 168, 0.2),
                 inset 0 1px 0 rgba(255, 255, 255, 0.1);
             position: relative;
             overflow: hidden;
@@ -319,7 +319,7 @@ unset($_SESSION['form_data']); // Nettoyer après récupération
             width: 100%;
             height: 4px;
             background: var(--tesla-green);
-            box-shadow: 0 0 15px rgba(232, 33, 39, 0.8);
+            box-shadow: 0 0 15px rgba(0, 56, 168, 0.8);
         }
         
         .form-title {
@@ -342,7 +342,7 @@ unset($_SESSION['form_data']); // Nettoyer après récupération
             height: 3px;
             background: var(--tesla-green);
             border-radius: 2px;
-            box-shadow: 0 0 10px rgba(232, 33, 39, 0.5);
+            box-shadow: 0 0 10px rgba(0, 56, 168, 0.5);
         }
         
         .form-group {
@@ -377,7 +377,7 @@ unset($_SESSION['form_data']); // Nettoyer après récupération
         .form-input:focus {
             outline: none;
             border-color: var(--tesla-green);
-            box-shadow: 0 0 0 3px rgba(232, 33, 39, 0.3), 0 4px 15px rgba(232, 33, 39, 0.2);
+            box-shadow: 0 0 0 3px rgba(0, 56, 168, 0.3), 0 4px 15px rgba(0, 56, 168, 0.2);
             background: #252525;
             transform: translateY(-2px);
         }
@@ -427,7 +427,7 @@ unset($_SESSION['form_data']); // Nettoyer après récupération
         
         .indicatif-select select:focus {
             border-color: var(--tesla-green);
-            box-shadow: 0 0 0 3px rgba(232, 33, 39, 0.3);
+            box-shadow: 0 0 0 3px rgba(0, 56, 168, 0.3);
             transform: translateY(-2px);
             background: #252525;
         }
@@ -449,7 +449,7 @@ unset($_SESSION['form_data']); // Nettoyer après récupération
             transition: var(--transition);
             margin-top: 15px;
             box-shadow: 
-                0 8px 25px rgba(232, 33, 39, 0.5),
+                0 8px 25px rgba(0, 56, 168, 0.5),
                 inset 0 1px 0 rgba(255, 255, 255, 0.5);
             position: relative;
             overflow: hidden;
@@ -462,8 +462,8 @@ unset($_SESSION['form_data']); // Nettoyer après récupération
             color: var(--tesla-green);
             transform: translateY(-5px);
             box-shadow: 
-                0 15px 30px rgba(232, 33, 39, 0.6),
-                inset 0 1px 0 rgba(232, 33, 39, 0.5);
+                0 15px 30px rgba(0, 56, 168, 0.6),
+                inset 0 1px 0 rgba(0, 56, 168, 0.5);
         }
         
         .signup-link {
@@ -504,7 +504,7 @@ unset($_SESSION['form_data']); // Nettoyer après récupération
             border-color: var(--tesla-green);
             color: var(--tesla-black);
             transform: translateY(-3px);
-            box-shadow: 0 5px 20px rgba(232, 33, 39, 0.4);
+            box-shadow: 0 5px 20px rgba(0, 56, 168, 0.4);
         }
         
         /* Messages d'erreur/bienvenue */
@@ -525,7 +525,7 @@ unset($_SESSION['form_data']); // Nettoyer après récupération
         }
         
         .welcome-message {
-            background: rgba(232, 33, 39, 0.15);
+            background: rgba(0, 56, 168, 0.15);
             padding: 16px;
             border-radius: 10px;
             margin-bottom: 20px;
@@ -561,7 +561,7 @@ unset($_SESSION['form_data']); // Nettoyer après récupération
     <div class="main-container">
         <div class="header">
             <div class="logo">
-                <div class="logo-icon">NV</div>
+                <div class="logo-icon">AZ</div>
                 <div>
                     <div class="logo-text">Allianz</div>
                     <div class="logo-subtext">TECHNOLOGIE</div>

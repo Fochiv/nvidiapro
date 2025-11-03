@@ -53,10 +53,10 @@ function joursRestants($date_fin) {
             --text-gray: #aaaaaa;
             --text-light: #cccccc;
             --card-bg: rgba(25, 25, 25, 0.95);
-            --border-color: rgba(232, 33, 39, 0.3);
+            --border-color: rgba(0, 56, 168, 0.3);
             --success: #10b981;
             --warning: #f59e0b;
-            --error: #ef4444;
+            --error: #0038A8;
             --transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
             --tesla-green: #0038A8;
             --deep-black: #000000;
@@ -96,8 +96,8 @@ function joursRestants($date_fin) {
             width: 100%;
             height: 100%;
             background: 
-                radial-gradient(circle at 10% 20%, rgba(232, 33, 39, 0.15) 0%, transparent 20%),
-                radial-gradient(circle at 90% 80%, rgba(232, 33, 39, 0.1) 0%, transparent 20%),
+                radial-gradient(circle at 10% 20%, rgba(0, 56, 168, 0.15) 0%, transparent 20%),
+                radial-gradient(circle at 90% 80%, rgba(0, 56, 168, 0.1) 0%, transparent 20%),
                 linear-gradient(135deg, var(--primary-black) 0%, var(--soft-black) 100%);
             z-index: -3;
         }
@@ -109,9 +109,9 @@ function joursRestants($date_fin) {
             width: 100%;
             height: 100%;
             background-image: 
-                linear-gradient(30deg, rgba(232, 33, 39, 0.08) 12%, transparent 12.5%, transparent 87%, rgba(232, 33, 39, 0.08) 87.5%, rgba(232, 33, 39, 0.08) 0),
-                linear-gradient(150deg, rgba(232, 33, 39, 0.08) 12%, transparent 12.5%, transparent 87%, rgba(232, 33, 39, 0.08) 87.5%, rgba(232, 33, 39, 0.08) 0),
-                linear-gradient(60deg, rgba(232, 33, 39, 0.1) 25%, transparent 25.5%, transparent 75%, rgba(232, 33, 39, 0.1) 75%, rgba(232, 33, 39, 0.1) 0);
+                linear-gradient(30deg, rgba(0, 56, 168, 0.08) 12%, transparent 12.5%, transparent 87%, rgba(0, 56, 168, 0.08) 87.5%, rgba(0, 56, 168, 0.08) 0),
+                linear-gradient(150deg, rgba(0, 56, 168, 0.08) 12%, transparent 12.5%, transparent 87%, rgba(0, 56, 168, 0.08) 87.5%, rgba(0, 56, 168, 0.08) 0),
+                linear-gradient(60deg, rgba(0, 56, 168, 0.1) 25%, transparent 25.5%, transparent 75%, rgba(0, 56, 168, 0.1) 75%, rgba(0, 56, 168, 0.1) 0);
             background-size: 100px 175px;
             background-position: 0 0, 50px 87.5px;
             z-index: -2;
@@ -128,7 +128,7 @@ function joursRestants($date_fin) {
             right: 0;
             width: 400px;
             height: 400px;
-            background: radial-gradient(circle, rgba(232, 33, 39, 0.25) 0%, transparent 70%);
+            background: radial-gradient(circle, rgba(0, 56, 168, 0.25) 0%, transparent 70%);
             filter: blur(80px);
             z-index: -1;
         }
@@ -142,9 +142,9 @@ function joursRestants($date_fin) {
             background: linear-gradient(
                 125deg,
                 transparent 0%,
-                rgba(232, 33, 39, 0.1) 40%,
+                rgba(0, 56, 168, 0.1) 40%,
                 transparent 50%,
-                rgba(232, 33, 39, 0.1) 60%,
+                rgba(0, 56, 168, 0.1) 60%,
                 transparent 100%
             );
             opacity: 0.2;
@@ -178,7 +178,7 @@ function joursRestants($date_fin) {
             color: var(--primary-black);
             font-weight: bold;
             font-size: 18px;
-            box-shadow: 0 8px 25px rgba(232, 33, 39, 0.4);
+            box-shadow: 0 8px 25px rgba(0, 56, 168, 0.4);
             transition: all 0.3s ease;
             position: relative;
             overflow: hidden;
@@ -200,7 +200,7 @@ function joursRestants($date_fin) {
         
         .logo-icon:hover {
             transform: rotate(5deg) scale(1.05);
-            box-shadow: 0 12px 35px rgba(232, 33, 39, 0.6);
+            box-shadow: 0 12px 35px rgba(0, 56, 168, 0.6);
         }
         
         .logo-text {
@@ -209,7 +209,7 @@ function joursRestants($date_fin) {
             font-size: 22px;
             color: var(--text-dark); /* Blanc pour un fond sombre */
             letter-spacing: -0.5px;
-            text-shadow: 0 0 5px rgba(232, 33, 39, 0.5);
+            text-shadow: 0 0 5px rgba(0, 56, 168, 0.5);
         }
         
         .logo-subtext {
@@ -253,7 +253,7 @@ function joursRestants($date_fin) {
             display: inline-flex;
             align-items: center;
             gap: 6px;
-            box-shadow: 0 4px 12px rgba(232, 33, 39, 0.3);
+            box-shadow: 0 4px 12px rgba(0, 56, 168, 0.3);
         }
         
         /* Grille des portefeuilles */
@@ -276,12 +276,12 @@ function joursRestants($date_fin) {
         
         .portfolio-card:hover {
             transform: translateY(-5px);
-            box-shadow: 0 15px 40px rgba(232, 33, 39, 0.2);
+            box-shadow: 0 15px 40px rgba(0, 56, 168, 0.2);
         }
         
         .portfolio-header {
             padding: 20px 20px 15px 20px;
-            background: rgba(232, 33, 39, 0.05);
+            background: rgba(0, 56, 168, 0.05);
             border-bottom: 1px solid var(--border-color);
         }
         
@@ -385,7 +385,7 @@ function joursRestants($date_fin) {
         }
         
         .status-active {
-            background: rgba(232, 33, 39, 0.15);
+            background: rgba(0, 56, 168, 0.15);
             color: var(--accent-green);
             border: 1px solid var(--accent-green);
         }
@@ -435,12 +435,12 @@ function joursRestants($date_fin) {
             text-decoration: none;
             font-weight: 700;
             transition: var(--transition);
-            box-shadow: 0 4px 12px rgba(232, 33, 39, 0.4);
+            box-shadow: 0 4px 12px rgba(0, 56, 168, 0.4);
         }
         
         .invest-btn:hover {
             transform: translateY(-2px);
-            box-shadow: 0 6px 15px rgba(232, 33, 39, 0.6);
+            box-shadow: 0 6px 15px rgba(0, 56, 168, 0.6);
             background: var(--green-light);
         }
         

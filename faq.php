@@ -23,8 +23,8 @@ if (!isset($_SESSION['user_id'])) {
             --soft-dark: #2d3748; /* Fond plus doux */
             --warm-white: #fefefe;
             --light-gray: #f1f5f9;
-            --accent-green: #0038A8; /* Vert émeraude Allianz */
-            --green-light: #ff4444;
+            --accent-green: #0038A8; /* Bleu Allianz */
+            --green-light: #0038A8;
             --green-dark: #589a00;
             --accent-black: #000000;
             --text-white: #e2e8f0; /* Texte clair sur fond foncé */
@@ -35,7 +35,7 @@ if (!isset($_SESSION['user_id'])) {
             --border-color: rgba(255, 255, 255, 0.3);
             --success: #10b981;
             --warning: #f59e0b;
-            --error: #ef4444;
+            --error: #0038A8;
             --transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
             --premium-color: #0038A8;
             --deep-color: #589a00;
@@ -77,9 +77,9 @@ if (!isset($_SESSION['user_id'])) {
             width: 100%;
             height: 100%;
             background: 
-                radial-gradient(circle at 10% 20%, rgba(232, 33, 39, 0.15) 0%, transparent 20%),
+                radial-gradient(circle at 10% 20%, rgba(0, 56, 168, 0.15) 0%, transparent 20%),
                 radial-gradient(circle at 90% 80%, rgba(0, 0, 0, 0.5) 0%, transparent 20%),
-                radial-gradient(circle at 20% 30%, rgba(232, 33, 39, 0.1) 0%, transparent 50%),
+                radial-gradient(circle at 20% 30%, rgba(0, 56, 168, 0.1) 0%, transparent 50%),
                 radial-gradient(circle at 80% 70%, rgba(0, 0, 0, 0.3) 0%, transparent 50%),
                 linear-gradient(135deg, var(--soft-dark) 0%, var(--primary-dark) 100%);
             z-index: -3;
@@ -92,11 +92,11 @@ if (!isset($_SESSION['user_id'])) {
             width: 100%;
             height: 100%;
             background-image: 
-                linear-gradient(30deg, rgba(232, 33, 39, 0.1) 12%, transparent 12.5%, transparent 87%, rgba(232, 33, 39, 0.1) 87.5%, rgba(232, 33, 39, 0.1) 0),
+                linear-gradient(30deg, rgba(0, 56, 168, 0.1) 12%, transparent 12.5%, transparent 87%, rgba(0, 56, 168, 0.1) 87.5%, rgba(0, 56, 168, 0.1) 0),
                 linear-gradient(150deg, rgba(0, 0, 0, 0.2) 12%, transparent 12.5%, transparent 87%, rgba(0, 0, 0, 0.2) 87.5%, rgba(0, 0, 0, 0.2) 0),
-                linear-gradient(30deg, rgba(232, 33, 39, 0.06) 12%, transparent 12.5%, transparent 87%, rgba(232, 33, 39, 0.06) 87.5%, rgba(232, 33, 39, 0.06) 0),
+                linear-gradient(30deg, rgba(0, 56, 168, 0.06) 12%, transparent 12.5%, transparent 87%, rgba(0, 56, 168, 0.06) 87.5%, rgba(0, 56, 168, 0.06) 0),
                 linear-gradient(150deg, rgba(0, 0, 0, 0.15) 12%, transparent 12.5%, transparent 87%, rgba(0, 0, 0, 0.15) 87.5%, rgba(0, 0, 0, 0.15) 0),
-                linear-gradient(60deg, rgba(232, 33, 39, 0.12) 25%, transparent 25.5%, transparent 75%, rgba(232, 33, 39, 0.12) 75%, rgba(232, 33, 39, 0.12) 0),
+                linear-gradient(60deg, rgba(0, 56, 168, 0.12) 25%, transparent 25.5%, transparent 75%, rgba(0, 56, 168, 0.12) 75%, rgba(0, 56, 168, 0.12) 0),
                 linear-gradient(60deg, rgba(0, 0, 0, 0.25) 25%, transparent 25.5%, transparent 75%, rgba(0, 0, 0, 0.25) 75%, rgba(0, 0, 0, 0.25) 0);
             background-size: 100px 175px;
             background-position: 0 0, 0 0, 50px 87.5px, 50px 87.5px, 0 0, 50px 87.5px;
@@ -114,7 +114,7 @@ if (!isset($_SESSION['user_id'])) {
             right: 0;
             width: 400px;
             height: 400px;
-            background: radial-gradient(circle, rgba(232, 33, 39, 0.15) 0%, transparent 70%);
+            background: radial-gradient(circle, rgba(0, 56, 168, 0.15) 0%, transparent 70%);
             filter: blur(60px);
             z-index: -1;
         }
@@ -139,9 +139,9 @@ if (!isset($_SESSION['user_id'])) {
             background: linear-gradient(
                 125deg,
                 transparent 0%,
-                rgba(232, 33, 39, 0.08) 40%,
+                rgba(0, 56, 168, 0.08) 40%,
                 rgba(0, 0, 0, 0.3) 50%,
-                rgba(232, 33, 39, 0.08) 60%,
+                rgba(0, 56, 168, 0.08) 60%,
                 transparent 100%
             );
             opacity: 0.3;
@@ -175,7 +175,7 @@ if (!isset($_SESSION['user_id'])) {
             color: var(--accent-black); /* Couleur noire pour le texte N ou V */
             font-weight: bold;
             font-size: 18px;
-            box-shadow: 0 8px 25px rgba(232, 33, 39, 0.4);
+            box-shadow: 0 8px 25px rgba(0, 56, 168, 0.4);
             transition: all 0.3s ease;
             position: relative;
             overflow: hidden;
@@ -242,8 +242,8 @@ if (!isset($_SESSION['user_id'])) {
             background: var(--card-bg);
             border-radius: 20px;
             padding: 30px;
-            box-shadow: 0 10px 30px rgba(232, 33, 39, 0.15);
-            border: 1px solid rgba(232, 33, 39, 0.2);
+            box-shadow: 0 10px 30px rgba(0, 56, 168, 0.15);
+            border: 1px solid rgba(0, 56, 168, 0.2);
             margin-bottom: 30px;
             color: var(--text-dark); /* Texte sombre sur carte claire */
         }
@@ -251,7 +251,7 @@ if (!isset($_SESSION['user_id'])) {
         .content-section {
             margin-bottom: 35px;
             padding-bottom: 30px;
-            border-bottom: 1px solid rgba(232, 33, 39, 0.2);
+            border-bottom: 1px solid rgba(0, 56, 168, 0.2);
         }
         
         .content-section:last-child {
@@ -283,8 +283,8 @@ if (!isset($_SESSION['user_id'])) {
         }
         
         .highlight-box {
-            background: linear-gradient(135deg, rgba(232, 33, 39, 0.08), rgba(0, 0, 0, 0.05));
-            border: 1px solid rgba(232, 33, 39, 0.3);
+            background: linear-gradient(135deg, rgba(0, 56, 168, 0.08), rgba(0, 0, 0, 0.05));
+            border: 1px solid rgba(0, 56, 168, 0.3);
             border-radius: 12px;
             padding: 20px;
             margin: 20px 0;
@@ -308,8 +308,8 @@ if (!isset($_SESSION['user_id'])) {
         }
         
         .info-item {
-            background: rgba(232, 33, 39, 0.05);
-            border: 1px solid rgba(232, 33, 39, 0.15);
+            background: rgba(0, 56, 168, 0.05);
+            border: 1px solid rgba(0, 56, 168, 0.15);
             border-radius: 10px;
             padding: 15px;
             display: flex;
@@ -351,9 +351,9 @@ if (!isset($_SESSION['user_id'])) {
             align-items: flex-start;
             gap: 15px;
             padding: 15px;
-            background: rgba(232, 33, 39, 0.05);
+            background: rgba(0, 56, 168, 0.05);
             border-radius: 10px;
-            border: 1px solid rgba(232, 33, 39, 0.15);
+            border: 1px solid rgba(0, 56, 168, 0.15);
         }
         
         .step-number {
@@ -368,7 +368,7 @@ if (!isset($_SESSION['user_id'])) {
             font-weight: 700;
             font-size: 14px;
             flex-shrink: 0;
-            box-shadow: 0 2px 6px rgba(232, 33, 39, 0.4);
+            box-shadow: 0 2px 6px rgba(0, 56, 168, 0.4);
         }
         
         .step-content {
@@ -401,14 +401,14 @@ if (!isset($_SESSION['user_id'])) {
             text-decoration: none;
             font-weight: 700;
             transition: var(--transition);
-            box-shadow: 0 4px 12px rgba(232, 33, 39, 0.3);
+            box-shadow: 0 4px 12px rgba(0, 56, 168, 0.3);
             margin: 15px 0 25px 0;
             font-size: 15px;
         }
         
         .history-btn:hover {
             transform: translateY(-2px);
-            box-shadow: 0 6px 15px rgba(232, 33, 39, 0.4);
+            box-shadow: 0 6px 15px rgba(0, 56, 168, 0.4);
             background: var(--accent-green);
             color: var(--accent-black);
         }
@@ -433,7 +433,7 @@ if (!isset($_SESSION['user_id'])) {
             font-weight: 600;
             transition: var(--transition);
             box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
-            border: 1px solid rgba(232, 33, 39, 0.2);
+            border: 1px solid rgba(0, 56, 168, 0.2);
             font-size: 14px;
         }
         
@@ -445,7 +445,7 @@ if (!isset($_SESSION['user_id'])) {
         
         .action-btn:hover {
             transform: translateY(-2px);
-            box-shadow: 0 6px 15px rgba(232, 33, 39, 0.3);
+            box-shadow: 0 6px 15px rgba(0, 56, 168, 0.3);
         }
         
         /* Animations et Responsive inchangés pour conserver la structure */
@@ -556,7 +556,7 @@ if (!isset($_SESSION['user_id'])) {
     <div class="container">
         <div class="header">
             <div class="logo">
-                <div class="logo-icon">NV</div>
+                <div class="logo-icon">AZ</div>
                 <div>
                     <div class="logo-text">Allianz</div>
                     <div class="logo-subtext">TECHNOLOGIES</div>

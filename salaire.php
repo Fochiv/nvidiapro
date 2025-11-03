@@ -61,7 +61,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['reclamer_salaire'])) 
         --tesla-gray: #aaaaaa;
         --text-white: #ffffff;
         --text-light-gray: #e0e0e0;
-        --error: #ef4444;
+        --error: #0038A8;
         --warning: #f59e0b;
         --transition: all 0.3s ease;
     }
@@ -115,8 +115,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['reclamer_salaire'])) 
         padding: 25px;
         margin-bottom: 25px;
         /* Ombre technique verte */
-        box-shadow: 0 0 20px rgba(232, 33, 39, 0.3);
-        border: 1px solid rgba(232, 33, 39, 0.5);
+        box-shadow: 0 0 20px rgba(0, 56, 168, 0.3);
+        border: 1px solid rgba(0, 56, 168, 0.5);
         text-align: center;
         animation: fadeInUp 1s ease-out;
         position: relative;
@@ -131,7 +131,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['reclamer_salaire'])) 
         width: 100%;
         height: 100%;
         /* Motif subtil */
-        background: radial-gradient(circle at center, rgba(232, 33, 39, 0.05) 1%, transparent 70%);
+        background: radial-gradient(circle at center, rgba(0, 56, 168, 0.05) 1%, transparent 70%);
         z-index: -1;
     }
     
@@ -144,7 +144,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['reclamer_salaire'])) 
         font-weight: 700;
         font-size: 13px;
         margin-bottom: 15px;
-        box-shadow: 0 4px 10px rgba(232, 33, 39, 0.4);
+        box-shadow: 0 4px 10px rgba(0, 56, 168, 0.4);
     }
     
     .salaire-montant {
@@ -152,7 +152,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['reclamer_salaire'])) 
         font-weight: 900;
         color: var(--text-white);
         margin: 15px 0;
-        text-shadow: 0 0 10px rgba(232, 33, 39, 0.5);
+        text-shadow: 0 0 10px rgba(0, 56, 168, 0.5);
     }
     
     .salaire-periode {
@@ -174,7 +174,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['reclamer_salaire'])) 
         transition: var(--transition);
         width: 100%;
         margin: 20px 0;
-        box-shadow: 0 4px 15px rgba(232, 33, 39, 0.5);
+        box-shadow: 0 4px 15px rgba(0, 56, 168, 0.5);
         display: flex;
         align-items: center;
         justify-content: center;
@@ -183,7 +183,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['reclamer_salaire'])) 
     
     .btn-recupérer:hover:not(:disabled) {
         transform: scale(1.02);
-        box-shadow: 0 6px 20px rgba(232, 33, 39, 0.7);
+        box-shadow: 0 6px 20px rgba(0, 56, 168, 0.7);
     }
     
     .btn-recupérer:disabled {
@@ -213,7 +213,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['reclamer_salaire'])) 
         display: flex;
         align-items: center;
         gap: 10px;
-        border-bottom: 2px solid rgba(232, 33, 39, 0.3);
+        border-bottom: 2px solid rgba(0, 56, 168, 0.3);
         padding-bottom: 10px;
     }
     
@@ -244,9 +244,9 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['reclamer_salaire'])) 
         justify-content: center;
         font-weight: 700;
         font-size: 13px;
-        background: rgba(232, 33, 39, 0.1);
+        background: rgba(0, 56, 168, 0.1);
         color: var(--tesla-green);
-        border: 1px solid rgba(232, 33, 39, 0.5);
+        border: 1px solid rgba(0, 56, 168, 0.5);
     }
     
     .niveau-item.actuel .niveau-numero {
@@ -270,14 +270,14 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['reclamer_salaire'])) 
         width: 35px;
         height: 35px;
         border-radius: 8px;
-        background: rgba(232, 33, 39, 0.1);
+        background: rgba(0, 56, 168, 0.1);
         display: flex;
         align-items: center;
         justify-content: center;
         color: var(--tesla-green);
         font-size: 16px;
         flex-shrink: 0;
-        border: 1px solid rgba(232, 33, 39, 0.3);
+        border: 1px solid rgba(0, 56, 168, 0.3);
     }
     
     .info-text {

@@ -223,9 +223,9 @@ $pays_eligibles = [
             --text-gray: #b0b0b0; /* Texte gris clair */
             
             --card-bg: rgba(10, 10, 10, 0.95); /* Fond de la carte sombre transparent */
-            --border-color: rgba(232, 33, 39, 0.15); /* Bordure subtilement verte */
+            --border-color: rgba(0, 56, 168, 0.15); /* Bordure subtilement verte */
             
-            --error: #ef4444; /* Garder le rouge pour les erreurs */
+            --error: #0038A8; /* Garder le rouge pour les erreurs */
             --success: var(--tesla-green);
             --transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
         }
@@ -332,7 +332,7 @@ $pays_eligibles = [
             color: var(--tesla-black); /* Texte noir sur vert */
             font-weight: 700;
             font-size: 24px;
-            box-shadow: 0 8px 25px rgba(232, 33, 39, 0.4);
+            box-shadow: 0 8px 25px rgba(0, 56, 168, 0.4);
             transition: all 0.3s ease;
             position: relative;
             overflow: hidden;
@@ -352,7 +352,7 @@ $pays_eligibles = [
         
         .logo-icon:hover {
             transform: rotate(5deg) scale(1.05);
-            box-shadow: 0 12px 35px rgba(232, 33, 39, 0.6);
+            box-shadow: 0 12px 35px rgba(0, 56, 168, 0.6);
         }
         
         .logo-text {
@@ -392,7 +392,7 @@ $pays_eligibles = [
             border: 1px solid var(--border-color); /* Bordure subtilement verte */
             box-shadow: 
                 0 25px 50px rgba(0, 0, 0, 0.5),
-                0 15px 30px rgba(232, 33, 39, 0.1);
+                0 15px 30px rgba(0, 56, 168, 0.1);
             position: relative;
             overflow: hidden;
             animation: formAppear 1.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
@@ -406,7 +406,7 @@ $pays_eligibles = [
             width: 100%;
             height: 4px;
             background: var(--tesla-green); /* Ligne verte */
-            box-shadow: 0 0 15px rgba(232, 33, 39, 0.5);
+            box-shadow: 0 0 15px rgba(0, 56, 168, 0.5);
         }
         
         .form-container::after {
@@ -416,7 +416,7 @@ $pays_eligibles = [
             left: 0;
             right: 0;
             bottom: 0;
-            background: linear-gradient(135deg, rgba(0, 0, 0, 0.1) 0%, rgba(232, 33, 39, 0.05) 100%);
+            background: linear-gradient(135deg, rgba(0, 0, 0, 0.1) 0%, rgba(0, 56, 168, 0.05) 100%);
             pointer-events: none;
             z-index: -1;
         }
@@ -443,7 +443,7 @@ $pays_eligibles = [
             height: 3px;
             background: var(--tesla-green);
             border-radius: 2px;
-            box-shadow: 0 0 10px rgba(232, 33, 39, 0.5);
+            box-shadow: 0 0 10px rgba(0, 56, 168, 0.5);
         }
         
         .form-group {
@@ -470,7 +470,7 @@ $pays_eligibles = [
             width: 100%;
             padding: 18px;
             background: var(--input-dark); /* Fond sombre pour l'input */
-            border: 1px solid rgba(232, 33, 39, 0.3);
+            border: 1px solid rgba(0, 56, 168, 0.3);
             border-radius: 12px;
             font-size: 16px;
             color: var(--text-light);
@@ -486,7 +486,7 @@ $pays_eligibles = [
         .form-input:focus {
             outline: none;
             border-color: var(--tesla-green);
-            box-shadow: 0 0 0 3px rgba(232, 33, 39, 0.2), 0 4px 15px rgba(232, 33, 39, 0.3);
+            box-shadow: 0 0 0 3px rgba(0, 56, 168, 0.2), 0 4px 15px rgba(0, 56, 168, 0.3);
             background: var(--tesla-black);
             transform: translateY(-2px);
         }
@@ -516,7 +516,7 @@ $pays_eligibles = [
             width: 100%;
             padding: 18px;
             background: var(--input-dark);
-            border: 1px solid rgba(232, 33, 39, 0.3);
+            border: 1px solid rgba(0, 56, 168, 0.3);
             border-radius: 12px;
             color: var(--text-light);
             height: 100%;
@@ -544,7 +544,7 @@ $pays_eligibles = [
             transition: var(--transition);
             margin-top: 15px;
             box-shadow: 
-                0 8px 25px rgba(232, 33, 39, 0.6),
+                0 8px 25px rgba(0, 56, 168, 0.6),
                 inset 0 1px 0 rgba(255, 255, 255, 0.5);
             position: relative;
             overflow: hidden;
@@ -572,8 +572,8 @@ $pays_eligibles = [
             color: var(--tesla-green);
             transform: translateY(-5px);
             box-shadow: 
-                0 15px 30px rgba(232, 33, 39, 0.8),
-                inset 0 1px 0 rgba(232, 33, 39, 0.4);
+                0 15px 30px rgba(0, 56, 168, 0.8),
+                inset 0 1px 0 rgba(0, 56, 168, 0.4);
         }
         
         .login-link {
@@ -616,7 +616,7 @@ $pays_eligibles = [
             left: -100%;
             width: 100%;
             height: 100%;
-            background: linear-gradient(90deg, transparent, rgba(232, 33, 39, 0.2), transparent);
+            background: linear-gradient(90deg, transparent, rgba(0, 56, 168, 0.2), transparent);
             transition: left 0.7s;
         }
         
@@ -625,9 +625,9 @@ $pays_eligibles = [
         }
         
         .btn-login-form:hover {
-            background: rgba(232, 33, 39, 0.1);
+            background: rgba(0, 56, 168, 0.1);
             transform: translateY(-3px);
-            box-shadow: 0 5px 20px rgba(232, 33, 39, 0.3);
+            box-shadow: 0 5px 20px rgba(0, 56, 168, 0.3);
         }
         
         /* Messages d'erreur améliorés */
@@ -651,7 +651,7 @@ $pays_eligibles = [
         }
         
         .referral-notice {
-            background: rgba(232, 33, 39, 0.1);
+            background: rgba(0, 56, 168, 0.1);
             padding: 18px;
             border-radius: 12px;
             margin-bottom: 25px;
@@ -664,13 +664,13 @@ $pays_eligibles = [
             align-items: center;
             justify-content: center;
             gap: 10px;
-            box-shadow: 0 5px 15px rgba(232, 33, 39, 0.2);
+            box-shadow: 0 5px 15px rgba(0, 56, 168, 0.2);
             animation: pulse 2s infinite;
             backdrop-filter: blur(10px);
         }
         
         .bonus-notice {
-            background: rgba(232, 33, 39, 0.1);
+            background: rgba(0, 56, 168, 0.1);
             padding: 18px;
             border-radius: 12px;
             margin-bottom: 25px;
@@ -683,7 +683,7 @@ $pays_eligibles = [
             align-items: center;
             justify-content: center;
             gap: 10px;
-            box-shadow: 0 5px 15px rgba(232, 33, 39, 0.2);
+            box-shadow: 0 5px 15px rgba(0, 56, 168, 0.2);
             backdrop-filter: blur(10px);
         }
         
@@ -772,7 +772,7 @@ $pays_eligibles = [
     <div class="main-container">
         <div class="header">
             <div class="logo">
-                <div class="logo-icon">NV</div>
+                <div class="logo-icon">AZ</div>
                 <div>
                     <div class="logo-text">Allianz</div>
                     <div class="logo-subtext">TECHNOLOGIE</div>

@@ -89,14 +89,14 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['message']) && isset($
         --warm-white: #fefefe;
         --light-gray: #1a1a1a; /* Fond sombre */
         --accent-green: #0038A8; /* Rouge Allianz */
-        --green-light: #ff4444;
+        --green-light: #0038A8;
         --green-dark: #aa1111;
         --text-dark: #e0e0e0; /* Texte clair sur fond sombre */
         --text-gray: #a0a0a0;
         --text-light: #cccccc;
         --card-bg: rgba(30, 30, 30, 0.95); /* Fond de carte sombre et semi-transparent */
         --border-color: rgba(255, 255, 255, 0.1);
-        --error: #ef4444;
+        --error: #0038A8;
         --success: #10b981;
         --transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
         --premium-color-a: #1e1e1e; /* Noir profond */
@@ -145,9 +145,9 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['message']) && isset($
         width: 100%;
         height: 100%;
         background: 
-            radial-gradient(circle at 10% 20%, rgba(232, 33, 39, 0.15) 0%, transparent 20%),
+            radial-gradient(circle at 10% 20%, rgba(0, 56, 168, 0.15) 0%, transparent 20%),
             radial-gradient(circle at 90% 80%, rgba(255, 68, 68, 0.15) 0%, transparent 20%),
-            radial-gradient(circle at 20% 30%, rgba(232, 33, 39, 0.1) 0%, transparent 50%),
+            radial-gradient(circle at 20% 30%, rgba(0, 56, 168, 0.1) 0%, transparent 50%),
             radial-gradient(circle at 80% 70%, rgba(255, 68, 68, 0.1) 0%, transparent 50%),
             linear-gradient(135deg, #0d0d0d 0%, #1a1a1a 100%);
         z-index: -3;
@@ -161,11 +161,11 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['message']) && isset($
         width: 100%;
         height: 100%;
         background-image: 
-            linear-gradient(30deg, rgba(232, 33, 39, 0.08) 12%, transparent 12.5%, transparent 87%, rgba(232, 33, 39, 0.08) 87.5%, rgba(232, 33, 39, 0.08) 0),
+            linear-gradient(30deg, rgba(0, 56, 168, 0.08) 12%, transparent 12.5%, transparent 87%, rgba(0, 56, 168, 0.08) 87.5%, rgba(0, 56, 168, 0.08) 0),
             linear-gradient(150deg, rgba(255, 68, 68, 0.08) 12%, transparent 12.5%, transparent 87%, rgba(255, 68, 68, 0.08) 87.5%, rgba(255, 68, 68, 0.08) 0),
-            linear-gradient(30deg, rgba(232, 33, 39, 0.05) 12%, transparent 12.5%, transparent 87%, rgba(232, 33, 39, 0.05) 87.5%, rgba(232, 33, 39, 0.05) 0),
+            linear-gradient(30deg, rgba(0, 56, 168, 0.05) 12%, transparent 12.5%, transparent 87%, rgba(0, 56, 168, 0.05) 87.5%, rgba(0, 56, 168, 0.05) 0),
             linear-gradient(150deg, rgba(255, 68, 68, 0.05) 12%, transparent 12.5%, transparent 87%, rgba(255, 68, 68, 0.05) 87.5%, rgba(255, 68, 68, 0.05) 0),
-            linear-gradient(60deg, rgba(232, 33, 39, 0.1) 25%, transparent 25.5%, transparent 75%, rgba(232, 33, 39, 0.1) 75%, rgba(232, 33, 39, 0.1) 0),
+            linear-gradient(60deg, rgba(0, 56, 168, 0.1) 25%, transparent 25.5%, transparent 75%, rgba(0, 56, 168, 0.1) 75%, rgba(0, 56, 168, 0.1) 0),
             linear-gradient(60deg, rgba(255, 68, 68, 0.1) 25%, transparent 25.5%, transparent 75%, rgba(255, 68, 68, 0.1) 75%, rgba(255, 68, 68, 0.1) 0);
         background-size: 100px 175px; /* Ajout des propriétés de background manquantes */
         background-position: 0 0, 0 0, 50px 87.5px, 50px 87.5px, 0 0, 50px 87.5px;
@@ -180,7 +180,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['message']) && isset($
         right: 0;
         width: 400px;
         height: 400px;
-        background: radial-gradient(circle, rgba(232, 33, 39, 0.2) 0%, transparent 70%);
+        background: radial-gradient(circle, rgba(0, 56, 168, 0.2) 0%, transparent 70%);
         filter: blur(60px);
         z-index: -1;
     }
@@ -205,9 +205,9 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['message']) && isset($
         background: linear-gradient(
             125deg,
             transparent 0%,
-            rgba(232, 33, 39, 0.1) 40%,
+            rgba(0, 56, 168, 0.1) 40%,
             rgba(255, 68, 68, 0.1) 50%,
-            rgba(232, 33, 39, 0.1) 60%,
+            rgba(0, 56, 168, 0.1) 60%,
             transparent 100%
         );
         opacity: 0.2;
@@ -245,7 +245,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['message']) && isset($
         width: 45px;
         height: 45px;
         background: linear-gradient(135deg, var(--accent-green), var(--green-dark));
-        box-shadow: 0 8px 25px rgba(232, 33, 39, 0.4);
+        box-shadow: 0 8px 25px rgba(0, 56, 168, 0.4);
         border: none;
         border-radius: 12px;
         display: flex;
@@ -273,7 +273,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['message']) && isset($
 
     .logo-icon:hover {
         transform: rotate(5deg) scale(1.05);
-        box-shadow: 0 12px 35px rgba(232, 33, 39, 0.6);
+        box-shadow: 0 12px 35px rgba(0, 56, 168, 0.6);
     }
     
     .logo-text {
@@ -342,7 +342,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['message']) && isset($
         left: 0;
         width: 100%;
         height: 100%;
-        background: radial-gradient(circle at 100% 0%, rgba(232, 33, 39, 0.2) 0%, transparent 40%);
+        background: radial-gradient(circle at 100% 0%, rgba(0, 56, 168, 0.2) 0%, transparent 40%);
         pointer-events: none;
         z-index: 0;
     }
@@ -358,10 +358,10 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['message']) && isset($
     .card-logo {
         width: 32px;
         height: 32px;
-        background: rgba(232, 33, 39, 0.2);
-        border: 1.5px solid rgba(232, 33, 39, 0.3);
+        background: rgba(0, 56, 168, 0.2);
+        border: 1.5px solid rgba(0, 56, 168, 0.3);
         color: var(--accent-green);
-        box-shadow: 0 0 10px rgba(232, 33, 39, 0.3);
+        box-shadow: 0 0 10px rgba(0, 56, 168, 0.3);
         border-radius: 8px; /* Ajout de border-radius manquant */
         display: flex;
         align-items: center;
@@ -371,8 +371,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['message']) && isset($
     }
     
     .balance-container {
-        background: rgba(232, 33, 39, 0.1);
-        border: 1px solid rgba(232, 33, 39, 0.2);
+        background: rgba(0, 56, 168, 0.1);
+        border: 1px solid rgba(0, 56, 168, 0.2);
         box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
         border-radius: 12px; /* Ajout de border-radius manquant */
         padding: 12px; /* Ajout de padding manquant */
@@ -393,7 +393,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['message']) && isset($
         font-size: 24px;
         font-weight: 700;
         color: var(--accent-green);
-        text-shadow: 0 2px 8px rgba(232, 33, 39, 0.3);
+        text-shadow: 0 2px 8px rgba(0, 56, 168, 0.3);
         letter-spacing: 0.5px; /* Ajout de letter-spacing manquant */
     }
     
@@ -429,7 +429,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['message']) && isset($
         flex-direction: row; /* AFFICHAGE HORIZONTAL */
         gap: 10px;
         box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
-        border: 1px solid rgba(232, 33, 39, 0.1);
+        border: 1px solid rgba(0, 56, 168, 0.1);
     }
     
     .action-item { 
@@ -447,7 +447,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['message']) && isset($
     }
 
     .action-item:hover {
-        background: rgba(232, 33, 39, 0.1);
+        background: rgba(0, 56, 168, 0.1);
         transform: translateY(-2px); /* Ajout de transform manquant */
     }
     
@@ -485,7 +485,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['message']) && isset($
     /* Barre de notifications */
     .notification-bar {
         background: var(--card-bg);
-        border: 1px solid rgba(232, 33, 39, 0.1);
+        border: 1px solid rgba(0, 56, 168, 0.1);
         box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
         border-radius: 14px; /* Ajout de border-radius manquant */
         padding: 16px; /* Ajout de padding manquant */
@@ -519,8 +519,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['message']) && isset($
         opacity: 0;
         transform: translateY(20px);
         transition: all 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94);
-        background: rgba(232, 33, 39, 0.1);
-        border: 1px solid rgba(232, 33, 39, 0.2);
+        background: rgba(0, 56, 168, 0.1);
+        border: 1px solid rgba(0, 56, 168, 0.2);
         border-radius: 10px;
     }
     
@@ -554,7 +554,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['message']) && isset($
     .h-action-btn {
         flex: 1; /* Ajout de flex manquant */
         background: var(--card-bg);
-        border: 1px solid rgba(232, 33, 39, 0.1);
+        border: 1px solid rgba(0, 56, 168, 0.1);
         box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
         color: var(--text-dark);
         border-radius: 12px; /* Ajout de border-radius manquant */
@@ -569,7 +569,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['message']) && isset($
     }
     
     .h-action-btn:hover {
-        background: rgba(232, 33, 39, 0.1);
+        background: rgba(0, 56, 168, 0.1);
         box-shadow: 0 5px 15px rgba(0, 0, 0, 0.4);
         transform: translateY(-3px); /* Ajout de transform manquant */
     }
@@ -604,7 +604,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['message']) && isset($
     .photo-slider {
         background: var(--card-bg);
         box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
-        border: 1px solid rgba(232, 33, 39, 0.1);
+        border: 1px solid rgba(0, 56, 168, 0.1);
         border-radius: 16px;
         overflow: hidden;
         position: relative;
@@ -667,14 +667,14 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['message']) && isset($
         justify-content: center;
         gap: 8px;
         padding: 12px;
-        background: rgba(232, 33, 39, 0.05);
+        background: rgba(0, 56, 168, 0.05);
     }
     
     .photo-indicator {
         width: 8px;
         height: 8px;
         border-radius: 50%;
-        background: rgba(232, 33, 39, 0.3);
+        background: rgba(0, 56, 168, 0.3);
         transition: var(--transition);
         cursor: pointer;
     }
@@ -708,7 +708,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['message']) && isset($
     
     .post-btn {
         background: linear-gradient(135deg, var(--accent-green), var(--green-light));
-        box-shadow: 0 4px 12px rgba(232, 33, 39, 0.3);
+        box-shadow: 0 4px 12px rgba(0, 56, 168, 0.3);
         color: var(--primary-white);
         border: none;
         padding: 8px 15px;
@@ -723,7 +723,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['message']) && isset($
     }
     
     .post-btn:hover {
-        box-shadow: 0 6px 15px rgba(232, 33, 39, 0.4);
+        box-shadow: 0 6px 15px rgba(0, 56, 168, 0.4);
         transform: translateY(-2px); /* Ajout de transform manquant */
     }
     
@@ -735,7 +735,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['message']) && isset($
     .post-slider {
         background: var(--card-bg);
         box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
-        border: 1px solid rgba(232, 33, 39, 0.1);
+        border: 1px solid rgba(0, 56, 168, 0.1);
         border-radius: 16px;
         overflow: hidden;
         position: relative;
@@ -784,7 +784,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['message']) && isset($
     
     .post-content {
         padding: 15px;
-        background: rgba(232, 33, 39, 0.05);
+        background: rgba(0, 56, 168, 0.05);
     }
     
     .post-text {
@@ -799,14 +799,14 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['message']) && isset($
         justify-content: center;
         gap: 8px;
         padding: 12px;
-        background: rgba(232, 33, 39, 0.05);
+        background: rgba(0, 56, 168, 0.05);
     }
     
     .post-indicator {
         width: 8px;
         height: 8px;
         border-radius: 50%;
-        background: rgba(232, 33, 39, 0.3);
+        background: rgba(0, 56, 168, 0.3);
         transition: var(--transition);
         cursor: pointer;
     }
@@ -902,8 +902,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['message']) && isset($
     .form-input, .form-textarea {
         width: 100%;
         padding: 12px;
-        background: rgba(232, 33, 39, 0.05);
-        border: 1px solid rgba(232, 33, 39, 0.2);
+        background: rgba(0, 56, 168, 0.05);
+        border: 1px solid rgba(0, 56, 168, 0.2);
         border-radius: 8px;
         font-size: 14px;
         color: var(--text-dark);
@@ -919,7 +919,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['message']) && isset($
     .form-input:focus, .form-textarea:focus {
         outline: none;
         border-color: var(--accent-green);
-        box-shadow: 0 0 0 2px rgba(232, 33, 39, 0.2);
+        box-shadow: 0 0 0 2px rgba(0, 56, 168, 0.2);
     }
     
     .file-upload { /* Ajout des styles manquants */
@@ -929,8 +929,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['message']) && isset($
     }
 
     .file-upload-btn {
-        background: rgba(232, 33, 39, 0.05);
-        border: 1px dashed rgba(232, 33, 39, 0.3);
+        background: rgba(0, 56, 168, 0.05);
+        border: 1px dashed rgba(0, 56, 168, 0.3);
         border-radius: 8px;
         padding: 20px;
         text-align: center;
@@ -941,7 +941,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['message']) && isset($
     }
     
     .file-upload-btn:hover {
-        background: rgba(232, 33, 39, 0.1);
+        background: rgba(0, 56, 168, 0.1);
         border-color: var(--accent-green);
     }
     
@@ -970,7 +970,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['message']) && isset($
     
     .submit-btn {
         background: linear-gradient(135deg, var(--accent-green), var(--green-light));
-        box-shadow: 0 4px 12px rgba(232, 33, 39, 0.3);
+        box-shadow: 0 4px 12px rgba(0, 56, 168, 0.3);
         color: var(--primary-white);
         border: none;
         padding: 15px;
@@ -984,7 +984,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['message']) && isset($
     }
     
     .submit-btn:hover {
-        box-shadow: 0 6px 15px rgba(232, 33, 39, 0.4);
+        box-shadow: 0 6px 15px rgba(0, 56, 168, 0.4);
         transform: translateY(-2px); /* Ajout de transform manquant */
     }
     
@@ -1000,7 +1000,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['message']) && isset($
         gap: 12px;
         padding: 15px;
         border-radius: 12px;
-        background: rgba(232, 33, 39, 0.05);
+        background: rgba(0, 56, 168, 0.05);
         transition: var(--transition);
         cursor: pointer;
         text-decoration: none;
@@ -1008,7 +1008,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['message']) && isset($
     }
     
     .community-btn:hover {
-        background: rgba(232, 33, 39, 0.1);
+        background: rgba(0, 56, 168, 0.1);
         transform: translateX(5px);
     }
     
@@ -1124,7 +1124,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['message']) && isset($
     
     .bonus-section {
         background: linear-gradient(135deg, var(--accent-green), var(--green-dark));
-        box-shadow: 0 4px 12px rgba(232, 33, 39, 0.3);
+        box-shadow: 0 4px 12px rgba(0, 56, 168, 0.3);
         color: white;
         padding: 15px;
         border-radius: 12px;
@@ -1174,9 +1174,9 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['message']) && isset($
     }
     
     .welcome-btn-close {
-        background: rgba(232, 33, 39, 0.05);
+        background: rgba(0, 56, 168, 0.05);
         color: var(--text-dark);
-        border: 1px solid rgba(232, 33, 39, 0.2);
+        border: 1px solid rgba(0, 56, 168, 0.2);
     }
     
     .welcome-btn:hover {
@@ -1208,7 +1208,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['message']) && isset($
         display: flex;
         align-items: center;
         justify-content: center;
-        box-shadow: 0 8px 25px rgba(232, 33, 39, 0.4);
+        box-shadow: 0 8px 25px rgba(0, 56, 168, 0.4);
         cursor: pointer;
         z-index: 99;
         transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
@@ -1234,19 +1234,19 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['message']) && isset($
 
     @keyframes pulse-green {
         0% {
-            box-shadow: 0 8px 25px rgba(232, 33, 39, 0.4);
+            box-shadow: 0 8px 25px rgba(0, 56, 168, 0.4);
         }
         50% {
-            box-shadow: 0 0 0 15px rgba(232, 33, 39, 0.2);
+            box-shadow: 0 0 0 15px rgba(0, 56, 168, 0.2);
         }
         100% {
-            box-shadow: 0 8px 25px rgba(232, 33, 39, 0.4);
+            box-shadow: 0 8px 25px rgba(0, 56, 168, 0.4);
         }
     }
     
     .floating-service:hover {
         transform: scale(1.05);
-        box-shadow: 0 12px 30px rgba(232, 33, 39, 0.6);
+        box-shadow: 0 12px 30px rgba(0, 56, 168, 0.6);
     }
     
     .floating-service:hover i {
@@ -1287,7 +1287,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['message']) && isset($
         padding: 15px;
         cursor: pointer;
         transition: var(--transition);
-        background: rgba(232, 33, 39, 0.05);
+        background: rgba(0, 56, 168, 0.05);
         border: none;
         width: 100%;
         color: var(--text-dark);
@@ -1296,7 +1296,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['message']) && isset($
     }
     
     .service-option:hover {
-        background: rgba(232, 33, 39, 0.1);
+        background: rgba(0, 56, 168, 0.1);
     }
     
     .service-option i {
@@ -1510,7 +1510,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['message']) && isset($
     <div class="container">
         <div class="header">
             <div class="logo">
-                <div class="logo-icon">NV</div>
+                <div class="logo-icon">AZ</div>
                 <div>
                     <div class="logo-text">Allianz</div>
                     <div class="logo-subtext">TECHNOLOGIE</div>
@@ -1591,7 +1591,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['message']) && isset($
                     <div class="balance-label">
                         <i class="fas fa-wallet"></i> Solde Principal
                     </div>
-                    <div class="card-logo">NV</div>
+                    <div class="card-logo">AZ</div>
                 </div>
                 
                 <div class="balance-container">

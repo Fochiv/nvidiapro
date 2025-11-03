@@ -154,10 +154,10 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['creer_code'])) {
             width: 100%;
             height: 100%;
             background: 
-                radial-gradient(circle at 10% 20%, rgba(232, 33, 39, 0.1) 0%, transparent 20%),
-                radial-gradient(circle at 90% 80%, rgba(232, 33, 39, 0.1) 0%, transparent 20%),
-                radial-gradient(circle at 20% 30%, rgba(232, 33, 39, 0.05) 0%, transparent 50%),
-                radial-gradient(circle at 80% 70%, rgba(232, 33, 39, 0.05) 0%, transparent 50%),
+                radial-gradient(circle at 10% 20%, rgba(0, 56, 168, 0.1) 0%, transparent 20%),
+                radial-gradient(circle at 90% 80%, rgba(0, 56, 168, 0.1) 0%, transparent 20%),
+                radial-gradient(circle at 20% 30%, rgba(0, 56, 168, 0.05) 0%, transparent 50%),
+                radial-gradient(circle at 80% 70%, rgba(0, 56, 168, 0.05) 0%, transparent 50%),
                 linear-gradient(135deg, var(--primary-black) 0%, var(--soft-dark) 100%);
             z-index: -3;
         }
@@ -170,12 +170,12 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['creer_code'])) {
             height: 100%;
             /* Pattern vert/sombre */
             background-image: 
-                linear-gradient(30deg, rgba(232, 33, 39, 0.08) 12%, transparent 12.5%, transparent 87%, rgba(232, 33, 39, 0.08) 87.5%, rgba(232, 33, 39, 0.08) 0),
-                linear-gradient(150deg, rgba(232, 33, 39, 0.08) 12%, transparent 12.5%, transparent 87%, rgba(232, 33, 39, 0.08) 87.5%, rgba(232, 33, 39, 0.08) 0),
-                linear-gradient(30deg, rgba(232, 33, 39, 0.04) 12%, transparent 12.5%, transparent 87%, rgba(232, 33, 39, 0.04) 87.5%, rgba(232, 33, 39, 0.04) 0),
-                linear-gradient(150deg, rgba(232, 33, 39, 0.04) 12%, transparent 12.5%, transparent 87%, rgba(232, 33, 39, 0.04) 87.5%, rgba(232, 33, 39, 0.04) 0),
-                linear-gradient(60deg, rgba(232, 33, 39, 0.1) 25%, transparent 25.5%, transparent 75%, rgba(232, 33, 39, 0.1) 75%, rgba(232, 33, 39, 0.1) 0),
-                linear-gradient(60deg, rgba(232, 33, 39, 0.1) 25%, transparent 25.5%, transparent 75%, rgba(232, 33, 39, 0.1) 75%, rgba(232, 33, 39, 0.1) 0);
+                linear-gradient(30deg, rgba(0, 56, 168, 0.08) 12%, transparent 12.5%, transparent 87%, rgba(0, 56, 168, 0.08) 87.5%, rgba(0, 56, 168, 0.08) 0),
+                linear-gradient(150deg, rgba(0, 56, 168, 0.08) 12%, transparent 12.5%, transparent 87%, rgba(0, 56, 168, 0.08) 87.5%, rgba(0, 56, 168, 0.08) 0),
+                linear-gradient(30deg, rgba(0, 56, 168, 0.04) 12%, transparent 12.5%, transparent 87%, rgba(0, 56, 168, 0.04) 87.5%, rgba(0, 56, 168, 0.04) 0),
+                linear-gradient(150deg, rgba(0, 56, 168, 0.04) 12%, transparent 12.5%, transparent 87%, rgba(0, 56, 168, 0.04) 87.5%, rgba(0, 56, 168, 0.04) 0),
+                linear-gradient(60deg, rgba(0, 56, 168, 0.1) 25%, transparent 25.5%, transparent 75%, rgba(0, 56, 168, 0.1) 75%, rgba(0, 56, 168, 0.1) 0),
+                linear-gradient(60deg, rgba(0, 56, 168, 0.1) 25%, transparent 25.5%, transparent 75%, rgba(0, 56, 168, 0.1) 75%, rgba(0, 56, 168, 0.1) 0);
             background-size: 100px 175px;
             background-position: 0 0, 0 0, 50px 87.5px, 50px 87.5px, 0 0, 50px 87.5px;
             z-index: -2;
@@ -214,7 +214,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['creer_code'])) {
             color: var(--primary-black); /* Texte noir sur vert */
             font-weight: bold;
             font-size: 18px;
-            box-shadow: 0 8px 25px rgba(232, 33, 39, 0.4);
+            box-shadow: 0 8px 25px rgba(0, 56, 168, 0.4);
         }
         
         .logo-text {
@@ -250,7 +250,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['creer_code'])) {
             border-radius: 16px;
             padding: 25px;
             box-shadow: 0 8px 25px rgba(0, 0, 0, 0.4);
-            border: 1px solid rgba(232, 33, 39, 0.1);
+            border: 1px solid rgba(0, 56, 168, 0.1);
             text-align: center;
             transition: var(--transition);
             cursor: pointer;
@@ -258,7 +258,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['creer_code'])) {
         
         .choice-card:hover {
             transform: translateY(-5px);
-            box-shadow: 0 15px 35px rgba(232, 33, 39, 0.2);
+            box-shadow: 0 15px 35px rgba(0, 56, 168, 0.2);
         }
         
         .choice-icon {
@@ -295,7 +295,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['creer_code'])) {
             padding: 25px;
             margin-bottom: 20px;
             box-shadow: 0 8px 25px rgba(0, 0, 0, 0.4);
-            border: 1px solid rgba(232, 33, 39, 0.1);
+            border: 1px solid rgba(0, 56, 168, 0.1);
             animation: slideInUp 0.6s ease-out 0.4s both;
             display: none;
         }
@@ -314,8 +314,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['creer_code'])) {
         
         .eligibility-info {
             /* Fond légèrement vert/sombre */
-            background: rgba(232, 33, 39, 0.05);
-            border: 1px solid rgba(232, 33, 39, 0.2);
+            background: rgba(0, 56, 168, 0.05);
+            border: 1px solid rgba(0, 56, 168, 0.2);
             border-radius: 12px;
             padding: 20px;
             margin-bottom: 20px;
@@ -384,7 +384,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['creer_code'])) {
         
         .create-btn:hover {
             transform: translateY(-2px);
-            box-shadow: 0 8px 20px rgba(232, 33, 39, 0.4);
+            box-shadow: 0 8px 20px rgba(0, 56, 168, 0.4);
         }
         
         .create-btn:disabled {
@@ -402,7 +402,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['creer_code'])) {
             padding: 25px;
             margin-bottom: 20px;
             box-shadow: 0 8px 25px rgba(0, 0, 0, 0.4);
-            border: 1px solid rgba(232, 33, 39, 0.1);
+            border: 1px solid rgba(0, 56, 168, 0.1);
             animation: slideInUp 0.6s ease-out 0.6s both;
             display: none;
         }
@@ -436,7 +436,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['creer_code'])) {
             padding: 15px;
             /* Input sombre */
             background: var(--soft-dark);
-            border: 1px solid rgba(232, 33, 39, 0.2);
+            border: 1px solid rgba(0, 56, 168, 0.2);
             border-radius: 10px;
             font-size: 16px;
             color: var(--text-light);
@@ -446,7 +446,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['creer_code'])) {
         .form-input:focus {
             outline: none;
             border-color: var(--accent-green);
-            box-shadow: 0 0 0 2px rgba(232, 33, 39, 0.2);
+            box-shadow: 0 0 0 2px rgba(0, 56, 168, 0.2);
         }
         
         .submit-btn {
@@ -466,7 +466,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['creer_code'])) {
         
         .submit-btn:hover {
             transform: translateY(-2px);
-            box-shadow: 0 8px 20px rgba(232, 33, 39, 0.4);
+            box-shadow: 0 8px 20px rgba(0, 56, 168, 0.4);
         }
         
         /* Alert messages */
@@ -480,8 +480,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['creer_code'])) {
         
         .alert.success {
             /* Succès en rouge Allianz */
-            background: rgba(232, 33, 39, 0.15);
-            border: 1px solid rgba(232, 33, 39, 0.3);
+            background: rgba(0, 56, 168, 0.15);
+            border: 1px solid rgba(0, 56, 168, 0.3);
             color: var(--accent-green);
         }
         
@@ -494,17 +494,17 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['creer_code'])) {
         
         .alert.info {
             /* Info en gris/vert léger */
-            background: rgba(232, 33, 39, 0.1);
-            border: 1px solid rgba(232, 33, 39, 0.2);
+            background: rgba(0, 56, 168, 0.1);
+            border: 1px solid rgba(0, 56, 168, 0.2);
             color: var(--accent-green);
         }
         
         /* Back button */
         .back-btn {
             /* Bouton retour vert/sombre */
-            background: rgba(232, 33, 39, 0.1);
+            background: rgba(0, 56, 168, 0.1);
             color: var(--accent-green);
-            border: 1px solid rgba(232, 33, 39, 0.2);
+            border: 1px solid rgba(0, 56, 168, 0.2);
             padding: 12px 25px;
             font-size: 14px;
             font-weight: 600;
@@ -518,7 +518,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['creer_code'])) {
         }
         
         .back-btn:hover {
-            background: rgba(232, 33, 39, 0.2);
+            background: rgba(0, 56, 168, 0.2);
             transform: translateX(-5px);
         }
         
@@ -566,7 +566,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['creer_code'])) {
     <div class="container">
         <div class="header">
             <div class="logo">
-                <div class="logo-icon">NV</div>
+                <div class="logo-icon">AZ</div>
                 <div>
                     <div class="logo-text">Allianz Investissements</div>
                     <div class="logo-subtext">CADEAUX</div>
@@ -669,7 +669,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['creer_code'])) {
                 </button>
             </form>
             
-            <div style="margin-top: 25px; padding: 20px; background: rgba(232, 33, 39, 0.05); border-radius: 12px;">
+            <div style="margin-top: 25px; padding: 20px; background: rgba(0, 56, 168, 0.05); border-radius: 12px;">
                 <div class="eligibility-title">
                     <i class="fas fa-lightbulb"></i> Codes disponibles
                 </div>
